@@ -1,0 +1,217 @@
+{% if section.blocks.size > 0 %}
+  <div class="faq-section">
+    <div class="col-12 mt-5 mb-5">
+      {% if section.settings.heading != blank %}
+        <div class="h2 text-center">{{ section.settings.heading }}</div>
+      {% endif %}
+    </div>
+    <div class="faq-wrapper">
+      {% for block in section.blocks %}
+        {% if block.settings.faq_question != blank and block.settings.faq_answer != blank %}
+          <div class="col-10 col-md-8 col-lg-6 m-auto">
+            <div class="faq-tab">
+              <input
+                id="faq-tab-{{forloop.index}}"
+                type="radio"
+                name="tabs" />
+              <label class="faq-question d-flex justify-content-between" for="faq-tab-{{forloop.index}}">{{ block.settings.faq_question }}
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14px"
+                    height="28px"
+                    viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" /></svg>
+                </span>
+              </label>
+              <div class="faq-tab-content">
+                <p>
+                  <span>{{ block.settings.faq_answer }}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .faq-section {
+    font-family: 'Sharp Grotesk';
+
+  }
+  .faq-question {
+    font-style: normal;
+    font-weight: 500;
+    color: #181818;
+  }
+  .faq_title {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 30px 0;
+  }
+  @media only screen and (max-width: 600px) {
+    .faq-tab label,
+    .wrp__cont {
+      margin: 10px 0;
+    }
+  }
+  .faq-tab {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 15px auto;
+    border-radius: 0;
+    padding: 0 0 10px;
+    color: #343434;
+    border: unset;
+    border-bottom: 2.5px solid #E8E8E8;
+  }
+  .faq-tab label {
+    position: relative;
+    display: block;
+    padding: 0 25px 0 0;
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  .faq-tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .faq-tab-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s;
+    overflow-y: visible;
+  }
+  .faq-tab input:checked ~ .faq-tab-content {
+    max-height: none;
+    color: #959595;
+  }
+  .faq-tab-content input:checked ~ label,
+  .faq-tab-content input:checked + label {
+    max-height: none;
+    color: #e42229;
+  }
+  .faq-tab label::after {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    display: block;
+    -webkit-transition: all 0.45s;
+    -o-transition: all 0.45s;
+    transition: all 0.45s;
+  }
+
+  @media only screen and (min-width:320px) and(max-width:480px) {
+    .got_quest {
+      padding: 10px 0;
+    }
+    .got_quest .heading {
+      padding: 10px 0;
+      font-size: 18px;
+    }
+    .faq_title {
+      font-size: 13px;
+      line-height: 18px;
+      padding: 30px 0;
+    }
+    .faq-tab input:checked ~ .faq-tab-content {
+      font-size: 12px;
+    }
+    .faq-tab label {
+      font-size: 12px;
+    }
+
+  }
+  @media only screen and (min-width:481px) and(max-width:767px) {
+    .got_quest {
+      padding: 10px 0;
+    }
+    .got_quest .heading {
+      padding: 10px 0;
+      font-size: 18px;
+    }
+    .faq_title {
+      font-size: 13px;
+      line-height: 18px;
+      padding: 30px 0;
+    }
+    .faq-tab input:checked ~ .faq-tab-content {
+      font-size: 12px;
+    }
+    .faq-tab label {
+      font-size: 12px;
+    }
+
+  }
+  @media only screen and (min-width:768px) and(max-width:1024px) {
+    .got_quest {
+      padding: 30px 0;
+    }
+    .got_quest .heading {
+      padding: 10px 0;
+      font-size: 26px;
+    }
+    .faq_title {
+      font-size: 13px;
+      line-height: 18px;
+      padding: 30px 0;
+    }
+    .faq-tab input:checked ~ .faq-tab-content {
+      font-size: 13px;
+    }
+    .faq-tab label {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (min-width:768px) and(max-width:1024px) {
+    .faq-tab label {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (min-width:1025px) {}
+</style>
+
+{% schema %}
+  {
+    "name": "FAQ Section",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "FAQ"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "FAQ",
+        "type": "faq-section",
+        "settings": [
+          {
+            "type": "text",
+            "id": "faq_question",
+            "label": "Question",
+            "default": "Question"
+          }, {
+            "type": "text",
+            "id": "faq_answer",
+            "label": "Answer",
+            "default": "Answer"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "FAQ Section"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,121 @@
+{
+  "sections": {
+    "main": {
+      "type": "vedio_section",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/Copy of VEGAN WAY v3.mp4",
+        "heading": "Are you conscious about fitness, nature, nutrition, and taste?",
+        "subheading": "Check out the daily health routine, made easy with plant-based proteins",
+        "button_text": "Go Proteinlicious",
+        "button_link": ""
+      }
+    },
+    "843c76d8-5c13-4385-8eae-6b8849167dcd": {
+      "type": "featuredin-section",
+      "blocks": {
+        "63c7c07c-7e5e-48f3-a7e5-35f965ddd380": {
+          "type": "item-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_649.png",
+            "text": "“Pea protein is a high-quality protein and a great source of iron. It can aid muscle growth, weight loss, and heart health.”"
+          }
+        },
+        "b16c0ed9-a1ac-4eb5-97ab-799539044995": {
+          "type": "item-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group.png",
+            "text": "“Barley grass offers a variety of health benefits because of the minerals, vitamins, and antioxidants it contains.”"
+          }
+        },
+        "1e416f1e-00f6-4d47-906c-c22af240f8f3": {
+          "type": "item-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14557.png",
+            "text": "“Moringa is believed to have many benefits, and its uses range from health and beauty to helping prevent and cure diseases.”"
+          }
+        },
+        "ba047269-7587-419c-b82c-1a9ea1eda810": {
+          "type": "item-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14558.png",
+            "text": "“Spinach has long been regarded as a plant which can restore energy, increase vitality and improve the quality of the blood.”"
+          }
+        }
+      },
+      "block_order": [
+        "63c7c07c-7e5e-48f3-a7e5-35f965ddd380",
+        "b16c0ed9-a1ac-4eb5-97ab-799539044995",
+        "1e416f1e-00f6-4d47-906c-c22af240f8f3",
+        "ba047269-7587-419c-b82c-1a9ea1eda810"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/featured_section_background.jpg",
+        "heading": "Veganway Featured In",
+        "color": "#181818"
+      }
+    },
+    "8517a24a-8d3e-4a86-979e-c9c141d6c190": {
+      "type": "faq-section",
+      "blocks": {
+        "0cec60df-4153-4e04-8cb8-a1744b731396": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "Is plant protein powder good for building muscle?",
+            "faq_answer": "Answer"
+          }
+        },
+        "19c8a719-9ed2-48cf-be4d-07d4fb52db90": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "Is protein powder safe?",
+            "faq_answer": "Answer"
+          }
+        },
+        "0e3e5129-4122-4dd0-83b1-be1be4469774": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "Is protein powder good for health?",
+            "faq_answer": "Answer"
+          }
+        },
+        "eea52d94-c82f-461f-85fc-b72b8cf6fde7": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "Is protein powder good for weight loss?",
+            "faq_answer": "Answer"
+          }
+        },
+        "a1514d5f-7c80-47ce-bfcc-62a5740156c4": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "How to take protein powder?",
+            "faq_answer": "Answer"
+          }
+        },
+        "7735e8df-e71c-4c1b-a558-d65ed97ad271": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "How many grams of protein are in each serving?",
+            "faq_answer": "Answer"
+          }
+        }
+      },
+      "block_order": [
+        "0cec60df-4153-4e04-8cb8-a1744b731396",
+        "19c8a719-9ed2-48cf-be4d-07d4fb52db90",
+        "0e3e5129-4122-4dd0-83b1-be1be4469774",
+        "eea52d94-c82f-461f-85fc-b72b8cf6fde7",
+        "a1514d5f-7c80-47ce-bfcc-62a5740156c4",
+        "7735e8df-e71c-4c1b-a558-d65ed97ad271"
+      ],
+      "settings": {
+        "heading": "FAQs"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "843c76d8-5c13-4385-8eae-6b8849167dcd",
+    "8517a24a-8d3e-4a86-979e-c9c141d6c190"
+  ]
+}

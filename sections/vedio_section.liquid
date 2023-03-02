@@ -1,0 +1,181 @@
+{% if section.settings.video != blank %}
+  <div class="fluid-container video">
+    <div class="col-12 video-section">
+      <div class="video-sectionitem">
+        <div class="video-sectionitem-wrap">
+          {% for video in section.settings.video.sources %}
+            {% if video.format == 'mp4' %}
+              <div class="media media--video">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline>
+                  <source src="{{ video.url }}" type="{{ video.mime_type }}">
+                </video>
+              </div>
+            {% endif %}
+          {% endfor %}
+
+          <div class="video__content d-flex justify-content-center align-items-center">
+            <div class="video__content-wrapper text-center">
+
+              {% if section.settings.heading != blank %}
+                <div class="video__heading h2 video-section__main-heading video-section__text--color">
+                  {{ section.settings.heading }}
+                </div>
+              {% endif %}
+
+              {% if section.settings.subheading != blank %}
+                <p class="video__paragraph video-section__subheading video-section__text--color p-3">
+                  {{ section.settings.subheading }}
+                </p>
+              {% endif %}
+
+              {% if section.settings.button_text != blank %}
+                <div class="video__button mt-3">
+                  <a class="btn video-section__button" href="{{ section.settings.button_link }}">
+                    {{ section.settings.button_text }}
+                  </a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .video-section__main-heading {
+    font-family: 'Sharp Grotesk';
+    font-weight: 500;
+    line-height: 128%;
+  }
+  .video-section__subheading {
+    font-family: 'Inter';
+    line-height: 128%;
+    font-weight: 400;
+
+  }
+  .video-section__text--color {
+    color: #FFFFFF;
+  }
+  .video-section__button {
+    color: #FFFFFF;
+    background-color: #017149;
+    border-radius: 30px;
+    font-family: 'Sharp Grotesk';
+    font-weight: 500;
+  }
+  .media {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .media > * {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .media > video {
+    object-fit: cover;
+    object-position: center center;
+    transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+  .video-sectionitem {
+    width: 100%;
+  }
+
+  .video-sectionitem .media::after {
+    content: '';
+    background: rgb(0 0 0 / 30%);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-sectionitem-wrap {
+    position: relative;
+  }
+
+  .video__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .video__content-wrapper {
+    max-width: 650px;
+  }
+
+  .media--video {
+    padding-bottom: 150%;
+  }
+
+  @media only screen and (min-width: 990px) {
+    .media--video {
+      padding-bottom: 56.25%;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Video",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Desktop Video"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subeading",
+        "default": "Subheading"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Shop Now"
+      }, {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Video"
+      }
+    ]
+  }
+{% endschema %}

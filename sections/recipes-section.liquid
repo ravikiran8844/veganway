@@ -1,0 +1,116 @@
+<div class="fluid-container p-4">
+  <div class="recipes-section__wrapper d-flex flex-column flex-md-row justify-content-center">
+    <div
+      class="col-12 col-md-4  p-2">
+      <div>{{ section.settings.heading }}</div>
+      <div>{{ section.settings.description }}</div>
+      <div>
+        <a class="btn" href="{{section.settings.link_url}}">{{ section.settings.link_text }}</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-2 p-2">
+      <div>
+        {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe1image, desktopSrc: section.settings.recipe1image %}
+      </div>
+      <div>{{ section.settings.recipe1text }}</div>
+      <div>
+        <a href="{{ section.settings.recipe1link}}">Read More</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-2 p-2">
+      <div>
+        {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe1image, desktopSrc: section.settings.recipe1image %}
+      </div>
+      <div>{{ section.settings.recipe1text }}</div>
+      <div>
+        <a href="{{ section.settings.recipe1link}}">Read More</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-2 p-2">
+      <div>
+        {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe1image, desktopSrc: section.settings.recipe1image %}
+      </div>
+      <div>{{ section.settings.recipe1text }}</div>
+      <div>
+        <a href="{{ section.settings.recipe1link}}">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Recipes Section",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Recipes"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "default": "Description",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "default": "More Recipes",
+        "label": "Button Text"
+
+      },
+      {
+        "type": "url",
+        "id": "link_url",
+        "label": "Button Link"
+      }, {
+        "type": "image_picker",
+        "id": "recipe1image",
+        "label": "Recipe 1 Image"
+      }, {
+        "type": "text",
+        "id": "recipe1text",
+        "label": "Recipe 1 Text"
+      }, {
+        "type": "text",
+        "id": "recipe1link",
+        "label": "Recipe 1 Link"
+      }, {
+        "type": "image_picker",
+        "id": "recipe2image",
+        "label": "Recipe 2 Image"
+      }, {
+        "type": "text",
+        "id": "recipe2text",
+        "label": "Recipe 2 Text"
+      }, {
+        "type": "text",
+        "id": "recipe2link",
+        "label": "Recipe 2 Link"
+      }, {
+        "type": "image_picker",
+        "id": "recipe3image",
+        "label": "Recipe 3 Image"
+      }, {
+        "type": "text",
+        "id": "recipe3text",
+        "label": "Recipe 3 Text"
+      }, {
+        "type": "text",
+        "id": "recipe3link",
+        "label": "Recipe 3 Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Recipes Section"
+      }
+    ]
+  }
+{% endschema %}
