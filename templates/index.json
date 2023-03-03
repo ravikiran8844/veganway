@@ -10,6 +10,77 @@
         "button_link": ""
       }
     },
+    "f43aec42-f575-41c4-91ef-3fbbe296439f": {
+      "type": "rated-5stars-section",
+      "blocks": {
+        "babe1fa8-e438-4eff-9642-006f31557074": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_1570_46f117db-5f13-44f4-97f5-f1a616b0ab64_300x_png.png"
+          }
+        },
+        "503d5585-ba65-4a61-89ad-18199b1543b1": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_1571_300x_png.png"
+          }
+        },
+        "625c3e96-2c5a-4898-9627-ef6da00c3d6f": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_6303-min_5553afb2-e735-4ce3-b07b-032d9f5058a4_300x_jpg.png"
+          }
+        },
+        "57258b86-6132-4c48-8844-7291fce34109": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_1572_7922a14b-3c7f-4c9d-aadd-dff3ab8e0878_300x_png.png"
+          }
+        },
+        "72e5a175-851e-4dae-bbcc-ef43884c2544": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_1568_8f29b142-3a91-4351-90ac-60254331bbd1_300x_png.png"
+          }
+        },
+        "aab3f413-2220-4563-ae4d-ffb5fb8b3300": {
+          "type": "image-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_1569_300x_png.png"
+          }
+        }
+      },
+      "block_order": [
+        "babe1fa8-e438-4eff-9642-006f31557074",
+        "503d5585-ba65-4a61-89ad-18199b1543b1",
+        "625c3e96-2c5a-4898-9627-ef6da00c3d6f",
+        "57258b86-6132-4c48-8844-7291fce34109",
+        "72e5a175-851e-4dae-bbcc-ef43884c2544",
+        "aab3f413-2220-4563-ae4d-ffb5fb8b3300"
+      ],
+      "settings": {
+        "bg_color": "#E5E5E5",
+        "caption": "Rated 5 stars",
+        "heading": "Fuel Up Your Day With India’s Tastiest Vegan Protein",
+        "subheading": "Zero Bloating | Designed For Everyday Health | All Natural",
+        "button_text": "TRY NOW",
+        "button_link": ""
+      }
+    },
+    "ec9dae8a-2489-466a-af04-23f55d2b4041": {
+      "type": "image_with_text_section",
+      "settings": {
+        "bg_color": "#dae7d4",
+        "heading": "A Proteinlicious Drink From India’s Purest Source",
+        "heading_color": "#017149",
+        "line1text": "Our ingredients are 100% vegan and are picked from the purest source to help you support your health goals.",
+        "line2text": "With our team of experts, we bring you sustainably sourced ingredients with better potency, digestibility, absorption, and bioavailability.",
+        "line3text": "Our full-spectrum approach and synergistic formulations help you build your health daily by day.",
+        "text_color": "#2c2b2b",
+        "image_logo": "shopify:\/\/shop_images\/Group_14556.png",
+        "main_image": "shopify:\/\/shop_images\/DSC00156_1.png"
+      }
+    },
     "843c76d8-5c13-4385-8eae-6b8849167dcd": {
       "type": "featuredin-section",
       "blocks": {
@@ -109,12 +180,15 @@
         "7735e8df-e71c-4c1b-a558-d65ed97ad271"
       ],
       "settings": {
+        "bg_color": "#E5E5E5",
         "heading": "FAQs"
       }
     }
   },
   "order": [
     "main",
+    "f43aec42-f575-41c4-91ef-3fbbe296439f",
+    "ec9dae8a-2489-466a-af04-23f55d2b4041",
     "843c76d8-5c13-4385-8eae-6b8849167dcd",
     "8517a24a-8d3e-4a86-979e-c9c141d6c190"
   ]
