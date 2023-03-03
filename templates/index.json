@@ -59,12 +59,73 @@
         "aab3f413-2220-4563-ae4d-ffb5fb8b3300"
       ],
       "settings": {
-        "bg_color": "#E5E5E5",
+        "bg_color": "#e5e5e5",
         "caption": "Rated 5 stars",
         "heading": "Fuel Up Your Day With India’s Tastiest Vegan Protein",
         "subheading": "Zero Bloating | Designed For Everyday Health | All Natural",
         "button_text": "TRY NOW",
         "button_link": ""
+      }
+    },
+    "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a": {
+      "type": "featured-products",
+      "blocks": {
+        "570b50c1-2f13-426f-b052-9eb7cf72ded6": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "vegan-plant-protein-powder",
+            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_title": "Vanilla",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "6645a8b2-32d1-47ed-8865-2cd03fd73180": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "100-vegan-plant-protein-powder-14-servings",
+            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_title": "Cafe Mocha",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "4f9ee208-02be-44a8-b7e2-64ccc8372f74": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "vegan-plant-protein-powder",
+            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_title": "Kacha Aam",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "c557dfa9-0fc0-4d99-9414-d05d3a2d816b": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "vegan-plant-protein-powder",
+            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_title": "Vanilla",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "72c9d794-bca4-47a7-ae80-43f18933cf62": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "100-vegan-plant-protein-powder-14-servings",
+            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_title": "Cafe Mocha",
+            "product_caption": "100% Plant Protein"
+          }
+        }
+      },
+      "block_order": [
+        "570b50c1-2f13-426f-b052-9eb7cf72ded6",
+        "6645a8b2-32d1-47ed-8865-2cd03fd73180",
+        "4f9ee208-02be-44a8-b7e2-64ccc8372f74",
+        "c557dfa9-0fc0-4d99-9414-d05d3a2d816b",
+        "72c9d794-bca4-47a7-ae80-43f18933cf62"
+      ],
+      "settings": {
+        "bg_color": "#e5e5e5",
+        "heading": "Our Most Loved Flavours"
       }
     },
     "ec9dae8a-2489-466a-af04-23f55d2b4041": {
@@ -125,6 +186,73 @@
         "color": "#181818"
       }
     },
+    "9617ebdd-f579-4744-8822-de2fa956a4d0": {
+      "type": "moneyback-section",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/Banner_1_1.jpg",
+        "heading": "Your Daily 100% Plant Protein",
+        "subheading": "For your gut, your brain, your muscles, your skin, your hair, your heart. Your whole health",
+        "bg_color": "#000000",
+        "image2": "shopify:\/\/shop_images\/Group_14570.png"
+      }
+    },
+    "4fb16557-cb08-4b0d-9d8b-47ed2340caf8": {
+      "type": "testimonials",
+      "blocks": {
+        "0c856eea-cb21-43d6-9b47-8ad551449975": {
+          "type": "testimonial-section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "name": "Name",
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+          }
+        },
+        "33558849-c2c1-43ff-b87c-b0738e2b9a75": {
+          "type": "testimonial-section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "name": "Name",
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+          }
+        },
+        "cfd9433a-4a40-46bc-a29d-b21bd29820d7": {
+          "type": "testimonial-section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "name": "Name",
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+          }
+        },
+        "ad51ef4d-1a32-40c5-b9a3-54b80bcbc0d1": {
+          "type": "testimonial-section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "name": "Name",
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+          }
+        },
+        "5fa480b5-afaa-4afc-91f1-003854c825b2": {
+          "type": "testimonial-section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "name": "Name",
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0c856eea-cb21-43d6-9b47-8ad551449975",
+        "33558849-c2c1-43ff-b87c-b0738e2b9a75",
+        "cfd9433a-4a40-46bc-a29d-b21bd29820d7",
+        "ad51ef4d-1a32-40c5-b9a3-54b80bcbc0d1",
+        "5fa480b5-afaa-4afc-91f1-003854c825b2"
+      ],
+      "settings": {
+        "bg_color": "#E5E5E5",
+        "heading": "Rated 5 star",
+        "subheading": "By 50,000 Customers"
+      }
+    },
     "8517a24a-8d3e-4a86-979e-c9c141d6c190": {
       "type": "faq-section",
       "blocks": {
@@ -180,7 +308,7 @@
         "7735e8df-e71c-4c1b-a558-d65ed97ad271"
       ],
       "settings": {
-        "bg_color": "#E5E5E5",
+        "bg_color": "#e5e5e5",
         "heading": "FAQs"
       }
     }
@@ -188,8 +316,11 @@
   "order": [
     "main",
     "f43aec42-f575-41c4-91ef-3fbbe296439f",
+    "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a",
     "ec9dae8a-2489-466a-af04-23f55d2b4041",
     "843c76d8-5c13-4385-8eae-6b8849167dcd",
+    "9617ebdd-f579-4744-8822-de2fa956a4d0",
+    "4fb16557-cb08-4b0d-9d8b-47ed2340caf8",
     "8517a24a-8d3e-4a86-979e-c9c141d6c190"
   ]
 }

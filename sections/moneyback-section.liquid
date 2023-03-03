@@ -1,19 +1,19 @@
 <div class="fluid-container">
   <div class="moneyback-section d-flex flex-column flex-md-row">
-    <div class="col-12 col-md-6 first-col--{{ section.id}}">
+    <div class="col-12 col-md-7 first-col--{{ section.id}}">
       <div class="moneyback-section__image w-100">
-        {% render 'image', class: 'media media--16-9', mobileSrc: section.settings.bg_image, desktopSrc: section.settings.bg_image %}
+        {% render 'image', class: 'moneyback--image', mobileSrc: section.settings.bg_image, desktopSrc: section.settings.bg_image %}
 
-        <div class="moneyback-content h-100 w-100">
-          <div class="w-50">
-            <div class="h2">{{ section.settings.heading }}</div>
-            <p>{{ section.settings.subheading }}</p>
+        <div class="moneyback-content">
+          <div class="w-100">
+            <div class="h2 moneyback-content-heading">{{ section.settings.heading }}</div>
+            <p class="moneyback-content-subheading">{{ section.settings.subheading }}</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-5">
       <div class="moneyback-section__wrapper moneyback-{{section.id}} second-col--{{ section.id}}">
         <div class="d-flex justify-content-center align-items-center h-100">
           {% render 'image', class: '', mobileSrc: section.settings.image2, desktopSrc: section.settings.image2 %}
@@ -34,17 +34,34 @@
     background-color: {{ section.settings.bg_color}}
     ;
   }
-  .moneyback-section__wrapper {}
+  .moneyback-section__wrapper {
+    height: 499px;
+  }
   .moneyback-section__image {
     position: relative;
   }
   .moneyback-content {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 40%;
+    left: 55%;
   }
-  .moneyback--image {
-    height: 499px;
+  .moneyback--image img {
+    position: relative;
+    min-height: 499px !important;
+    width: 100%;
+  }
+  .moneyback-content-heading {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.5%;
+  }
+  .moneyback-content-subheading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 137.02%;
   }
 {% endstyle %}
 

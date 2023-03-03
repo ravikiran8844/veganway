@@ -1,6 +1,6 @@
 {% if section.blocks.size > 0 %}
   <div class="rated-section wrapper--{{section.id}} p-5 fluid-container">
-    <div class="row text-center">
+    <div class="row  g-0 text-center">
       <div class="col-12">
         <div class="mb-3 d-flex justify-content-center align-items-center">
           <span class="rated-section__caption-text">{{ section.settings.caption }}</span>
@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <div class="row mt-4">
+    <div class="row g-0 mt-4">
       <div class="rated-section__image-wrapper col-12 d-flex">
         {% for block in section.blocks %}
           <div class="col-4 col-md-3 col-xl-2">
