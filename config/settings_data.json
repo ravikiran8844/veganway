@@ -1,5 +1,16 @@
 {
   "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/logo.png"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {

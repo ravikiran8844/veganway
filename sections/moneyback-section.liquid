@@ -1,6 +1,6 @@
 <div class="fluid-container">
   <div class="moneyback-section d-flex flex-column flex-md-row">
-    <div class="col-12 col-md-7 first-col--{{ section.id}}">
+    <div class="col-12 col-md-7 first-col--{{ section.id}} p-0">
       <div class="moneyback-section__image w-100">
         {% render 'image', class: 'moneyback--image', mobileSrc: section.settings.bg_image, desktopSrc: section.settings.bg_image %}
 
@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="col-12 col-md-5">
+    <div class="col-12 col-md-5 p-0">
       <div class="moneyback-section__wrapper moneyback-{{section.id}} second-col--{{ section.id}}">
         <div class="d-flex justify-content-center align-items-center h-100">
           {% render 'image', class: '', mobileSrc: section.settings.image2, desktopSrc: section.settings.image2 %}

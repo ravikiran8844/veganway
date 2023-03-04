@@ -1,0 +1,310 @@
+{% if section.blocks.size > 0 %}
+  <div class="fluid-container">
+    <div class="row g-0">
+      <div class="col-12 slider__wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true,"prevNextButtons": false,"autoPlay": true }'>
+        {% for block in section.blocks %}
+          <div class="col-12 d-flex flex-column flex-md-row p-5 justify-content-center align-items-center slide--{{block.id}}">
+            <div class="col-12 col-md-4 col-lg-5">
+              <p>
+                <span>
+                  <svg
+                    width="117"
+                    height="19"
+                    viewBox="0 0 117 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.61048 0L12.5789 6.14399L19.2148 7.12728L14.4127 11.9059L15.5473 18.6574L9.61048 15.4696L3.67369 18.6574L4.80831 11.9059L0 7.12728L6.64209 6.14399L9.61048 0Z" fill="#FEA500" />
+                    <path d="M33.8795 0L36.8479 6.14399L43.4839 7.12728L38.6817 11.9059L39.8163 18.6574L33.8795 15.4696L27.9427 18.6574L29.0774 11.9059L24.269 7.12728L30.9111 6.14399L33.8795 0Z" fill="#FEA500" />
+                    <path d="M58.1468 0L61.1152 6.14399L67.7512 7.12728L62.949 11.9059L64.0836 18.6574L58.1468 15.4696L52.21 18.6574L53.3447 11.9059L48.5425 7.12728L55.1784 6.14399L58.1468 0Z" fill="#FEA500" />
+                    <path d="M83.1278 0L86.0962 6.14399L92.7321 7.12728L87.93 11.9059L89.0646 18.6574L83.1278 15.4696L77.191 18.6574L78.3256 11.9059L73.5234 7.12728L80.1594 6.14399L83.1278 0Z" fill="#FEA500" />
+                    <path d="M107.396 0L110.364 6.14399L117 7.12728L112.198 11.9059L113.333 18.6574L107.396 15.4696L101.459 18.6574L102.594 11.9059L97.7915 7.12728L104.427 6.14399L107.396 0Z" fill="#FEA500" />
+                  </svg>
+                </span>
+                <span class="slide-caption">{{ block.settings.caption }}</span>
+              </p>
+              <h2 class="h1 slide-heading">{{ block.settings.heading }}
+                <span class="slide-heading_highlight">{{ block.settings.heading_highlight }}</span>
+              </h2>
+              <a class="btn slide-button" href="{{ block.settings.btn_link }}">{{ block.settings.btn_text }}</a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 p-2">
+              {% render 'image', class: 'slide-item-img media media--square', mobileSrc: block.settings.slide_image, desktopSrc: block.settings.slide_image %}
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 p-2">
+              {% if block.settings.list-item1 != blank %}
+                <div>
+                  <span>
+                    {% render 'checkmark' %}
+                  </span>
+                  <span class="slider-list-item">{{ block.settings.list-item1 }}</span>
+                </div>
+              {% endif %}
+              {% if block.settings.list-item2 != blank %}
+                <div>
+                  <span>
+                    {% render 'checkmark' %}
+                  </span>
+                  <span class="slider-list-item">{{ block.settings.list-item2 }}</span>
+                </div>
+              {% endif %}
+              {% if block.settings.list-item3 != blank %}
+                <div>
+                  <span>
+                    {% render 'checkmark' %}
+                  </span>
+                  <span class="slider-list-item">{{ block.settings.list-item3 }}</span>
+                </div>
+              {% endif %}
+              {% if block.settings.list-item4 != blank %}
+                <div>
+                  <span>
+                    {% render 'checkmark' %}
+                  </span>
+                  <span class="slider-list-item">{{ block.settings.list-item4 }}</span>
+                </div>
+              {% endif %}
+              {% if block.settings.list-item5 != blank %}
+                <div>
+                  <span>
+                    {% render 'checkmark' %}
+                  </span>
+                  <span class="slider-list-item">{{ block.settings.list-item5 }}</span>
+                </div>
+              {% endif %}
+              {% if block.settings.list-item6 != blank %}
+                <div>
+                  <span>
+                    {% render 'checkmark' %}
+                  </span>
+                  <span class="slider-list-item">{{ block.settings.list-item6 }}</span>
+                </div>
+              {% endif %}
+              {% if block.settings.list-item7 != blank %}
+                <div>
+                  <span>
+                    {% render 'checkmark' %}
+                  </span>
+                  <span class="slider-list-item">{{ block.settings.list-item7 }}</span>
+                </div>
+              {% endif %}
+              {% if block.settings.list-item8 != blank %}
+                <div>
+                  <span>
+                    {% render 'checkmark' %}
+                  </span>
+                  <span class="slider-list-item">{{ block.settings.list-item8 }}</span>
+                </div>
+              {% endif %}
+              {% if block.settings.list-item9 != blank %}
+                <div>
+                  <span>
+                    {% render 'checkmark' %}
+                  </span>
+                  <span class="slider-list-item">{{ block.settings.list-item9 }}</span>
+                </div>
+              {% endif %}
+              {% if block.settings.list-item10 != blank %}
+                <div>
+                  <span>
+                    {% render 'checkmark' %}
+                  </span>
+                  <span class="slider-list-item">{{ block.settings.list-item10 }}</span>
+                </div>
+              {% endif %}
+              <div class="slide-list-item-title mt-3">
+                {{ block.settings.title }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+
+{% style %}
+  {% for block in section.blocks %}
+    .slide--{{ block.id}}{
+      background-image: url('{{block.settings.bg_image | img_url: 'large'}}');
+      background-size: cover;
+    }
+  {% endfor %}
+{% endstyle %}
+
+<style>
+  .slide-caption {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: #181818;
+  }
+
+  .slide-heading {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    color: #181818;
+  }
+  .slide-heading_highlight {
+    color: #017149;
+  }
+  .slide-button {
+    background: #017149;
+    border-radius: 28.5714px;
+    color: #fff;
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .slider-list-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 158%;
+    color: #834332;
+  }
+  .flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .slide-list-item-title {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 100%;
+    color: #834332;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Slider",
+    "class": "section",
+    "tag": "section",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Slide",
+        "type": "slide-block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "bg_image",
+            "label": "Background Image"
+          },
+          {
+            "type": "text",
+            "id": "caption",
+            "label": "Caption",
+            "default": "41,696 Five Star Reviews"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Everything You Need"
+          },
+          {
+            "type": "text",
+            "id": "heading_highlight",
+            "label": "Highlight Text",
+            "default": "Is Right Here!"
+          }, {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "20+ Plant-Based Superfoods & Is Rich in Nutrients"
+          }, {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button Text",
+            "default": "Try Veganway"
+          }, {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button Link"
+          }, {
+            "type": "image_picker",
+            "id": "slide_image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "list-item1",
+            "label": "List Item 1",
+            "default": "List Item"
+          }, {
+            "type": "text",
+            "id": "list-item2",
+            "label": "List Item 2",
+            "default": "List Item"
+          }, {
+            "type": "text",
+            "id": "list-item3",
+            "label": "List Item 3",
+            "default": "List Item"
+          }, {
+            "type": "text",
+            "id": "list-item4",
+            "label": "List Item 4",
+            "default": "List Item"
+          }, {
+            "type": "text",
+            "id": "list-item5",
+            "label": "List Item 5",
+            "default": "List Item"
+          }, {
+            "type": "text",
+            "id": "list-item6",
+            "label": "List Item 6",
+            "default": "List Item"
+          }, {
+            "type": "text",
+            "id": "list-item7",
+            "label": "List Item 7",
+            "default": "List Item"
+          }, {
+            "type": "text",
+            "id": "list-item8",
+            "label": "List Item 8",
+            "default": "List Item"
+          }, {
+            "type": "text",
+            "id": "list-item9",
+            "label": "List Item 9",
+            "default": "List Item"
+          }, {
+            "type": "text",
+            "id": "list-item10",
+            "label": "List Item 10",
+            "default": "List Item"
+
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Bold Title",
+            "default": "Title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slider"
+      }
+    ]
+  }
+{% endschema %}

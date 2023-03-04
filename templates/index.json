@@ -67,6 +67,65 @@
         "button_link": ""
       }
     },
+    "79764431-e8b0-4f42-bbff-8410ae5e374e": {
+      "type": "slider-section",
+      "blocks": {
+        "0e9c8a91-2b84-401b-9816-0aa69c99115a": {
+          "type": "slide-block",
+          "settings": {
+            "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png",
+            "caption": "41,696 Five Star Reviews",
+            "heading": "Everything You Need",
+            "heading_highlight": "Is Right Here!",
+            "subheading": "20+ Plant-Based Superfoods & Is Rich in Nutrients",
+            "btn_text": "Try Veganway",
+            "btn_link": "shopify:\/\/products\/vegan-plant-protein-powder",
+            "slide_image": "shopify:\/\/shop_images\/1_27_2.png",
+            "list-item1": "Plant Protein",
+            "list-item2": "Super Greens",
+            "list-item3": "Omegas + MCTs",
+            "list-item4": "Vitamins + Minerals",
+            "list-item5": "Adaptogen + Minerals",
+            "list-item6": "Probiotics + Fiber",
+            "list-item7": "Super Mushrooms",
+            "list-item8": "Antioxidant Berries",
+            "list-item9": "Digestive Enzymes",
+            "list-item10": "Electrolytes + MORE",
+            "title": "Cafe Mocha"
+          }
+        },
+        "ec2be645-aba1-4cf5-a9ad-803b6a4552ad": {
+          "type": "slide-block",
+          "settings": {
+            "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png",
+            "caption": "41,696 Five Star Reviews",
+            "heading": "Everything You Need",
+            "heading_highlight": "Is Right Here!",
+            "subheading": "20+ Plant-Based Superfoods & Is Rich in Nutrients",
+            "btn_text": "Try Veganway",
+            "btn_link": "",
+            "slide_image": "shopify:\/\/shop_images\/image_648_1.png",
+            "list-item1": "Pea Protein",
+            "list-item2": "Brown Rice Protein",
+            "list-item3": "Coconut Water Powder",
+            "list-item4": "Spinach",
+            "list-item5": "Moringa",
+            "list-item6": "Alfalfa",
+            "list-item7": "Chlorella",
+            "list-item8": "Barley Grass",
+            "list-item9": "Amla Extract",
+            "list-item10": "Spirulina",
+            "title": "Vanilla"
+          }
+        }
+      },
+      "block_order": [
+        "0e9c8a91-2b84-401b-9816-0aa69c99115a",
+        "ec2be645-aba1-4cf5-a9ad-803b6a4552ad"
+      ],
+      "settings": {
+      }
+    },
     "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a": {
       "type": "featured-products",
       "blocks": {
@@ -248,7 +307,7 @@
         "5fa480b5-afaa-4afc-91f1-003854c825b2"
       ],
       "settings": {
-        "bg_color": "#E5E5E5",
+        "bg_color": "#e5e5e5",
         "heading": "Rated 5 star",
         "subheading": "By 50,000 Customers"
       }
@@ -316,6 +375,7 @@
   "order": [
     "main",
     "f43aec42-f575-41c4-91ef-3fbbe296439f",
+    "79764431-e8b0-4f42-bbff-8410ae5e374e",
     "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a",
     "ec9dae8a-2489-466a-af04-23f55d2b4041",
     "843c76d8-5c13-4385-8eae-6b8849167dcd",
