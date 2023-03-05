@@ -1,51 +1,103 @@
-<div class="fluid-container p-4">
-  <div class="recipes-section__wrapper d-flex flex-column flex-md-row justify-content-center">
-    <div
-      class="col-12 col-md-4  p-2">
-      <div>{{ section.settings.heading }}</div>
-      <div>{{ section.settings.description }}</div>
+<div class="fluid-container recipes-section--{{ section.id}} p-4">
+  <div class="recipes-section__wrapper d-flex flex-wrap justify-content-center">
+    <div class="col-12 col-md-4  p-2">
+      <div class="h2 recipes-section__heading">{{ section.settings.heading }}</div>
+      <div class="recipes-section__text my-3">{{ section.settings.description }}</div>
       <div>
-        <a class="btn" href="{{section.settings.link_url}}">{{ section.settings.link_text }}</a>
+        <a class="btn recipes-section__button" href="{{section.settings.link_url}}">{{ section.settings.link_text }}</a>
       </div>
     </div>
 
-    <div class="col-12 col-md-2 p-2">
+    <div class="col-4 col-md-2 p-2">
       <div>
         {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe1image, desktopSrc: section.settings.recipe1image %}
       </div>
-      <div>{{ section.settings.recipe1text }}</div>
+      <div class="recipe-title my-3">{{ section.settings.recipe1text }}</div>
       <div>
-        <a href="{{ section.settings.recipe1link}}">Read More</a>
+        <a class="recipe-link" href="{{ section.settings.recipe1link}}">Read More</a>
       </div>
     </div>
-    <div class="col-12 col-md-2 p-2">
+    <div class="col-4 col-md-2 p-2">
       <div>
-        {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe1image, desktopSrc: section.settings.recipe1image %}
+        {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe2image, desktopSrc: section.settings.recipe2image %}
       </div>
-      <div>{{ section.settings.recipe1text }}</div>
+      <div class="recipe-title my-3">{{ section.settings.recipe2text }}</div>
       <div>
-        <a href="{{ section.settings.recipe1link}}">Read More</a>
+        <a class="recipe-link" href="{{ section.settings.recipe2link}}">Read More</a>
       </div>
     </div>
-    <div class="col-12 col-md-2 p-2">
+    <div class="col-4 col-md-2 p-2">
       <div>
-        {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe1image, desktopSrc: section.settings.recipe1image %}
+        {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe3image, desktopSrc: section.settings.recipe3image %}
       </div>
-      <div>{{ section.settings.recipe1text }}</div>
+      <div class="recipe-title my-3">{{ section.settings.recipe3text }}</div>
       <div>
-        <a href="{{ section.settings.recipe1link}}">Read More</a>
+        <a class="recipe-link" href="{{ section.settings.recipe3link}}">Read More</a>
       </div>
     </div>
   </div>
 </div>
 
+<style>
+  .recipes-section--{{ section.id}}{
+    background-color: {{ section.settings.bg_color}}
+    ;
+  }
+  .recipes-section__heading {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 128.5%;
+    text-transform: capitalize;
+    color: #181818;
+  }
+  .recipes-section__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.5%;
+    color: #474747;
 
+  }
+  .recipes-section__button {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    background: #017149;
+    color: #fff;
+    border-radius: 28.5714px;
+  }
+  .recipe-title {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 109%;
+    color: #181818;
+  }
+  .recipe-link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 109%;
+    text-decoration-line: underline;
+    color: #017149;
+  }
+</style>
 {% schema %}
   {
     "name": "Recipes Section",
     "class": "section",
     "tag": "section",
     "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#E5E5E5"
+      },
       {
         "type": "text",
         "id": "heading",
@@ -64,8 +116,7 @@
         "default": "More Recipes",
         "label": "Button Text"
 
-      },
-      {
+      }, {
         "type": "url",
         "id": "link_url",
         "label": "Button Link"
