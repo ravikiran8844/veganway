@@ -1,7 +1,7 @@
 {% if section.blocks.size > 0 %}
   <div class="fluid-container">
     <div class="row g-0">
-      <div class="col-12 slider__wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true,"prevNextButtons": false,"autoPlay": true }'>
+      <div class="col-12 slider__wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true,"prevNextButtons": false,"autoPlay": false }'>
         {% for block in section.blocks %}
           <div class="col-12 d-flex flex-column flex-md-row p-5 justify-content-center align-items-center slide--{{block.id}}">
             <div class="col-12 col-md-4 col-lg-5">
