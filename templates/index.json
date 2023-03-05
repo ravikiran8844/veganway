@@ -126,6 +126,61 @@
       "settings": {
       }
     },
+    "dc392530-1a75-40a2-9243-1c8e9bae2068": {
+      "type": "supporting-text-block",
+      "blocks": {
+        "a00ffe07-e771-4aa6-9494-d686f57e5a4c": {
+          "type": "text-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1571.png",
+            "title": "Nutritionally complete",
+            "text": "Nutritionally balanced. Keeps you always on the go."
+          }
+        },
+        "df1c1c21-ce3b-44bd-9c74-265bba71c2a4": {
+          "type": "text-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1572.png",
+            "title": "Super tasty",
+            "text": "Super yummy even the aftertaste makes you feel more resilient."
+          }
+        },
+        "c01ace95-e420-4e33-9211-eb15e774e2c4": {
+          "type": "text-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1573_1.png",
+            "title": "Plant based",
+            "text": "100% Vegan. Sourced ethically and free from added preservatives."
+          }
+        },
+        "6b99a5bf-6987-4699-a199-b254a2a42e73": {
+          "type": "text-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1574.png",
+            "title": "super convenient",
+            "text": "Cut. Pour. Shake. And it’s consumable in seconds."
+          }
+        },
+        "adb1796d-6cc9-461c-ae1e-da21cfd6306e": {
+          "type": "text-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1576.png",
+            "title": "Good value",
+            "text": "Intrinsically healthier for the body and the mind."
+          }
+        }
+      },
+      "block_order": [
+        "a00ffe07-e771-4aa6-9494-d686f57e5a4c",
+        "df1c1c21-ce3b-44bd-9c74-265bba71c2a4",
+        "c01ace95-e420-4e33-9211-eb15e774e2c4",
+        "6b99a5bf-6987-4699-a199-b254a2a42e73",
+        "adb1796d-6cc9-461c-ae1e-da21cfd6306e"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png"
+      }
+    },
     "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a": {
       "type": "featured-products",
       "blocks": {
@@ -199,6 +254,25 @@
         "text_color": "#2c2b2b",
         "image_logo": "shopify:\/\/shop_images\/Group_14556.png",
         "main_image": "shopify:\/\/shop_images\/DSC00156_1.png"
+      }
+    },
+    "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45": {
+      "type": "recipes-section",
+      "settings": {
+        "bg_color": "#E5E5E5",
+        "heading": "PROTEIN-FILLED RECIPES - QUICK & EASY TO MAKE!",
+        "description": "If your protein shake recipe is getting old and you’re looking for a change, then go for these yummiest recipes here! From creamy smoothies to delicious pancakes, our recipes are made from the tastiest and highest amount of protein with wholesome ingredients. So, try these quick, easy & yummy recipes!",
+        "link_text": "More Recipes",
+        "link_url": "shopify:\/\/blogs\/recipes",
+        "recipe1image": "shopify:\/\/shop_images\/recipe_1.png",
+        "recipe1text": "Very Berry Vegan Smoothie",
+        "recipe1link": "",
+        "recipe2image": "shopify:\/\/shop_images\/recipe_2.png",
+        "recipe2text": "PB Vegan Smoothie",
+        "recipe2link": "",
+        "recipe3image": "shopify:\/\/shop_images\/recipe_3.png",
+        "recipe3text": "Coco Berry Vegan Smoothie",
+        "recipe3link": ""
       }
     },
     "843c76d8-5c13-4385-8eae-6b8849167dcd": {
@@ -376,8 +450,10 @@
     "main",
     "f43aec42-f575-41c4-91ef-3fbbe296439f",
     "79764431-e8b0-4f42-bbff-8410ae5e374e",
+    "dc392530-1a75-40a2-9243-1c8e9bae2068",
     "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a",
     "ec9dae8a-2489-466a-af04-23f55d2b4041",
+    "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45",
     "843c76d8-5c13-4385-8eae-6b8849167dcd",
     "9617ebdd-f579-4744-8822-de2fa956a4d0",
     "4fb16557-cb08-4b0d-9d8b-47ed2340caf8",
