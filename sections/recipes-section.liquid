@@ -49,7 +49,8 @@
     font-weight: 500;
     line-height: 128.5%;
     text-transform: capitalize;
-    color: #181818;
+    color: {{ section.settings.heading_color}}
+    ;
   }
   .recipes-section__text {
     font-family: 'Inter';
@@ -57,14 +58,16 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 142.5%;
-    color: #474747;
+    color: {{ section.settings.description_color}}
+    ;
 
   }
   .recipes-section__button {
     font-family: 'Sharp Grotesk';
     font-style: normal;
     font-weight: 500;
-    background: #017149;
+    background: {{ section.settings.btn_color}}
+    ;
     color: #fff;
     border-radius: 28.5714px;
   }
@@ -83,7 +86,8 @@
     font-size: 16px;
     line-height: 109%;
     text-decoration-line: underline;
-    color: #017149;
+    color: {{ section.settings.btn_color}}
+    ;
   }
 </style>
 {% schema %}
@@ -105,17 +109,32 @@
         "default": "Recipes"
       },
       {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading Color",
+        "default": "#181818"
+      },
+      {
         "type": "text",
         "id": "description",
         "default": "Description",
         "label": "Description"
-      },
-      {
+      }, {
+        "type": "color",
+        "id": "description_color",
+        "label": "Description Color",
+        "default": "#474747"
+      }, {
         "type": "text",
         "id": "link_text",
         "default": "More Recipes",
         "label": "Button Text"
 
+      }, {
+        "type": "color",
+        "id": "btn_color",
+        "label": "Button Color",
+        "default": "#017149"
       }, {
         "type": "url",
         "id": "link_url",

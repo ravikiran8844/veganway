@@ -1,0 +1,145 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+      }
+    },
+    "3b754e96-18df-465c-a2d1-0b7eb94ac28a": {
+      "type": "logo_with_text",
+      "blocks": {
+        "81a5a255-be52-4123-a08f-c37f99caeb18": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14544.png",
+            "text": ""
+          }
+        },
+        "5c7cf7f5-f720-42a0-b77e-a58a8d8e6ca9": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14543.png",
+            "text": ""
+          }
+        },
+        "81b98e51-74c7-48df-9d01-d0c369246f1c": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14542.png",
+            "text": ""
+          }
+        },
+        "de67261d-67f4-498b-bf52-cec11a0808e4": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14541.png",
+            "text": ""
+          }
+        },
+        "2bc440ac-7187-40ff-9b82-82e6539122d6": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14540.png",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "81a5a255-be52-4123-a08f-c37f99caeb18",
+        "5c7cf7f5-f720-42a0-b77e-a58a8d8e6ca9",
+        "81b98e51-74c7-48df-9d01-d0c369246f1c",
+        "de67261d-67f4-498b-bf52-cec11a0808e4",
+        "2bc440ac-7187-40ff-9b82-82e6539122d6"
+      ],
+      "settings": {
+        "bg_color": "#583d36"
+      }
+    },
+    "b0074d67-d009-4929-8faf-9bd4a74bd59d": {
+      "type": "recipes-section",
+      "settings": {
+        "bg_color": "#e5e5e5",
+        "heading": "Try Your Hand At SimpleNutrient-Dense Recipes",
+        "heading_color": "#583d36",
+        "description": "With every sachet of Vegan Way Protein Powder, add the benefits of over 20+ Superfoods and their nutrients for your daily dose of power to make each day better than your last! Try a different recipe each day and treat your taste buds.",
+        "description_color": "#583d36",
+        "link_text": "More Recipes",
+        "btn_color": "#583d36",
+        "link_url": "",
+        "recipe1image": "shopify:\/\/shop_images\/recipe_1.png",
+        "recipe1text": "",
+        "recipe1link": "",
+        "recipe2image": "shopify:\/\/shop_images\/recipe_2.png",
+        "recipe2text": "",
+        "recipe2link": "",
+        "recipe3image": "shopify:\/\/shop_images\/recipe_3.png",
+        "recipe3text": "",
+        "recipe3link": ""
+      }
+    },
+    "fffb2753-7a7f-466e-ae6f-68280c15990f": {
+      "type": "logo_with_text",
+      "blocks": {
+        "04b42659-b8e4-44c3-8bca-a2438cebd7a7": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14536.png",
+            "text": ""
+          }
+        },
+        "2686d5e4-702e-4fa1-b135-b80e1ae1c9bc": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14534.png",
+            "text": ""
+          }
+        },
+        "61b714eb-1cb3-4f47-9481-099c0d742501": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14533.png",
+            "text": ""
+          }
+        },
+        "2ab58409-5863-467a-845f-d26e81d1696c": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14532.png",
+            "text": ""
+          }
+        },
+        "5beba020-6e55-48be-893f-913b967c5a76": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1829.png",
+            "text": ""
+          }
+        },
+        "9b0dca46-0167-42af-9dbd-48c5c680bf23": {
+          "type": "logo-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_14530_1.png",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "04b42659-b8e4-44c3-8bca-a2438cebd7a7",
+        "2686d5e4-702e-4fa1-b135-b80e1ae1c9bc",
+        "61b714eb-1cb3-4f47-9481-099c0d742501",
+        "2ab58409-5863-467a-845f-d26e81d1696c",
+        "5beba020-6e55-48be-893f-913b967c5a76",
+        "9b0dca46-0167-42af-9dbd-48c5c680bf23"
+      ],
+      "settings": {
+        "bg_color": "#282828"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3b754e96-18df-465c-a2d1-0b7eb94ac28a",
+    "b0074d67-d009-4929-8faf-9bd4a74bd59d",
+    "fffb2753-7a7f-466e-ae6f-68280c15990f"
+  ]
+}

@@ -1,0 +1,74 @@
+{% if section.blocks.size > 0 %}
+  <div class="fluid-container logo-section__wrapper--{{ section.id }}">
+    <div class="row g-0">
+      <div class="col-12 logo-section__item d-flex justify-content-between align-content-center m-auto p-5">
+        {% for block in section.blocks %}
+          <div class="col m-3 text-center">
+            {% render 'image', class: 'p-2', mobileSrc: block.settings.image, desktopSrc: block.settings.image %}
+            {% if block.settings.text !=blank%}
+              <div class="mt-2">{{ block.settings.text }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .logo-section__item {
+    overflow:auto;
+  }
+  .logo-section__wrapper--{{ section.id }} {
+    background-color: {{ section.settings.bg_color}}
+    ;
+    font-family: 'Pluto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135.5%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Logo with Text",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#282828"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Logo Block",
+        "type": "logo-block",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "label": "Text",
+            "default": "Text",
+            "id": "text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Logo with Text"
+      }
+    ]
+  }
+{% endschema %}
