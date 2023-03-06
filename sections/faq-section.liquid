@@ -2,7 +2,7 @@
   <div class="fluid-container faq-section faq--{{section.id}}">
     <div class="col-12">
       {% if section.settings.heading != blank %}
-        <div class="h2 text-center pt-5">{{ section.settings.heading }}</div>
+        <div class="h2 faq-heading--{{section.id}} text-center pt-5">{{ section.settings.heading }}</div>
       {% endif %}
     </div>
     <div class="faq-wrapper pb-3">
@@ -14,12 +14,13 @@
                 id="faq-tab-{{forloop.index}}"
                 type="radio"
                 name="tabs" />
-              <label class="faq-question d-flex justify-content-between" for="faq-tab-{{forloop.index}}">{{ block.settings.faq_question }}
+              <label class="faq-question faq-question--{{section.id}} d-flex justify-content-between" for="faq-tab-{{forloop.index}}">{{ block.settings.faq_question }}
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14px"
                     height="28px"
+                    fill="{{section.settings.text_color}}"
                     viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" /></svg>
                 </span>
               </label>
@@ -36,6 +37,10 @@
   </div>
 {% endif %}
 {% style %}
+  .faq-heading--{{section.id}}, .faq-question--{{section.id}}{
+ color:{{section.settings.text_color}};
+  }
+    
   .faq--{{ section.id}}{
     background-color: {{ section.settings.bg_color}}
     ;
@@ -49,7 +54,6 @@
   .faq-question {
     font-style: normal;
     font-weight: 500;
-    color: #181818;
   }
   .faq_title {
     font-size: 16px;
@@ -197,6 +201,12 @@
         "id": "heading",
         "label": "Heading",
         "default": "FAQ"
+      }
+      , {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text color",
+        "default": "#181818"
       }
     ],
     "blocks": [

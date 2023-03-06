@@ -77,6 +77,220 @@
         "recipe3link": ""
       }
     },
+    "dc16db68-a5ad-4dbd-9acd-3d83ee41809a": {
+      "type": "product-comparision",
+      "blocks": {
+        "900939dd-8c81-4459-a7dd-5c9f8c3fc243": {
+          "type": "item1-block",
+          "settings": {
+            "item1text": "No dairy based allergens"
+          }
+        },
+        "7e118c94-9844-40d2-ac9b-e53086e57cc7": {
+          "type": "item1-block",
+          "settings": {
+            "item1text": "Gluten Free "
+          }
+        },
+        "2f94a099-6f25-4afb-aa9b-768f0325fe2f": {
+          "type": "item1-block",
+          "settings": {
+            "item1text": "Complete Nutrition For The Body And Mind"
+          }
+        },
+        "50028fa3-3833-4642-b76e-cfb8492288e4": {
+          "type": "item1-block",
+          "settings": {
+            "item1text": "Controls Hunger Cravings for long "
+          }
+        },
+        "3cd2006f-d337-46a6-be5a-09559db6c73b": {
+          "type": "item1-block",
+          "settings": {
+            "item1text": "Nutritionally Balanced "
+          }
+        },
+        "2b54da42-b7c1-4865-9151-e6de1cd8bb5f": {
+          "type": "item1-block",
+          "settings": {
+            "item1text": "100% Vegan \/ Plant-Based"
+          }
+        },
+        "12449254-719b-4261-b6a4-7f237aca05a7": {
+          "type": "item1-block",
+          "settings": {
+            "item1text": "Easy To Digest "
+          }
+        },
+        "6b065614-4652-41f6-bf7b-b5db83f93ee0": {
+          "type": "item1-block",
+          "settings": {
+            "item1text": "Great Aftertaste "
+          }
+        },
+        "d360426d-06d0-4f36-ba1a-e07d4ee229f5": {
+          "type": "item1-block",
+          "settings": {
+            "item1text": "Contains Antioxidant Blend "
+          }
+        },
+        "2c1066c8-8816-49c3-b759-b6be37cc0e2d": {
+          "type": "item1-block",
+          "settings": {
+            "item1text": "100% Natural"
+          }
+        },
+        "b7077826-d4d8-4e37-8b81-aab7e54c69b2": {
+          "type": "item2-block",
+          "settings": {
+            "item2text": "Dairy is a major allergen "
+          }
+        },
+        "6b5800e7-51b4-4423-9f63-9fb37d93c4e7": {
+          "type": "item2-block",
+          "settings": {
+            "item2text": "Contains Gluten "
+          }
+        },
+        "e8a3ea77-f96c-486b-bac9-a6d3584b59fb": {
+          "type": "item2-block",
+          "settings": {
+            "item2text": "Nutrition only for muscle "
+          }
+        },
+        "66983a5e-f8cc-4513-b8f0-d517eca83079": {
+          "type": "item2-block",
+          "settings": {
+            "item2text": "Doesn’t control hunger cravings for long "
+          }
+        },
+        "469ced08-8592-45d1-a32e-86b9b047359f": {
+          "type": "item2-block",
+          "settings": {
+            "item2text": "Does not contain vital nutrients & minerals "
+          }
+        },
+        "d7053a06-72a5-4d34-ba38-7a2281af5af9": {
+          "type": "item2-block",
+          "settings": {
+            "item2text": "Made from animal product "
+          }
+        },
+        "0e7493cd-ca8a-4833-b3fb-cadc0094a8a1": {
+          "type": "item2-block",
+          "settings": {
+            "item2text": "Difficult to Digest and causes bloating "
+          }
+        },
+        "d31b2a19-1b7b-4af7-9e28-3b482b8bece1": {
+          "type": "item2-block",
+          "settings": {
+            "item2text": "Not So Good Aftertaste "
+          }
+        },
+        "fe202153-ee3f-410a-8f42-31779ba6d021": {
+          "type": "item2-block",
+          "settings": {
+            "item2text": "Doesn’t contain antioxidant blend "
+          }
+        },
+        "a9c84fa6-709c-42bf-a684-f78000f226a2": {
+          "type": "item2-block",
+          "settings": {
+            "item2text": "Contains additives & preservatives"
+          }
+        }
+      },
+      "block_order": [
+        "900939dd-8c81-4459-a7dd-5c9f8c3fc243",
+        "7e118c94-9844-40d2-ac9b-e53086e57cc7",
+        "2f94a099-6f25-4afb-aa9b-768f0325fe2f",
+        "50028fa3-3833-4642-b76e-cfb8492288e4",
+        "3cd2006f-d337-46a6-be5a-09559db6c73b",
+        "2b54da42-b7c1-4865-9151-e6de1cd8bb5f",
+        "12449254-719b-4261-b6a4-7f237aca05a7",
+        "6b065614-4652-41f6-bf7b-b5db83f93ee0",
+        "d360426d-06d0-4f36-ba1a-e07d4ee229f5",
+        "2c1066c8-8816-49c3-b759-b6be37cc0e2d",
+        "b7077826-d4d8-4e37-8b81-aab7e54c69b2",
+        "6b5800e7-51b4-4423-9f63-9fb37d93c4e7",
+        "e8a3ea77-f96c-486b-bac9-a6d3584b59fb",
+        "66983a5e-f8cc-4513-b8f0-d517eca83079",
+        "469ced08-8592-45d1-a32e-86b9b047359f",
+        "d7053a06-72a5-4d34-ba38-7a2281af5af9",
+        "0e7493cd-ca8a-4833-b3fb-cadc0094a8a1",
+        "d31b2a19-1b7b-4af7-9e28-3b482b8bece1",
+        "fe202153-ee3f-410a-8f42-31779ba6d021",
+        "a9c84fa6-709c-42bf-a684-f78000f226a2"
+      ],
+      "settings": {
+        "bg_color": "#F4EBDE",
+        "title_1": "Vegan Way Protein",
+        "title_2": "Whey Protein",
+        "logo": "shopify:\/\/shop_images\/Group_14353.png",
+        "image": "shopify:\/\/shop_images\/Group_14379.png"
+      }
+    },
+    "6ebf93de-e5c4-453f-a809-21632efa5ae7": {
+      "type": "faq-section",
+      "blocks": {
+        "1a970a3e-0018-4d55-9390-85e2b9b98768": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "What makes it so filling?",
+            "faq_answer": "Answer"
+          }
+        },
+        "53dd2535-f447-44be-b666-676031679a08": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "What are the benefits?",
+            "faq_answer": "Answer"
+          }
+        },
+        "756df48a-c969-4de0-8aed-5c12fe08f0af": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "Which flavor is most popular?",
+            "faq_answer": "Answer"
+          }
+        },
+        "7bf42a78-e215-432a-b406-b0e70a518371": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "Can it help me lose weight?",
+            "faq_answer": "Answer"
+          }
+        },
+        "959ed6fc-94c7-431f-a194-676e868d995c": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "What makes it better than others?",
+            "faq_answer": "Answer"
+          }
+        },
+        "0624144e-4f56-4fec-b0e2-cc7ca7081163": {
+          "type": "faq-section",
+          "settings": {
+            "faq_question": "How much protein?",
+            "faq_answer": "Answer"
+          }
+        }
+      },
+      "block_order": [
+        "1a970a3e-0018-4d55-9390-85e2b9b98768",
+        "53dd2535-f447-44be-b666-676031679a08",
+        "756df48a-c969-4de0-8aed-5c12fe08f0af",
+        "7bf42a78-e215-432a-b406-b0e70a518371",
+        "959ed6fc-94c7-431f-a194-676e868d995c",
+        "0624144e-4f56-4fec-b0e2-cc7ca7081163"
+      ],
+      "settings": {
+        "bg_color": "#e5e5e5",
+        "heading": "FAQ",
+        "text_color": "#583d36"
+      }
+    },
     "fffb2753-7a7f-466e-ae6f-68280c15990f": {
       "type": "logo_with_text",
       "blocks": {
@@ -140,6 +354,8 @@
     "main",
     "3b754e96-18df-465c-a2d1-0b7eb94ac28a",
     "b0074d67-d009-4929-8faf-9bd4a74bd59d",
+    "dc16db68-a5ad-4dbd-9acd-3d83ee41809a",
+    "6ebf93de-e5c4-453f-a809-21632efa5ae7",
     "fffb2753-7a7f-466e-ae6f-68280c15990f"
   ]
 }
