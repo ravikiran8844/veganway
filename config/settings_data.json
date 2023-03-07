@@ -6,6 +6,48 @@
         "settings": {
           "image": "shopify:\/\/shop_images\/logo.png"
         }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "e3999a10-7ca3-4b96-b4e5-a9e6fbbf26df": {
+            "type": "list-block",
+            "settings": {
+              "title": "Shop",
+              "list": "main-menu"
+            }
+          },
+          "f89a65f8-5715-4a92-a591-bd0d613b365b": {
+            "type": "list-block",
+            "settings": {
+              "title": "More Info",
+              "list": "footer-one"
+            }
+          },
+          "ab444c36-d9dd-4cc3-9e24-6731643866bf": {
+            "type": "list-block",
+            "settings": {
+              "title": "Get Help",
+              "list": "main-menu"
+            }
+          }
+        },
+        "block_order": [
+          "e3999a10-7ca3-4b96-b4e5-a9e6fbbf26df",
+          "f89a65f8-5715-4a92-a591-bd0d613b365b",
+          "ab444c36-d9dd-4cc3-9e24-6731643866bf"
+        ],
+        "settings": {
+          "bg_color": "#181818",
+          "text_color": "#FFFFFF",
+          "logo": "shopify:\/\/shop_images\/footer_logo.png",
+          "heading": "Get 10% off!",
+          "description": "Sign up to our newsletter - the place for wild news, invitations and good karma treats!",
+          "fabebook_url": "",
+          "instagram_url": "",
+          "youtube_url": "",
+          "location_url": ""
+        }
       }
     },
     "content_for_index": [

@@ -1,0 +1,287 @@
+<div class="footer--{{section.id}} fluid-container py-5 px-4">
+  <div class="row g-0 p-2">
+    <div class="col-12 col-md-6 col-lg-4 p-2 footer__line px-3">
+      <div class="d-flex">
+        <div><img src="{{section.settings.logo | img_url}}" alt="Footer Logo"></div>
+        <div class="ms-3">
+          <div class="fs-2 footer__main-heading">{{ section.settings.heading }}</div>
+          <div class="footer__main-description">{{ section.settings.description }}</div>
+        </div>
+      </div>
+      <div class="footer__newsletter">
+        {% form 'customer' %}
+          <div class="email my-2">
+            <input
+              class="footer__ns-label p-2"
+              placeholder="EMAIL ADDRESS"
+              type="email"
+              name="contact[email]" />
+          </div>
+          <div class="mobile my-2">
+            <input
+              class="footer__ns-label p-2"
+              placeholder="PHONE NUMBER"
+              type="tel"
+              name="contact[note][mobile]"
+              pattern="[0-9\-]*" />
+          </div>
+          <p class="footer_ns-text">By clicking Sign Up, you agree to receive marketing text messages from Fable & Mane at the number provided, including messages sent by autodialer. Consent is not a condition of any purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel.</p>
+          <div class="submit">
+            <button class="btn footer__ns-button px-4" type="submit">Sign up</button>
+          </div>
+        {% endform %}
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-8 p-4">
+      <div class="d-flex flex-wrap">
+        {% for block in section.blocks %}
+          <div class="col-6 col-md-4 px-2">
+            <ul class="list-unstyled">
+              <p class="list-unstyled mb-3">{{ block.settings.title }}</p>
+              {% for link in block.settings.list.links %}
+                <li class="list-unstyled">
+                  <a class="footer-pagelinks" href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+      <hr>
+      <div class="mb-4">Follow Us</div>
+      <div class="d-flex">
+        <span class="me-2">
+          <a href="{{section.settings.fabebook_url}}">
+            <svg
+              width="13"
+              height="27"
+              viewBox="0 0 13 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 13.1209C0 11.6372 0 10.2115 0 8.74816C0.896984 8.74816 1.75426 8.74816 2.70419 8.74816C2.70419 8.44923 2.69242 8.18631 2.70566 7.92651C2.78212 6.51953 2.74977 5.09063 2.97475 3.70869C3.27032 1.90262 4.4011 0.721007 6.08478 0.395476C7.47732 0.126288 8.91396 0.115332 10.333 0.0198637C10.9344 -0.0208277 11.5417 0.0136045 12.199 0.0136045C12.199 1.46754 12.199 2.88704 12.199 4.39105C11.7637 4.39105 11.3226 4.39105 10.88 4.39105C10.5859 4.39105 10.2933 4.38636 9.99916 4.39419C8.46694 4.43488 8.16696 4.75884 8.15226 6.40371C8.14638 7.15024 8.15079 7.89677 8.15079 8.72468C9.52273 8.72468 10.8594 8.72468 12.2593 8.72468C12.099 10.2303 11.9461 11.6482 11.7917 13.1021C10.58 13.1021 9.40951 13.1021 8.17579 13.1021C8.17579 17.4624 8.17579 21.7803 8.17579 26.1531C6.33035 26.1531 4.54815 26.1531 2.70272 26.1531C2.70272 21.8163 2.70272 17.4984 2.70272 13.1209C1.77191 13.1209 0.901395 13.1209 0 13.1209Z" fill="white" />
+            </svg>
+          </a>
+        </span>
+        <span class="me-2">
+          <a href="{{section.settings.instagram_url}}">
+            <svg
+              width="27"
+              height="26"
+              viewBox="0 0 27 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.2418 25.433C15.7406 25.433 11.2395 25.433 6.73826 25.433C6.5629 25.4016 6.38677 25.3725 6.21218 25.3396C3.91257 24.9053 2.30369 23.6026 1.41693 21.4468C1.18566 20.8847 1.11138 20.2575 0.965121 19.6601C0.964355 15.1593 0.964355 10.6584 0.964355 6.15758C1.06314 5.68965 1.12057 5.20793 1.2676 4.75532C2.1199 2.1239 4.48843 0.395397 7.26664 0.387738C11.4163 0.376251 15.5661 0.381612 19.7165 0.386207C21.0589 0.387738 22.2933 0.761468 23.3777 1.55871C25.1412 2.85604 26.0127 4.61671 26.015 6.80318C26.0188 10.8468 26.0188 14.8904 26.0119 18.9333C26.0112 19.3469 25.992 19.7681 25.9177 20.174C25.4973 22.4891 24.1817 24.1027 22.01 24.9873C21.4518 25.214 20.8323 25.2882 20.2418 25.433ZM23.9129 12.9077C23.916 12.9077 23.9191 12.9077 23.9221 12.9077C23.9221 10.8698 23.9191 8.83112 23.9244 6.79322C23.926 6.13996 23.8387 5.50585 23.5461 4.91921C22.739 3.29793 21.4227 2.47848 19.6108 2.47695C15.5339 2.47312 11.4577 2.47465 7.38074 2.47848C7.10506 2.47848 6.82632 2.49839 6.55371 2.53668C4.65843 2.80167 3.08707 4.51944 3.07405 6.44094C3.04572 10.7044 3.06256 14.9686 3.06027 19.232C3.06027 19.811 3.1736 20.37 3.42937 20.887C4.23113 22.5098 5.54519 23.3369 7.35777 23.34C11.4424 23.3461 15.5278 23.343 19.6124 23.3392C19.8881 23.3392 20.166 23.3177 20.4394 23.2802C22.2987 23.0252 23.8808 21.2906 23.906 19.4135C23.9351 17.2454 23.9129 15.0765 23.9129 12.9077Z" fill="white" />
+              <path d="M19.7517 12.9113C19.7479 16.363 16.9168 19.1859 13.4739 19.1698C10.0234 19.1529 7.22448 16.3454 7.22754 12.9052C7.23137 9.45203 10.0601 6.63145 13.5046 6.64753C16.9551 6.66361 19.7548 9.47041 19.7517 12.9113ZM13.4923 8.73904C11.1881 8.73597 9.32882 10.5893 9.31963 12.8991C9.31044 15.2004 11.1628 17.063 13.4739 17.0775C15.782 17.0913 17.6619 15.218 17.6589 12.9052C17.6558 10.5985 15.7996 8.7421 13.4923 8.73904Z" fill="white" />
+              <path d="M20.2698 7.68216C19.4091 7.6791 18.7199 6.99137 18.7168 6.13133C18.7137 5.26593 19.4221 4.5537 20.2805 4.5606C21.1328 4.56749 21.8327 5.26517 21.8404 6.11831C21.8496 6.97452 21.1359 7.68522 20.2698 7.68216Z" fill="white" />
+            </svg>
+          </a>
+
+
+        </span>
+        <span class="me-2">
+          <a href="{{section.settings.youtube_url}}">
+            <svg
+              width="30"
+              height="21"
+              viewBox="0 0 30 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.9817 3.45712C28.6393 2.1956 27.6464 1.21568 26.3796 0.877774C24.0856 0.269541 14.8869 0.269531 14.8869 0.269531C14.8869 0.269531 5.68817 0.269541 3.3942 0.877774C2.12737 1.21568 1.13446 2.20687 0.792073 3.45712C0.175781 5.73236 0.175781 10.4856 0.175781 10.4856C0.175781 10.4856 0.175781 15.2388 0.792073 17.5141C1.13446 18.7756 2.12737 19.7555 3.3942 20.0934C5.68817 20.7016 14.8869 20.7016 14.8869 20.7016C14.8869 20.7016 24.0856 20.7016 26.3796 20.0934C27.6464 19.7555 28.6393 18.7643 28.9817 17.5141C29.598 15.2388 29.598 10.4856 29.598 10.4856C29.598 10.4856 29.598 5.73236 28.9817 3.45712ZM11.8853 14.7995V6.17165L19.5662 10.4856L11.8853 14.7995Z" fill="white" />
+            </svg>
+          </a>
+
+
+        </span>
+        <span class="me-2">
+          <a href="{{section.settings.location_url}}">
+            <svg
+              width="20"
+              height="24"
+              viewBox="0 0 20 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.76812 1C7.44267 1 5.21246 1.92378 3.56812 3.56812C1.92378 5.21246 1 7.44267 1 9.76812C1 11.8418 1.4406 13.1986 2.64402 14.7002L9.76812 22.9203L16.8922 14.7002C18.0956 13.1986 18.5362 11.8418 18.5362 9.76812C18.5362 7.44267 17.6125 5.21246 15.9681 3.56812C14.3238 1.92378 12.0936 1 9.76812 1V1Z"
+                stroke="white"
+                stroke-width="1.68056"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M10.288 12.5761C12.104 12.5761 13.5761 11.104 13.5761 9.28804C13.5761 7.47211 12.104 6 10.288 6C8.47211 6 7 7.47211 7 9.28804C7 11.104 8.47211 12.5761 10.288 12.5761Z"
+                stroke="white"
+                stroke-width="1.68056"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+
+        </span>
+        <div class="ms-4">
+          <span class="footer_ns-text">Sip the goodness of Plants Everyday.. 
+            Build your health the Natures' Way..</span>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <p class="mt-3 me-3 footer-brandtext">Veganway © 2022.| A Supercluster Pi Brand</p>
+        <div class="">
+          <a class="footer-pagelinks me-2" href="https://www.getveganway.com/pages/privacy-policy">Privacy Policy</a>
+          <a class="footer-pagelinks" href="https://www.getveganway.com/pages/terms-conditions">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .footer__line {
+    border-right: none;
+  }
+  @media(min-width:768px) {
+    .footer__line {
+      border-right: 0.75px solid #FFFFFF;
+
+    }
+  }
+  .footer--{{ section.id}}{
+    background-color: {{ section.settings.bg_color}}
+    ;
+    color: {{ section.settings.text_color}}
+    ;
+    font-family: 'Sharp Grotesk';
+  }
+  .footer__main-heading {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .footer__main-description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.5px;
+    line-height: 151.8%;
+    letter-spacing: 0.02em;
+  }
+  .footer_ns-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 159.8%;
+    letter-spacing: 0.02em;
+  }
+  .footer__ns-button {
+    background: #FEA500;
+    border-radius: 24.375px;
+    text-transform: uppercase;
+  }
+  .footer__ns-button:hover {
+    color: #fff;
+  }
+  .footer__ns-label {
+    background: #2B2B2B;
+    border: 0.75px solid #474747;
+    border-radius: 24.375px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 151.8%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    width: 100%;
+  }
+  .footer-brandtext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 131.5%;
+  }
+  .footer-pagelinks {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .footer-pagelinks:hover {
+    color: #FFFFFF;
+    opacity: .7;
+  }
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "Footer",
+    "class": "section",
+    "tag": "footer",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#181818"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Get 10% off!"
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Sign up to our newsletter - the place for wild news, invitations and good karma treats!"
+      }, {
+        "type": "url",
+        "id": "fabebook_url",
+        "label": "Facebook Url"
+      }, {
+        "type": "url",
+        "id": "instagram_url",
+        "label": "Instagram Url"
+      }, {
+        "type": "url",
+        "id": "youtube_url",
+        "label": "Youtube Url"
+      }, {
+        "type": "url",
+        "id": "location_url",
+        "label": "Location Url"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Linklist",
+        "type": "list-block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+          }, {
+            "type": "link_list",
+            "id": "list",
+            "label": "List"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -4,9 +4,9 @@
       <div class="col-12 text-center">
         <h2 class="fs-2 featured-product__main-heading">{{ section.settings.heading }}</h2>
       </div>
-      <div class="col-12 my-5 m-auto carousel" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
+      <div class="col-12 my-5 m-auto" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
         {% for block in section.blocks %}
-          <div class="col-12 col-sm-6 col-md-4 carousel-cell">
+          <div class="col-12 col-sm-6 col-md-4">
             <div class="featured-product-card__wrapper py-4 me-4 bg-light text-center">
               <div class="mb-3">
                 <img
@@ -40,6 +40,7 @@
 
 
 <style>
+
   .featured-product__main-heading {
     font-family: 'Sharp Grotesk';
     font-style: normal;
@@ -77,8 +78,8 @@
     color: #181818;
   }
   .carousel-cell {
-    max-width: 33.33%;
     min-height: 563px;
+    max-width: 372px;
   }
   .featured-product-card__wrapper {
     border-radius: 20px;
