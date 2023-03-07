@@ -21,20 +21,20 @@
             <div class="video__content-wrapper text-center">
 
               {% if section.settings.heading != blank %}
-                <div class="video__heading h2 video-section__main-heading video-section__text--color">
+                <div class="video__heading fs-1 video-section__main-heading video-section__text--color">
                   {{ section.settings.heading }}
                 </div>
               {% endif %}
 
               {% if section.settings.subheading != blank %}
-                <p class="video__paragraph video-section__subheading video-section__text--color p-3">
+                <p class="video__paragraph fs-5 video-section__subheading video-section__text--color p-3">
                   {{ section.settings.subheading }}
                 </p>
               {% endif %}
 
               {% if section.settings.button_text != blank %}
                 <div class="video__button mt-3">
-                  <a class="btn video-section__button" href="{{ section.settings.button_link }}">
+                  <a class="btn px-4 py-2 video-section__button" href="{{ section.settings.button_link }}">
                     {{ section.settings.button_text }}
                   </a>
                 </div>
@@ -68,27 +68,6 @@
     border-radius: 30px;
     font-family: 'Sharp Grotesk';
     font-weight: 500;
-  }
-  .media {
-    display: block;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .media > * {
-    display: block;
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-
-  .media > video {
-    object-fit: cover;
-    object-position: center center;
-    transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
   video {
     height: auto;
@@ -125,7 +104,7 @@
   }
 
   .video__content-wrapper {
-    max-width: 650px;
+    max-width: 800px;
   }
 
   .media--video {

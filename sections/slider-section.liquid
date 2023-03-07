@@ -4,7 +4,7 @@
       <div class="col-12 slider__wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true,"prevNextButtons": false,"autoPlay": false }'>
         {% for block in section.blocks %}
           <div class="col-12 d-flex flex-column flex-md-row p-5 justify-content-center align-items-center slide--{{block.id}}">
-            <div class="col-12 col-md-4 col-lg-5">
+            <div class="col-12 col-md-4 col-lg-5 col-xl-4">
               <p>
                 <span>
                   <svg
@@ -22,15 +22,15 @@
                 </span>
                 <span class="slide-caption">{{ block.settings.caption }}</span>
               </p>
-              <h2 class="h1 slide-heading">{{ block.settings.heading }}
+              <h2 class="fs-2 mt-4 slide-heading">{{ block.settings.heading }}
                 <span class="slide-heading_highlight">{{ block.settings.heading_highlight }}</span>
               </h2>
-              <a class="btn slide-button" href="{{ block.settings.btn_link }}">{{ block.settings.btn_text }}</a>
+              <a class="btn slide-button px-4 my-4" href="{{ block.settings.btn_link }}">{{ block.settings.btn_text }}</a>
             </div>
-            <div class="col-12 col-md-4 col-lg-4 p-2">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-3 p-2">
               {% render 'image', class: 'slide-item-img media media--square', mobileSrc: block.settings.slide_image, desktopSrc: block.settings.slide_image %}
             </div>
-            <div class="col-12 col-md-4 col-lg-3 p-2">
+            <div class="col-12 col-md-4 col-lg-3 col-xl-2 p-2">
               {% if block.settings.list-item1 != blank %}
                 <div>
                   <span>
@@ -149,6 +149,7 @@
     font-weight: 500;
     line-height: 140%;
     color: #181818;
+    max-width: 447px;
   }
   .slide-heading_highlight {
     color: #017149;
@@ -168,16 +169,6 @@
     font-weight: 500;
     line-height: 158%;
     color: #834332;
-  }
-  .flickity-page-dots {
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center;
-    line-height: 1;
   }
 
   .slide-list-item-title {

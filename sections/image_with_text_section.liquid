@@ -1,12 +1,12 @@
 <div class="wrapper--{{section.id}} fluid-container p-5 pb-0">
   <div class="row g-0">
     <div class="col-12 main-heading-wrapper mb-4">
-      <h2 class="h1 section-main-heading heading-{{section.id}}">{{ section.settings.heading }}</h2>
+      <h2 class="fs-2 iwt__main-heading section-main-heading heading-{{section.id}}">{{ section.settings.heading }}</h2>
     </div>
   </div>
   <div class="row  g-0">
     <div class="d-flex flex-column-reverse flex-md-row justify-content-center">
-      <div class="col-12 col-md-5 p-3">
+      <div class="iwt__content-wrapper col-12 col-md-5 p-3">
         <div class="mb-2">
           <span>
             <svg
@@ -99,9 +99,13 @@
 {% endstyle %}
 
 <style>
+  .iwt__content-wrapper {
+    max-width: 542px;
+  }
   .section-main-image img {
     border-radius: 30px;
-    width: 497px;
+    max-width: 497px;
+    max-height: 270px;
   }
   .section-logs-img img {
     max-width: 100%;
@@ -111,6 +115,9 @@
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+  .iwt__main-heading {
+    max-width: 614px;
   }
   .section-main-heading {
     width: 100%;

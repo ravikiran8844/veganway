@@ -1,15 +1,18 @@
 {% if section.blocks.size > 0 %}
   <div class="featured-product__wrapper--{{section.id}} fluid-container">
     <div class="row g-0 p-5">
-      <div class="col-12 text-center mb-3">
-        <h2 class="featured-product__main-heading">{{ section.settings.heading }}</h2>
+      <div class="col-12 text-center">
+        <h2 class="fs-2 featured-product__main-heading">{{ section.settings.heading }}</h2>
       </div>
-      <div class="col-12 carousel" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
+      <div class="col-12 my-5 m-auto carousel" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
         {% for block in section.blocks %}
-          <div class="col-12 col-md-4 carousel-cell">
-            <div class="featured-product-card__wrapper p-3 bg-light text-center">
+          <div class="col-12 col-sm-6 col-md-4 carousel-cell">
+            <div class="featured-product-card__wrapper py-4 me-4 bg-light text-center">
               <div class="mb-3">
-                {% render 'image', class: 'media media--portrait', mobileSrc: block.settings.product_image, desktopSrc: block.settings.product_image %}
+                <img
+                  class="featured-product__image"
+                  src="{{block.settings.product_image | img_url: 'medium'}}"
+                  alt="">
               </div>
               <h2 class="featured-product__title">
                 {{ block.settings.product_title }}
@@ -17,7 +20,7 @@
               <p class="featured-product__caption">{{ block.settings.product_caption }}</p>
               <p class="featured-product__price">{{ block.settings.product_id.price | money_with_currency }}</p>
               <div>
-                <a class="btn btn-outline-success featured-product__button" href="{{ block.settings.product_id.url }}">Shop Now</a>
+                <a class="btn btn-outline-success px-4 featured-product__button" href="{{ block.settings.product_id.url }}">Shop Now</a>
               </div>
             </div>
           </div>
@@ -31,6 +34,7 @@
   .featured-product__wrapper--{{ section.id}}{
     background-color: {{ section.settings.bg_color}}
     ;
+
   }
 {% endstyle %}
 
@@ -42,6 +46,10 @@
     font-weight: 500;
     line-height: 51px;
     color: #181818;
+  }
+  .featured-product__image {
+    max-width: 190.9px;
+    max-height: 315.4px;
   }
   .featured-product__title {
     font-family: 'Sharp Grotesk';
@@ -69,19 +77,12 @@
     color: #181818;
   }
   .carousel-cell {
-    width: 100%;
-    margin-right: 20px;
-    counter-increment: carousel-cell;
-  }
-  @media(min-width:768px) {
-    .carousel-cell {
-      width: 31%;
-      margin-right: 20px;
-      counter-increment: carousel-cell;
-    }
+    max-width: 33.33%;
+    min-height: 563px;
   }
   .featured-product-card__wrapper {
     border-radius: 20px;
+    background-color: #fff !important;
   }
   .featured-product__button {
     border-radius: 30.8044px;
@@ -106,6 +107,11 @@
         "id": "bg_color",
         "default": "#E5E5E5",
         "label": "Background Color"
+      }, {
+        "type": "color",
+        "id": "card_color",
+        "default": "#FFF",
+        "label": "Product Card Color"
       }, {
         "type": "text",
         "id": "heading",

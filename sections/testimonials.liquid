@@ -3,7 +3,7 @@
     <div class="row  g-0 p-5">
       <div class="col-12 d-flex flex-column justify-content-center align-items-center">
         <div class="d-flex align-items-center flex-wrap">
-          <span class="h1 testimonials__main-heading">{{ section.settings.heading }}</span>
+          <span class="fs-2 testimonials__main-heading">{{ section.settings.heading }}</span>
           <span class="ms-3">
             <svg
               width="175"
@@ -44,11 +44,11 @@
             </svg>
           </span>
         </div>
-        <div class="h1 testimonials__sub-heading mb-4">{{ section.settings.subheading }}</div>
+        <div class="fs-2 testimonials__sub-heading mb-4">{{ section.settings.subheading }}</div>
       </div>
-      <div class="col-12 testimonial-wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true ,"groupCells": true,"prevNextButtons": false}'>
+      <div class="col-12 my-3 testimonial-wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true ,"groupCells": true,"prevNextButtons": false}'>
         {% for block in section.blocks %}
-          <div class="col-12 col-md-4 carousel-cell">
+          <div class="col-12 col-md-4 me-4 carousel-cell">
             <div class="testimonial__item p-3">
               <div class="d-flex">
                 <div class="me-2">
@@ -122,18 +122,6 @@
     background-color: #fff;
     border-radius: 15.6176px;
   }
-  .carousel-cell {
-    width: 100%;
-    margin-right: 20px;
-    counter-increment: carousel-cell;
-  }
-  @media(min-width:768px) {
-    .carousel-cell {
-      width: 32%;
-      margin-right: 20px;
-      counter-increment: carousel-cell;
-    }
-  }
   .testimonials__main-heading,
   .testimonials__sub-heading {
     font-family: 'Sharp Grotesk';
@@ -149,6 +137,10 @@
     font-size: 16px;
     line-height: 100%;
     color: #2C2C2C;
+  }
+  .carousel-cell {
+    width: 349.26px;
+    min-height: 413.82px;
   }
   .testimonials__buyer {
     font-family: 'Inter';

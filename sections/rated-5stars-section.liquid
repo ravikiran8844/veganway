@@ -2,8 +2,8 @@
   <div class="rated-section wrapper--{{section.id}} p-5 fluid-container">
     <div class="row  g-0 text-center">
       <div class="col-12">
-        <div class="mb-3 d-flex justify-content-center align-items-center">
-          <span class="rated-section__caption-text">{{ section.settings.caption }}</span>
+        <div class="d-flex justify-content-center align-items-center">
+          <span class="rated-section__caption-text fs-3 me-2">{{ section.settings.caption }}</span>
           <span>
             <svg
               width="122"
@@ -30,23 +30,23 @@
             </svg>
           </span>
         </div>
-        <h2 class=" h1 rated-section__heading">
+        <h2 class="fs-2 m-auto my-4 rated-section__heading">
           {{ section.settings.heading }}
         </h2>
         <p class="rated-section__subheading">
           {{ section.settings.subheading }}
         </p>
         <div>
-          <a class="btn rated-section__btn" href="{{ section.settings.button_link }}">{{ section.settings.button_text }}
+          <a class="btn rated-section__btn my-4 px-5 py-2" href="{{ section.settings.button_link }}">{{ section.settings.button_text }}
           </a>
         </div>
       </div>
     </div>
     <div class="row g-0 mt-4">
-      <div class="rated-section__image-wrapper col-12" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false,"prevNextButtons": false,"autoPlay": true }'>
+      <div class="rated-section__image-wrapper col-12" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false,"prevNextButtons": false,"autoPlay": true,"groupCells": true }'>
         {% for block in section.blocks %}
           <div class="col-6 col-md-3 col-xl-2">
-            {% render 'image', class: 'rated-section__image media media--square', mobileSrc: block.settings.image, desktopSrc: block.settings.image %}
+            {% render 'image', class: 'rated-section__image media media--square', mobileSrc: , desktopSrc: block.settings.image %}
           </div>
         {% endfor %}
       </div>
@@ -80,6 +80,7 @@
     font-size: 30px;
     line-height: 130%;
     color: #017149;
+    max-width: 634px;
   }
   .rated-section__subheading {
     font-family: 'Inter';
@@ -100,9 +101,9 @@
     color: #FFFFFF;
   }
   .rated-section__image img {
-    max-width: 184px;
-    max-height: 184px;
     padding: 5px;
+    height: auto;
+    width: auto;
   }
 </style>
 

@@ -1,10 +1,10 @@
 {% if section.blocks.size > 0 %}
-  <div class="fluid-container featured-section-{{section.id}}">
+  <div class="fluid-container featured-section-{{section.id}} pb-5">
     <div class="col-12">
       {% if section.settings.bg_image != blank %}
         <div class="featured-section text-center pt-5">
           {% if section.settings.heading != blank %}
-            <div class="featured-section__heading h2">{{ section.settings.heading }}</div>
+            <div class="featured-section__heading h2 pb-5">{{ section.settings.heading }}</div>
           {% endif %}
         </div>
       </div>
@@ -13,7 +13,9 @@
           <div class="col-12 col-md-3 p-3">
             {% if block.settings.image != blank and block.settings.text != blank %}
               <div class="text-center">
-                {% render 'image', class: '', mobileSrc: block.settings.image, desktopSrc: block.settings.image %}
+                <div class="fs__logo-wrapper">
+                  {% render 'image', class: '', mobileSrc: block.settings.image, desktopSrc: block.settings.image %}
+                </div>
                 <p class="mt-4">{{ block.settings.text }}</p>
               </div>
             </div>
@@ -34,7 +36,9 @@
   .featured-item__wrapper {
     padding: 0 50px;
   }
-
+  .fs__logo-wrapper {
+    height: 67.05px;
+  }
   .featured-section__heading {
     font-family: 'Sharp Grotesk';
     font-style: normal;
