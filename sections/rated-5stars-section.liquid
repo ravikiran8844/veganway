@@ -3,7 +3,7 @@
     <div class="row  g-0 text-center">
       <div class="col-12">
         <div class="d-flex justify-content-center align-items-center">
-          <span class="rated-section__caption-text fs-3 me-2">{{ section.settings.caption }}</span>
+          <span class="rated-section__caption-text me-2">{{ section.settings.caption }}</span>
           <span>
             <svg
               width="122"
@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="row g-0 mt-4">
-      <div class="rated-section__image-wrapper col-12" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false,"prevNextButtons": false,"autoPlay": true,"groupCells": true }'>
+      <div class="rated-section__image-wrapper col-12" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false,"prevNextButtons": false,"autoPlay": false,"groupCells": true }'>
         {% for block in section.blocks %}
           <div class="col-6 col-md-3 col-xl-2">
             {% render 'image', class: 'rated-section__image media media--square', mobileSrc: , desktopSrc: block.settings.image %}
