@@ -1,0 +1,137 @@
+{% if section.blocks.size > 0 %}
+  <div class="wct__wrapper--{{section.id}} fluid-container">
+    <div class="row g-0 p-5">
+      <div class="col-12 text-center">
+        <h2 class="wct__main-heading mb-4">{{ section.settings.heading }}</h2>
+      </div>
+      <div class="col-12" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
+        {% for block in section.blocks %}
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mx-4">
+            <div>
+              {% render 'image', class: 'media media--portrait', mobileSrc: block.settings.customer_image, desktopSrc: block.settings.customer_image %}
+              <div class="d-flex mx-4 my-3">
+                <div class="me-2">
+                  {% render 'image', class: 'wct__product-img', mobileSrc: block.settings.product_image, desktopSrc: block.settings.product_image %}
+                </div>
+                <div>
+                  <div class="wct__customer-name">{{ block.settings.customer_name }}
+                    <span class="float-end">
+                      <svg
+                        width="82"
+                        height="17"
+                        viewBox="0 0 82 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.2823 6.09904L8.2905 2.06689L10.5397 6.09904L14.7167 6.93906L11.5839 10.2152L12.1462 14.9194L8.2905 12.8193L4.35443 14.9194L4.83639 10.2152L1.86426 6.93906L6.2823 6.09904Z" fill="#E87B26" />
+                        <path d="M22.6295 6.09904L24.6377 2.06689L26.8869 6.09904L31.0639 6.93909L27.9311 10.2152L28.4934 14.9194L24.6377 12.8193L20.7016 14.9194L21.1836 10.2152L18.2114 6.93909L22.6295 6.09904Z" fill="#E87B26" />
+                        <path d="M38.9766 6.09904L40.9848 2.06689L43.234 6.09904L47.4111 6.93909L44.2783 10.2152L44.8406 14.9194L40.9848 12.8193L37.0488 14.9194L37.5308 10.2152L34.5586 6.93909L38.9766 6.09904Z" fill="#E87B26" />
+                        <path d="M55.3233 6.09904L57.3313 2.06689L59.5808 6.09904L63.7577 6.93909L60.625 10.2152L61.1874 14.9194L57.3313 12.8193L53.3955 14.9194L53.8774 10.2152L50.9053 6.93909L55.3233 6.09904Z" fill="#E87B26" />
+                        <path d="M71.6698 6.09904L73.6784 2.06689L75.9273 6.09904L80.1048 6.93909L76.9715 10.2152L77.5339 14.9194L73.6784 12.8193L69.7424 14.9194L70.2242 10.2152L67.252 6.93909L71.6698 6.09904Z" fill="#E87B26" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="wct__customer-review w-80">{{ block.settings.review }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+
+<style>
+  .wct__wrapper--{{ section.id}}{
+    background-color: {{ section.settings.bg_color}}
+    ;
+  }
+  .wct__main-heading {
+    font-family: 'Pluto';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: {{ section.settings.heading_color}}
+    ;
+  }
+  .wct__product-img img {
+    width: 32.74px;
+    height: 53.77px;
+  }
+  .wct__customer-name {
+    font-family: 'Pluto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9.5493px;
+    line-height: 17px;
+    letter-spacing: -0.03em;
+    color: #2B2B2B;
+  }
+  .wct__customer-review {
+    ont-family: 'Pluto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+    color: #2B2B2B;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "What customer thinks",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "default": "#E5E5E5",
+        "label": "Background Color",
+        "id": "bg_color"
+      }, {
+        "type": "text",
+        "default": "What the VeganWay fam thinks",
+        "label": "Heading",
+        "id": "heading"
+      }, {
+        "type": "color",
+        "default": "#583D36",
+        "label": "Heading Color",
+        "id": "heading_color"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Customer Review",
+        "type": "review-block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "customer_image",
+            "label": "Customer Image"
+          }, {
+            "type": "text",
+            "id": "customer_name",
+            "label": "Customer Name"
+          }, {
+            "type": "image_picker",
+            "id": "product_image",
+            "label": "Product Image"
+          }, {
+            "type": "text",
+            "id": "review",
+            "label": "Review"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "What customer thinks"
+      }
+    ]
+  }
+{% endschema %}

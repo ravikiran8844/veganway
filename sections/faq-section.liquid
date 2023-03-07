@@ -36,11 +36,23 @@
     </div>
   </div>
 {% endif %}
+
+
+{% if template contains "index" %}
+  {% assign main_font = "Sharp Grotesk" %}
+  {% assign second_font = "Inter" %}
+{% endif %}
+{% if template contains "product" %}
+  {% assign main_font = "Pluto" %}
+  {% assign second_font = "Pluto" %}
+{% endif %}
+
 {% style %}
-  .faq-heading--{{section.id}}, .faq-question--{{section.id}}{
- color:{{section.settings.text_color}};
+  .faq-heading--{{ section.id}}, .faq-question--{{ section.id}}{
+    color: {{ section.settings.text_color}}
+    ;
   }
-    
+
   .faq--{{ section.id}}{
     background-color: {{ section.settings.bg_color}}
     ;
@@ -48,7 +60,8 @@
 {% endstyle %}
 <style>
   .faq-section {
-    font-family: 'Sharp Grotesk';
+    font-family: {{ main_font}}
+    ;
 
   }
   .faq-question {
@@ -201,8 +214,7 @@
         "id": "heading",
         "label": "Heading",
         "default": "FAQ"
-      }
-      , {
+      }, {
         "type": "color",
         "id": "text_color",
         "label": "Text color",

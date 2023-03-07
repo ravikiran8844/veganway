@@ -38,13 +38,24 @@
   </div>
 </div>
 
+{% if template contains "index" %}
+  {% assign main_font = "Sharp Grotesk" %}
+  {% assign second_font = "Inter" %}
+{% endif %}
+{% if template contains "product" %}
+  {% assign main_font = "Pluto" %}
+  {% assign second_font = "Pluto" %}
+{% endif %}
+
+
 <style>
   .recipes-section--{{ section.id}}{
     background-color: {{ section.settings.bg_color}}
     ;
   }
   .recipes-section__heading {
-    font-family: 'Sharp Grotesk';
+    font-family: {{ main_font}}
+    ;
     font-style: normal;
     font-weight: 500;
     line-height: 128.5%;
@@ -53,7 +64,8 @@
     ;
   }
   .recipes-section__text {
-    font-family: 'Inter';
+    font-family: {{ second_font}}
+    ;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -63,7 +75,8 @@
 
   }
   .recipes-section__button {
-    font-family: 'Sharp Grotesk';
+    font-family: {{ main_font}}
+    ;
     font-style: normal;
     font-weight: 500;
     background: {{ section.settings.btn_color}}
@@ -72,7 +85,8 @@
     border-radius: 28.5714px;
   }
   .recipe-title {
-    font-family: 'Sharp Grotesk';
+    font-family: {{ main_font}}
+    ;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -80,7 +94,8 @@
     color: #181818;
   }
   .recipe-link {
-    font-family: 'Inter';
+    font-family: {{ second_font}}
+    ;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

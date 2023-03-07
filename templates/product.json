@@ -5,6 +5,68 @@
       "settings": {
       }
     },
+    "9d5e1cdc-a77c-45df-b42b-7c069ed22710": {
+      "type": "what-customer-thinks",
+      "blocks": {
+        "1059865b-93df-4ca0-9ab5-dab8586ddb42": {
+          "type": "review-block",
+          "settings": {
+            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1.png",
+            "customer_name": "Nikhil A.",
+            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1_1.png",
+            "review": "Heavenly Protein Powder - Dreamy Kacha Aam"
+          }
+        },
+        "12c4b6a9-b58c-4bb8-a7ad-7ec3d3549857": {
+          "type": "review-block",
+          "settings": {
+            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1.png",
+            "customer_name": "Brandy A.",
+            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1_1.png",
+            "review": "Heavenly Protein Powder - Dreamy Cafe Mocha"
+          }
+        },
+        "eb9bc994-e4f0-4e16-a5a8-28b352b7025c": {
+          "type": "review-block",
+          "settings": {
+            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1.png",
+            "customer_name": "Akhil",
+            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1_2.png",
+            "review": "Heavenly Protein Powder - Dreamy Cafe Mocha"
+          }
+        },
+        "b4354ed4-9514-4201-9c42-3e801b5238e0": {
+          "type": "review-block",
+          "settings": {
+            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1.png",
+            "customer_name": "Name",
+            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1_1.png",
+            "review": "Heavenly Protein Powder - Dreamy Cafe Mocha"
+          }
+        },
+        "051b06ae-ce52-4d6a-8c05-e98c304e957b": {
+          "type": "review-block",
+          "settings": {
+            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1.png",
+            "customer_name": "Name",
+            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1_2.png",
+            "review": "Heavenly Protein Powder - Dreamy Cafe Mocha"
+          }
+        }
+      },
+      "block_order": [
+        "1059865b-93df-4ca0-9ab5-dab8586ddb42",
+        "12c4b6a9-b58c-4bb8-a7ad-7ec3d3549857",
+        "eb9bc994-e4f0-4e16-a5a8-28b352b7025c",
+        "b4354ed4-9514-4201-9c42-3e801b5238e0",
+        "051b06ae-ce52-4d6a-8c05-e98c304e957b"
+      ],
+      "settings": {
+        "bg_color": "#E5E5E5",
+        "heading": "What the VeganWay fam thinks",
+        "heading_color": "#583D36"
+      }
+    },
     "3b754e96-18df-465c-a2d1-0b7eb94ac28a": {
       "type": "logo_with_text",
       "blocks": {
@@ -224,7 +286,7 @@
         "a9c84fa6-709c-42bf-a684-f78000f226a2"
       ],
       "settings": {
-        "bg_color": "#F4EBDE",
+        "bg_color": "#f4ebde",
         "title_1": "Vegan Way Protein",
         "title_2": "Whey Protein",
         "logo": "shopify:\/\/shop_images\/Group_14353.png",
@@ -352,6 +414,7 @@
   },
   "order": [
     "main",
+    "9d5e1cdc-a77c-45df-b42b-7c069ed22710",
     "3b754e96-18df-465c-a2d1-0b7eb94ac28a",
     "b0074d67-d009-4929-8faf-9bd4a74bd59d",
     "dc16db68-a5ad-4dbd-9acd-3d83ee41809a",
