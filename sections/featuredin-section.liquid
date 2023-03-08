@@ -8,7 +8,7 @@
           {% endif %}
         </div>
       </div>
-      <div class="featured-item__wrapper d-flex flex-column flex-md-row">
+      <div class="featured-item__wrapper page-width d-flex flex-column flex-md-row">
         {% for block in section.blocks %}
           <div class="col-12 col-md-3 p-3">
             {% if block.settings.image != blank and block.settings.text != blank %}
@@ -29,9 +29,8 @@
 
 {% style %}
   .featured-section-{{ section.id}}{
-    background-image: url('{{section.settings.bg_image | img_url}}');
-    background-size: contain;
-    height: 100%;
+    background-image: url('{{section.settings.bg_image | img_url: 'large'}}');
+    background-size: cover;
   }
   .featured-item__wrapper {
     padding: 0 50px;

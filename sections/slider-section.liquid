@@ -1,121 +1,137 @@
 {% if section.blocks.size > 0 %}
-  <div class="fluid-container mb-0">
+  <div class="slider--{{ section.id}} fluid-container mb-0">
     <div class="row g-0">
-      <div class="col-12 slider__wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true,"prevNextButtons": false,"autoPlay": false }'>
+      <div class="page-width col-12 slider__wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true,"prevNextButtons": false,"autoPlay": false }'>
         {% for block in section.blocks %}
-          <div class="col-12 d-flex flex-column flex-md-row p-5 justify-content-center align-items-center slide--{{block.id}}">
-            <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-              <p>
-                <span>
-                  <svg
-                    width="117"
-                    height="19"
-                    viewBox="0 0 117 19"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.61048 0L12.5789 6.14399L19.2148 7.12728L14.4127 11.9059L15.5473 18.6574L9.61048 15.4696L3.67369 18.6574L4.80831 11.9059L0 7.12728L6.64209 6.14399L9.61048 0Z" fill="#FEA500" />
-                    <path d="M33.8795 0L36.8479 6.14399L43.4839 7.12728L38.6817 11.9059L39.8163 18.6574L33.8795 15.4696L27.9427 18.6574L29.0774 11.9059L24.269 7.12728L30.9111 6.14399L33.8795 0Z" fill="#FEA500" />
-                    <path d="M58.1468 0L61.1152 6.14399L67.7512 7.12728L62.949 11.9059L64.0836 18.6574L58.1468 15.4696L52.21 18.6574L53.3447 11.9059L48.5425 7.12728L55.1784 6.14399L58.1468 0Z" fill="#FEA500" />
-                    <path d="M83.1278 0L86.0962 6.14399L92.7321 7.12728L87.93 11.9059L89.0646 18.6574L83.1278 15.4696L77.191 18.6574L78.3256 11.9059L73.5234 7.12728L80.1594 6.14399L83.1278 0Z" fill="#FEA500" />
-                    <path d="M107.396 0L110.364 6.14399L117 7.12728L112.198 11.9059L113.333 18.6574L107.396 15.4696L101.459 18.6574L102.594 11.9059L97.7915 7.12728L104.427 6.14399L107.396 0Z" fill="#FEA500" />
-                  </svg>
-                </span>
-                <span class="slide-caption">{{ block.settings.caption }}</span>
-              </p>
-              <h2 class="fs-2 mt-4 slide-heading">{{ block.settings.heading }}
-                <span class="slide-heading_highlight">{{ block.settings.heading_highlight }}</span>
-              </h2>
-              <a class="btn slide-button px-4 my-4" href="{{ block.settings.btn_link }}">{{ block.settings.btn_text }}</a>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 col-xl-3 p-2">
-              {% render 'image', class: 'slide-item-img media media--square', mobileSrc: block.settings.slide_image, desktopSrc: block.settings.slide_image %}
-            </div>
-            <div class="col-12 col-md-4 col-lg-4 col-xl-3 p-2">
-              {% if block.settings.list-item1 != blank %}
-                <div>
+          {% if block.type == "slide-block" %}
+            <div class="col-12 d-flex flex-column flex-md-row p-5 justify-content-center align-items-center slide--{{block.id}}">
+              <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                <p>
                   <span>
-                    {% render 'checkmark' %}
+                    <svg
+                      width="117"
+                      height="19"
+                      viewBox="0 0 117 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.61048 0L12.5789 6.14399L19.2148 7.12728L14.4127 11.9059L15.5473 18.6574L9.61048 15.4696L3.67369 18.6574L4.80831 11.9059L0 7.12728L6.64209 6.14399L9.61048 0Z" fill="#FEA500" />
+                      <path d="M33.8795 0L36.8479 6.14399L43.4839 7.12728L38.6817 11.9059L39.8163 18.6574L33.8795 15.4696L27.9427 18.6574L29.0774 11.9059L24.269 7.12728L30.9111 6.14399L33.8795 0Z" fill="#FEA500" />
+                      <path d="M58.1468 0L61.1152 6.14399L67.7512 7.12728L62.949 11.9059L64.0836 18.6574L58.1468 15.4696L52.21 18.6574L53.3447 11.9059L48.5425 7.12728L55.1784 6.14399L58.1468 0Z" fill="#FEA500" />
+                      <path d="M83.1278 0L86.0962 6.14399L92.7321 7.12728L87.93 11.9059L89.0646 18.6574L83.1278 15.4696L77.191 18.6574L78.3256 11.9059L73.5234 7.12728L80.1594 6.14399L83.1278 0Z" fill="#FEA500" />
+                      <path d="M107.396 0L110.364 6.14399L117 7.12728L112.198 11.9059L113.333 18.6574L107.396 15.4696L101.459 18.6574L102.594 11.9059L97.7915 7.12728L104.427 6.14399L107.396 0Z" fill="#FEA500" />
+                    </svg>
                   </span>
-                  <span class="slider-list-item">{{ block.settings.list-item1 }}</span>
+                  <span class="slide-caption">{{ block.settings.caption }}</span>
+                </p>
+                <h2 class="fs-2 mt-4 slide-heading">{{ block.settings.heading }}
+                  <span class="slide-heading_highlight">{{ block.settings.heading_highlight }}</span>
+                </h2>
+                <a class="btn slide-button px-4 my-4" href="{{ block.settings.btn_link }}">{{ block.settings.btn_text }}</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-4 col-xl-3 p-2">
+                {% render 'image', class: 'slide-item-img media media--square', mobileSrc: block.settings.slide_image, desktopSrc: block.settings.slide_image %}
+              </div>
+              <div class="col-12 col-md-4 col-lg-4 col-xl-3 p-2">
+                {% if block.settings.list-item1 != blank %}
+                  <div>
+                    <span>
+                      {% render 'checkmark' %}
+                    </span>
+                    <span class="slider-list-item">{{ block.settings.list-item1 }}</span>
+                  </div>
+                {% endif %}
+                {% if block.settings.list-item2 != blank %}
+                  <div>
+                    <span>
+                      {% render 'checkmark' %}
+                    </span>
+                    <span class="slider-list-item">{{ block.settings.list-item2 }}</span>
+                  </div>
+                {% endif %}
+                {% if block.settings.list-item3 != blank %}
+                  <div>
+                    <span>
+                      {% render 'checkmark' %}
+                    </span>
+                    <span class="slider-list-item">{{ block.settings.list-item3 }}</span>
+                  </div>
+                {% endif %}
+                {% if block.settings.list-item4 != blank %}
+                  <div>
+                    <span>
+                      {% render 'checkmark' %}
+                    </span>
+                    <span class="slider-list-item">{{ block.settings.list-item4 }}</span>
+                  </div>
+                {% endif %}
+                {% if block.settings.list-item5 != blank %}
+                  <div>
+                    <span>
+                      {% render 'checkmark' %}
+                    </span>
+                    <span class="slider-list-item">{{ block.settings.list-item5 }}</span>
+                  </div>
+                {% endif %}
+                {% if block.settings.list-item6 != blank %}
+                  <div>
+                    <span>
+                      {% render 'checkmark' %}
+                    </span>
+                    <span class="slider-list-item">{{ block.settings.list-item6 }}</span>
+                  </div>
+                {% endif %}
+                {% if block.settings.list-item7 != blank %}
+                  <div>
+                    <span>
+                      {% render 'checkmark' %}
+                    </span>
+                    <span class="slider-list-item">{{ block.settings.list-item7 }}</span>
+                  </div>
+                {% endif %}
+                {% if block.settings.list-item8 != blank %}
+                  <div>
+                    <span>
+                      {% render 'checkmark' %}
+                    </span>
+                    <span class="slider-list-item">{{ block.settings.list-item8 }}</span>
+                  </div>
+                {% endif %}
+                {% if block.settings.list-item9 != blank %}
+                  <div>
+                    <span>
+                      {% render 'checkmark' %}
+                    </span>
+                    <span class="slider-list-item">{{ block.settings.list-item9 }}</span>
+                  </div>
+                {% endif %}
+                {% if block.settings.list-item10 != blank %}
+                  <div>
+                    <span>
+                      {% render 'checkmark' %}
+                    </span>
+                    <span class="slider-list-item">{{ block.settings.list-item10 }}</span>
+                  </div>
+                {% endif %}
+                <div class="slide-list-item-title mt-3">
+                  {{ block.settings.title }}
                 </div>
-              {% endif %}
-              {% if block.settings.list-item2 != blank %}
-                <div>
-                  <span>
-                    {% render 'checkmark' %}
-                  </span>
-                  <span class="slider-list-item">{{ block.settings.list-item2 }}</span>
-                </div>
-              {% endif %}
-              {% if block.settings.list-item3 != blank %}
-                <div>
-                  <span>
-                    {% render 'checkmark' %}
-                  </span>
-                  <span class="slider-list-item">{{ block.settings.list-item3 }}</span>
-                </div>
-              {% endif %}
-              {% if block.settings.list-item4 != blank %}
-                <div>
-                  <span>
-                    {% render 'checkmark' %}
-                  </span>
-                  <span class="slider-list-item">{{ block.settings.list-item4 }}</span>
-                </div>
-              {% endif %}
-              {% if block.settings.list-item5 != blank %}
-                <div>
-                  <span>
-                    {% render 'checkmark' %}
-                  </span>
-                  <span class="slider-list-item">{{ block.settings.list-item5 }}</span>
-                </div>
-              {% endif %}
-              {% if block.settings.list-item6 != blank %}
-                <div>
-                  <span>
-                    {% render 'checkmark' %}
-                  </span>
-                  <span class="slider-list-item">{{ block.settings.list-item6 }}</span>
-                </div>
-              {% endif %}
-              {% if block.settings.list-item7 != blank %}
-                <div>
-                  <span>
-                    {% render 'checkmark' %}
-                  </span>
-                  <span class="slider-list-item">{{ block.settings.list-item7 }}</span>
-                </div>
-              {% endif %}
-              {% if block.settings.list-item8 != blank %}
-                <div>
-                  <span>
-                    {% render 'checkmark' %}
-                  </span>
-                  <span class="slider-list-item">{{ block.settings.list-item8 }}</span>
-                </div>
-              {% endif %}
-              {% if block.settings.list-item9 != blank %}
-                <div>
-                  <span>
-                    {% render 'checkmark' %}
-                  </span>
-                  <span class="slider-list-item">{{ block.settings.list-item9 }}</span>
-                </div>
-              {% endif %}
-              {% if block.settings.list-item10 != blank %}
-                <div>
-                  <span>
-                    {% render 'checkmark' %}
-                  </span>
-                  <span class="slider-list-item">{{ block.settings.list-item10 }}</span>
-                </div>
-              {% endif %}
-              <div class="slide-list-item-title mt-3">
-                {{ block.settings.title }}
               </div>
             </div>
-          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row g-0 p-5">
+      <div class="col-12 page-width d-flex flex-wrap justify-content-center align-items-center text-block__wrapper">
+        {% for block in section.blocks %}
+          {% if block.type == "text-block" %}
+
+            <div class="p-3 py-4 col-12 col-sm-6  col-md-4 col-lg-2 text-center">
+              {% render 'image', class: '', mobileSrc: block.settings.image1, desktopSrc: block.settings.image1 %}
+              <div class="my-2 text-block__title">{{ block.settings.title1 }}</div>
+              <p class="text-block__text">{{ block.settings.text1 }}</p>
+            </div>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
@@ -124,12 +140,10 @@
 
 
 {% style %}
-  {% for block in section.blocks %}
-    .slide--{{ block.id}}{
-      background-image: url('{{block.settings.bg_image | img_url: 'large'}}');
-      background-size: cover;
-    }
-  {% endfor %}
+  .slider--{{ section.id}}{
+    background-image: url('{{section.settings.bg_image | img_url: 'large'}}');
+    background-size: cover;
+  }
 {% endstyle %}
 
 <style>
@@ -179,6 +193,28 @@
     line-height: 100%;
     color: #834332;
   }
+  .text-block__title {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #222222;
+  }
+  .text-block__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #151515;
+  }
+  .text-block__wrapper {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid #FFFFFF;
+    border-radius: 19px;
+  }
 </style>
 
 {% schema %}
@@ -186,17 +222,18 @@
     "name": "Slider",
     "class": "section",
     "tag": "section",
-    "settings": [],
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Background Image"
+      }
+    ],
     "blocks": [
       {
         "name": "Slide",
         "type": "slide-block",
         "settings": [
-          {
-            "type": "image_picker",
-            "id": "bg_image",
-            "label": "Background Image"
-          },
           {
             "type": "text",
             "id": "caption",
@@ -214,7 +251,8 @@
             "id": "heading_highlight",
             "label": "Highlight Text",
             "default": "Is Right Here!"
-          }, {
+          },
+          {
             "type": "text",
             "id": "subheading",
             "label": "Subheading",
@@ -288,6 +326,27 @@
             "id": "title",
             "label": "Bold Title",
             "default": "Title"
+          }
+        ]
+      }, {
+        "name": "Text Block",
+        "type": "text-block",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "title1",
+            "label": "Title",
+            "default": "Title"
+          }, {
+            "type": "text",
+            "id": "text1",
+            "label": "Text",
+            "default": "Text"
           }
         ]
       }

@@ -59,7 +59,7 @@
         "aab3f413-2220-4563-ae4d-ffb5fb8b3300"
       ],
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#ffffff",
         "caption": "Rated 5 stars",
         "heading": "Fuel Up Your Day With India’s Tastiest Vegan Protein",
         "subheading": "Zero Bloating | Designed For Everyday Health | All Natural",
@@ -73,7 +73,6 @@
         "0e9c8a91-2b84-401b-9816-0aa69c99115a": {
           "type": "slide-block",
           "settings": {
-            "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png",
             "caption": "41,696 Five Star Reviews",
             "heading": "Everything You Need Is",
             "heading_highlight": "Right Here!",
@@ -97,7 +96,6 @@
         "ec2be645-aba1-4cf5-a9ad-803b6a4552ad": {
           "type": "slide-block",
           "settings": {
-            "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png",
             "caption": "41,696 Five Star Reviews",
             "heading": "Everything You Need Is",
             "heading_highlight": "Right Here!",
@@ -117,65 +115,56 @@
             "list-item10": "Spirulina",
             "title": "Vanilla"
           }
+        },
+        "ea94166d-d2a6-4ffe-aed8-f5bd89a3b6f2": {
+          "type": "text-block",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Group_1571.png",
+            "title1": "Nutritionally Complete",
+            "text1": "Nutritionally balanced. Keeps you always on the go."
+          }
+        },
+        "708bae88-7900-4d58-9fab-f466508131d3": {
+          "type": "text-block",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Group_1572.png",
+            "title1": "Super Tasty",
+            "text1": "Super yummy even the aftertaste makes you feel more resilient."
+          }
+        },
+        "c48a3872-7422-4d42-9cc5-71945cc8bb35": {
+          "type": "text-block",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Group_1573_1.png",
+            "title1": "Plant Based",
+            "text1": "100% Vegan. Sourced ethically and free from added preservatives."
+          }
+        },
+        "fb3ec4e6-c0b1-4aaa-abed-2b64918e2dab": {
+          "type": "text-block",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Group_1574.png",
+            "title1": "Super Convenient",
+            "text1": "Cut. Pour. Shake. And it’s consumable in seconds."
+          }
+        },
+        "956a1e4f-f11d-4677-ab30-159a13f81bdb": {
+          "type": "text-block",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Group_1576.png",
+            "title1": "Good Value",
+            "text1": "Intrinsically healthier for the body and the mind."
+          }
         }
       },
       "block_order": [
         "0e9c8a91-2b84-401b-9816-0aa69c99115a",
-        "ec2be645-aba1-4cf5-a9ad-803b6a4552ad"
-      ],
-      "settings": {
-      }
-    },
-    "dc392530-1a75-40a2-9243-1c8e9bae2068": {
-      "type": "supporting-text-block",
-      "blocks": {
-        "a00ffe07-e771-4aa6-9494-d686f57e5a4c": {
-          "type": "text-block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1571.png",
-            "title": "Nutritionally complete",
-            "text": "Nutritionally balanced. Keeps you always on the go."
-          }
-        },
-        "df1c1c21-ce3b-44bd-9c74-265bba71c2a4": {
-          "type": "text-block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1572.png",
-            "title": "Super tasty",
-            "text": "Super yummy even the aftertaste makes you feel more resilient."
-          }
-        },
-        "c01ace95-e420-4e33-9211-eb15e774e2c4": {
-          "type": "text-block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1573_1.png",
-            "title": "Plant based",
-            "text": "100% Vegan. Sourced ethically and free from added preservatives."
-          }
-        },
-        "6b99a5bf-6987-4699-a199-b254a2a42e73": {
-          "type": "text-block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1574.png",
-            "title": "super convenient",
-            "text": "Cut. Pour. Shake. And it’s consumable in seconds."
-          }
-        },
-        "adb1796d-6cc9-461c-ae1e-da21cfd6306e": {
-          "type": "text-block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1576.png",
-            "title": "Good value",
-            "text": "Intrinsically healthier for the body and the mind."
-          }
-        }
-      },
-      "block_order": [
-        "a00ffe07-e771-4aa6-9494-d686f57e5a4c",
-        "df1c1c21-ce3b-44bd-9c74-265bba71c2a4",
-        "c01ace95-e420-4e33-9211-eb15e774e2c4",
-        "6b99a5bf-6987-4699-a199-b254a2a42e73",
-        "adb1796d-6cc9-461c-ae1e-da21cfd6306e"
+        "ec2be645-aba1-4cf5-a9ad-803b6a4552ad",
+        "ea94166d-d2a6-4ffe-aed8-f5bd89a3b6f2",
+        "708bae88-7900-4d58-9fab-f466508131d3",
+        "c48a3872-7422-4d42-9cc5-71945cc8bb35",
+        "fb3ec4e6-c0b1-4aaa-abed-2b64918e2dab",
+        "956a1e4f-f11d-4677-ab30-159a13f81bdb"
       ],
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png"
@@ -238,8 +227,8 @@
         "72c9d794-bca4-47a7-ae80-43f18933cf62"
       ],
       "settings": {
-        "bg_color": "#e5e5e5",
-        "card_color": "#FFF",
+        "bg_color": "#ffffff",
+        "card_color": "#ffffff",
         "heading": "Our Most Loved Flavours"
       }
     },
@@ -260,7 +249,7 @@
     "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45": {
       "type": "recipes-section",
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#ffffff",
         "heading": "PROTEIN-FILLED RECIPES - QUICK & EASY TO MAKE!",
         "heading_color": "#181818",
         "description": "If your protein shake recipe is getting old and you’re looking for a change, then go for these yummiest recipes here! From creamy smoothies to delicious pancakes, our recipes are made from the tastiest and highest amount of protein with wholesome ingredients. So, try these quick, easy & yummy recipes!",
@@ -385,7 +374,7 @@
         "5fa480b5-afaa-4afc-91f1-003854c825b2"
       ],
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#ffffff",
         "heading": "Rated 5 star",
         "subheading": "By 50,000 Customers"
       }
@@ -445,7 +434,7 @@
         "7735e8df-e71c-4c1b-a558-d65ed97ad271"
       ],
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#ffffff",
         "heading": "FAQs",
         "text_color": "#181818",
         "read_more_link": "",
@@ -457,7 +446,6 @@
     "main",
     "f43aec42-f575-41c4-91ef-3fbbe296439f",
     "79764431-e8b0-4f42-bbff-8410ae5e374e",
-    "dc392530-1a75-40a2-9243-1c8e9bae2068",
     "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a",
     "ec9dae8a-2489-466a-af04-23f55d2b4041",
     "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45",

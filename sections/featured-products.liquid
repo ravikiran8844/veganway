@@ -4,10 +4,10 @@
       <div class="col-12 text-center">
         <h2 class="fs-2 featured-product__main-heading">{{ section.settings.heading }}</h2>
       </div>
-      <div class="col-12 my-5 m-auto" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
+      <div class="col-12 mt-5 m-auto  page-width" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
         {% for block in section.blocks %}
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="featured-product-card__wrapper py-4 mx-2 bg-light text-center">
+          <div class="col-12 col-sm-6 col-md-4" style="height: 563px;">
+            <div class="featured-product-card__wrapper shadow-sm py-4 mx-2 bg-light text-center">
               <div class="mb-3">
                 <img
                   class="featured-product__image"
@@ -82,13 +82,11 @@
     letter-spacing: -0.03em;
     color: #181818;
   }
-  .carousel-cell {
-    min-height: 563px;
-    max-width: 372px;
-  }
+
   .featured-product-card__wrapper {
     border-radius: 20px;
     background-color: #fff !important;
+    max-width: 372px;
   }
   .featured-product__button {
     border-radius: 30.8044px;
