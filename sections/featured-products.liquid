@@ -7,7 +7,7 @@
       <div class="col-12 my-5 m-auto" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
         {% for block in section.blocks %}
           <div class="col-12 col-sm-6 col-md-4">
-            <div class="featured-product-card__wrapper py-4 me-4 bg-light text-center">
+            <div class="featured-product-card__wrapper py-4 mx-2 bg-light text-center">
               <div class="mb-3">
                 <img
                   class="featured-product__image"
@@ -40,7 +40,12 @@
 
 
 <style>
-
+  .flickity-prev-next-button.previous {
+    left: -40px;
+  }
+  .flickity-prev-next-button.next {
+    right: -40px;
+  }
   .featured-product__main-heading {
     font-family: 'Sharp Grotesk';
     font-style: normal;
@@ -96,6 +101,7 @@
     background: #017149;
   }
 </style>
+
 
 {% schema %}
   {

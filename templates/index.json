@@ -75,8 +75,8 @@
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png",
             "caption": "41,696 Five Star Reviews",
-            "heading": "Everything You Need",
-            "heading_highlight": "Is Right Here!",
+            "heading": "Everything You Need Is",
+            "heading_highlight": "Right Here!",
             "subheading": "20+ Plant-Based Superfoods & Is Rich in Nutrients",
             "btn_text": "Try Veganway",
             "btn_link": "shopify:\/\/products\/vegan-plant-protein-powder",
@@ -99,8 +99,8 @@
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png",
             "caption": "41,696 Five Star Reviews",
-            "heading": "Everything You Need",
-            "heading_highlight": "Is Right Here!",
+            "heading": "Everything You Need Is",
+            "heading_highlight": "Right Here!",
             "subheading": "20+ Plant-Based Superfoods & Is Rich in Nutrients",
             "btn_text": "Try Veganway",
             "btn_link": "",
@@ -239,6 +239,7 @@
       ],
       "settings": {
         "bg_color": "#e5e5e5",
+        "card_color": "#FFF",
         "heading": "Our Most Loved Flavours"
       }
     },
@@ -259,10 +260,13 @@
     "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45": {
       "type": "recipes-section",
       "settings": {
-        "bg_color": "#E5E5E5",
+        "bg_color": "#e5e5e5",
         "heading": "PROTEIN-FILLED RECIPES - QUICK & EASY TO MAKE!",
+        "heading_color": "#181818",
         "description": "If your protein shake recipe is getting old and you’re looking for a change, then go for these yummiest recipes here! From creamy smoothies to delicious pancakes, our recipes are made from the tastiest and highest amount of protein with wholesome ingredients. So, try these quick, easy & yummy recipes!",
+        "description_color": "#474747",
         "link_text": "More Recipes",
+        "btn_color": "#017149",
         "link_url": "shopify:\/\/blogs\/recipes",
         "recipe1image": "shopify:\/\/shop_images\/recipe_1.png",
         "recipe1text": "Very Berry Vegan Smoothie",
@@ -442,7 +446,10 @@
       ],
       "settings": {
         "bg_color": "#e5e5e5",
-        "heading": "FAQs"
+        "heading": "FAQs",
+        "text_color": "#181818",
+        "read_more_link": "",
+        "link_color": "#017149"
       }
     }
   },
