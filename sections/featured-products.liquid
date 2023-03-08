@@ -1,13 +1,15 @@
+{{ 'flickity.js' | asset_url | script_tag }}
+
 {% if section.blocks.size > 0 %}
   <div class="featured-product__wrapper--{{section.id}} fluid-container">
     <div class="row g-0 p-5">
       <div class="col-12 text-center">
         <h2 class="fs-2 featured-product__main-heading">{{ section.settings.heading }}</h2>
       </div>
-      <div class="col-12 mt-5 m-auto  page-width" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
+      <div class="col-12 mt-5 m-auto  page-width main-carousel">
         {% for block in section.blocks %}
           <div class="col-12 col-sm-6 col-md-4" style="height: 563px;">
-            <div class="featured-product-card__wrapper shadow-sm py-4 mx-2 bg-light text-center">
+            <div class="featured-product-card__wrapper shadow-sm m-3 py-4 bg-light text-center">
               <div class="mb-3">
                 <img
                   class="featured-product__image"
@@ -40,6 +42,11 @@
 
 
 <style>
+  .flickity-prev-next-button {
+    width: 51px;
+    height: 51px;
+    border: 2px solid #B0B0B0;
+  }
   .flickity-prev-next-button.previous {
     left: -40px;
   }
@@ -100,6 +107,20 @@
   }
 </style>
 
+<script>
+  $('.main-carousel').flickity({
+    arrowShape: 'M83.999 43.999H21.656l21.172-21.172a4.001 4.001 0 0 0-5.657-5.657l-28 28a4 4 0 0 0-.001 5.656l28 28a3.989 3.989 0 0 0 2.829 1.172 3.999 3.999 0 0 0 2.829-6.828L21.655 51.999h62.344a4 4 0 0 0 0-8z',
+
+// options
+    cellAlign: 'left',
+    contain: true,
+    freeScroll: true,
+
+// disable previous & next buttons and dots
+    prevNextButtons: true,
+    pageDots: false
+  });
+</script>
 
 {% schema %}
   {
