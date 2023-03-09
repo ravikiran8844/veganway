@@ -1,0 +1,45 @@
+.rated-section__caption-text {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.6039px;
+    line-height: 19px;
+    color: #181818;
+    margin-right: 5px;
+  }
+
+  .rated-section__heading {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130%;
+    color: #017149;
+    max-width: 634px;
+  }
+  .rated-section__subheading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 128%;
+    color: #515151;
+
+  }
+  .rated-section__btn {
+    background: #017149;
+    border-radius: 28.5714px;
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  .rated-section__image img {
+    padding: 5px;
+    height: auto;
+    width: auto;
+  }
+
+
+  

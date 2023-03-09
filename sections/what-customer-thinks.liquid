@@ -1,3 +1,5 @@
+{{ 'what-customer-thinks.css' | asset_url | stylesheet_tag }}
+
 {% if section.blocks.size > 0 %}
   <div class="wct__wrapper--{{section.id}} fluid-container">
     <div class="row g-0 p-5">
@@ -55,28 +57,6 @@
     letter-spacing: -1px;
     color: {{ section.settings.heading_color}}
     ;
-  }
-  .wct__product-img img {
-    width: 32.74px;
-    height: 53.77px;
-  }
-  .wct__customer-name {
-    font-family: 'Pluto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 9.5493px;
-    line-height: 17px;
-    letter-spacing: -0.03em;
-    color: #2B2B2B;
-  }
-  .wct__customer-review {
-    ont-family: 'Pluto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 9px;
-    line-height: 14px;
-    letter-spacing: -0.03em;
-    color: #2B2B2B;
   }
 </style>
 

@@ -2,40 +2,25 @@
   <div class="fluid-container faq-section faq--{{section.id}}">
     <div class="col-12">
       {% if section.settings.heading != blank %}
-        <div class="h2 faq-heading--{{section.id}} text-center pt-5">{{ section.settings.heading }}</div>
+        <div class="h2 faq-heading--{{section.id}} text-center mb-4 pt-5">{{ section.settings.heading }}</div>
       {% endif %}
     </div>
     <div class="faq-wrapper page-width pb-3">
       {% for block in section.blocks %}
         {% if block.settings.faq_question != blank and block.settings.faq_answer != blank %}
           <div class="col-10 col-md-8 col-lg-6 m-auto">
-            <div class="faq-tab">
-              <input
-                id="faq-tab-{{forloop.index}}"
-                type="radio"
-                name="tabs" />
-              <label class="faq-question faq-question--{{section.id}} d-flex justify-content-between" for="faq-tab-{{forloop.index}}">{{ block.settings.faq_question }}
-                <span>
-                  <svg
-                    class="faq-svg-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24px"
-                    height="24px"
-                    fill="{{section.settings.text_color}}"
-                    viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" /></svg>
-                </span>
-              </label>
-              <div class="faq-tab-content">
-                <p>
-                  <span>{{ block.settings.faq_answer }}</span>
-                </p>
+            <div class="eachFaq">
+              <h4 class="py-3 pe-5 faq-question title">{{ block.settings.faq_question }}</h4>
+              <div class="accordion-content">
+                <p class="faq-answer">{{ block.settings.faq_answer }}</p>
               </div>
+              <!-- //.accordion-content -->
             </div>
           </div>
         {% endif %}
       {% endfor %}
-      <div class="col-10 col-md-8  mb-5 col-lg-6 m-auto">
-        <a class="faq__read-more " href="{{section.settings.read_more_link}}">SEE MORE</a>
+      <div class="col-10 col-md-8  my-5 col-lg-6 m-auto">
+        <a class="faq__read-more" href="{{section.settings.read_more_link}}">SEE MORE</a>
       </div>
     </div>
   </div>
@@ -81,137 +66,94 @@
 
   }
   .faq-question {
+    font-family: {{ main_font}}
+    ;
     font-style: normal;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #E8E8E8;
+    color: {{ section.settings.text_color}}
+
+
+  }
+  .faq-answer {
+    font-size: 14px;
+    line-height: 23px;
+    opacity: .8;
+
   }
   .faq_title {
     font-size: 18px;
     line-height: 18px;
     padding: 30px 0;
   }
-  @media only screen and (max-width: 600px) {
-    .faq-tab label,
-    .wrp__cont {
-      margin: 10px 0;
-    }
-  }
-  .faq-tab {
+  h4 {
     position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin: 15px auto;
-    border-radius: 0;
-    padding: 0 0 10px;
-    color: #343434;
-    border: unset;
-    border-bottom: 1px solid #E8E8E8;
   }
-  .faq-tab label {
-    position: relative;
-    display: block;
-    padding: 0 25px 0 0;
+  .eachFaq.close h4:before {
+    content: '+';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: {{ section.settings.text_color}}
+    ;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 60px;
+  }
+  .eachFaq.open h4:before {
+    content: '-';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: {{ section.settings.text_color}}
+    ;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 60px;
+  }
+  .eachFaq .title {
     cursor: pointer;
-    margin: 10px 0;
-    font-weight: 500;
-  }
-  .faq-tab input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
-  .faq-tab-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.45s;
-    overflow-y: visible;
-  }
-  .faq-tab input:checked ~ .faq-tab-content {
-    max-height: none;
-    color: #959595;
-  }
-  .faq-tab-content input:checked ~ label,
-  .faq-tab-content input:checked + label {
-    max-height: none;
-    color: #e42229;
-  }
-  .faq-tab label::after {
-    position: absolute;
-    right: 10px;
-    top: 0;
-    display: block;
-    -webkit-transition: all 0.45s;
-    -o-transition: all 0.45s;
-    transition: all 0.45s;
-  }
-
-  @media only screen and (min-width:320px) and(max-width:480px) {
-    .got_quest {
-      padding: 10px 0;
-    }
-    .got_quest .heading {
-      padding: 10px 0;
-      font-size: 18px;
-    }
-    .faq_title {
-      font-size: 13px;
-      line-height: 18px;
-      padding: 30px 0;
-    }
-    .faq-tab input:checked ~ .faq-tab-content {
-      font-size: 12px;
-    }
-    .faq-tab label {
-      font-size: 12px;
-    }
-
-  }
-  @media only screen and (min-width:481px) and(max-width:767px) {
-    .got_quest {
-      padding: 10px 0;
-    }
-    .got_quest .heading {
-      padding: 10px 0;
-      font-size: 18px;
-    }
-    .faq_title {
-      font-size: 13px;
-      line-height: 18px;
-      padding: 30px 0;
-    }
-    .faq-tab input:checked ~ .faq-tab-content {
-      font-size: 12px;
-    }
-    .faq-tab label {
-      font-size: 12px;
-    }
-
-  }
-  @media only screen and (min-width:768px) and(max-width:1024px) {
-    .got_quest {
-      padding: 30px 0;
-    }
-    .got_quest .heading {
-      padding: 10px 0;
-      font-size: 26px;
-    }
-    .faq_title {
-      font-size: 13px;
-      line-height: 18px;
-      padding: 30px 0;
-    }
-    .faq-tab input:checked ~ .faq-tab-content {
-      font-size: 13px;
-    }
-    .faq-tab label {
-      font-size: 13px;
-    }
-  }
-  @media only screen and (min-width:768px) and(max-width:1024px) {
-    .faq-tab label {
-      font-size: 14px;
-    }
   }
 </style>
+
+
+<script>
+  $(document).ready(function() {
+
+    var accordionParentClass = '.eachFaq';
+    var accordionQuestionClass = '.eachFaq .title';
+    var accordionContentClass = '.accordion-content';
+
+    $(accordionParentClass).each(function() {
+      $(this).addClass('close');
+      $(this).find(accordionContentClass).hide();
+    });
+
+    $(accordionQuestionClass).click(function() {
+      var faqClass = $(this).closest(accordionParentClass).attr('class');
+      console.log(faqClass);
+
+      if (faqClass.indexOf('close') != -1) { // WHEN CLOSED
+        $(accordionParentClass).find(accordionContentClass).slideUp('slow'); // CLOSE ALL
+        $(accordionParentClass).addClass('close').removeClass('open'); // set all faq as closed
+
+        $(this).closest(accordionParentClass).removeClass('close');
+        $(this).closest(accordionParentClass).addClass('open');
+        $(this).closest(accordionParentClass).find(accordionContentClass).slideDown('slow');
+
+      } else {
+        $(this).closest(accordionParentClass).addClass('close');
+        $(this).closest(accordionParentClass).removeClass('open');
+        $(this).closest(accordionParentClass).find(accordionContentClass).slideUp('slow');
+      }
+
+    });
+
+  });
+</script>
 
 {% schema %}
   {

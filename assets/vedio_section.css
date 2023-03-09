@@ -1,0 +1,68 @@
+.video-section__main-heading {
+    font-family: 'Sharp Grotesk';
+    font-weight: 500;
+    line-height: 128%;
+  }
+  .video-section__subheading {
+    font-family: 'Inter';
+    line-height: 128%;
+    font-weight: 400;
+
+  }
+  .video-section__text--color {
+    color: #FFFFFF;
+  }
+  .video-section__button {
+    color: #FFFFFF;
+    background-color: #017149;
+    border-radius: 30px;
+    font-family: 'Sharp Grotesk';
+    font-weight: 500;
+  }
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+  .video-sectionitem {
+    width: 100%;
+  }
+
+  .video-sectionitem .media::after {
+    content: '';
+    background: rgb(0 0 0 / 30%);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-sectionitem-wrap {
+    position: relative;
+  }
+
+  .video__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .video__content-wrapper {
+    max-width: 800px;
+  }
+
+  .media--video {
+    padding-bottom: 150%;
+  }
+
+  @media only screen and (min-width: 990px) {
+    .media--video {
+      padding-bottom: 56.25%;
+    }
+  }
