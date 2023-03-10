@@ -1,0 +1,265 @@
+<div class="owl-products__{{section.id}} fluid-container py-5">
+  <div class="row g-0">
+    <div class="col-12 text-center my-4">
+      <h2 class="fs-2 ocp__main-heading">{{ section.settings.heading }}</h2>
+    </div>
+    <div class="col-12">
+      <div class="ocp__wrapper page-width">
+        <div class="owl-carousel">
+          {% for block in section.blocks %}
+            <div class="ocp__slide item">
+              <div class="ocp-card__wrapper py-4 bg-light text-center">
+                <div class="mb-3 text-center">
+                  <img
+                    class="ocp__image"
+                    src="{{block.settings.product_image | img_url: 'master'}}"
+                    alt="">
+                </div>
+                <h2 class="ocp__title">
+                  {{ block.settings.product_title }}
+                </h2>
+                <p class="ocp__caption">{{ block.settings.product_caption }}</p>
+                <p class="ocp__price">{{ block.settings.product_id.price | money_with_currency }}</p>
+                <div>
+                  <a class="btn btn-outline-success px-4 ocp__button" href="{{ block.settings.product_id.url }}">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+  .ocp__slide {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .ocp__main-heading {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 51px;
+    color: #181818;
+  }
+  .ocp__image {
+    display: inline !important;
+    max-width: 173.58px;
+    max-height: 286.79px;
+  }
+  .ocp__title {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.3728px;
+    line-height: 123.5%;
+    color: #181818;
+  }
+  .ocp__caption {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.9021px;
+    line-height: 148.5%;
+    color: #666666;
+  }
+  .ocp__price {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.8868px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #181818;
+  }
+
+  .ocp-card__wrapper {
+    border-radius: 20px;
+    background-color: #fff !important;
+  }
+  .ocp__button {
+    border-radius: 30.8044px;
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17.2504px;
+  }
+  .ocp__button:hover {
+    background: #017149;
+  }
+
+  .owl-products__{{ section.id}}{
+    background-color: {{ section.settings.bg_color}}
+    ;
+  }
+</style>
+<style>
+  .owl-item {
+    width: 100%;
+  }
+  .ocp__wrapper .owl-item .item {
+    border: 2px solid #E9E6E6;
+    border-radius: 18.4768px;
+  }
+  .ocp__wrapper .owl-item.center .item {
+    border: 2px solid #E9E6E6;
+    border-radius: 15.6176px;
+  }
+
+  @media(min-width:800px) {
+    .owl-item {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .ocp__image {
+      display: inline !important;
+      max-width: 173.58px;
+      max-height: 286.79px;
+    }
+    .ocp__wrapper .owl-item.center .item .ocp__button {
+      color: #fff !important;
+      background-color: #017149 !important;
+    }
+    .ocp__wrapper .owl-item.center .item .ocp__button:hover {
+      color: #fff !important;
+      background-color: #017149 !important;
+    }
+    .owl-item .item {
+      transform: translate3d(0, 0, 0); /* DO NOT REMEMBER WHERE TU PUT THIS, SEARCH FOR 3D ACCELERATION */
+      // transform: scale(0.9);
+      // transition: all .25s ease-in-out;
+      margin: 50px 0; /* OVERWRITE PLUGIN MARGIN */
+    }
+
+    .ocp__wrapper .owl-item .item {
+      -webkit-transition: 0.3s;
+      box-shadow: 0 0 39px rgba(102, 102, 102, 0.25);
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      -webkit-transform: scale(0.90);
+      -ms-transform: scale(0.90);
+      transform: scale(0.90);
+      border: 0.951133px solid #D2D2D2;
+      border-radius: 15.6176px;
+    }
+
+    .ocp__wrapper .owl-item.center .item {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      border: 0.951133px solid #D2D2D2;
+      border-radius: 15.6176px;
+    }
+  }
+</style>
+
+
+<style>
+  .owl-dots {
+    text-align: center;
+    padding-top: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+
+  }
+  .owl-dots button.owl-dot {
+    width: 13.32px;
+    height: 13.32px;
+    border-radius: 6.65793px;
+
+    display: inline-block;
+    background: transparent;
+    border: 0.951133px solid #2B2B2B;
+    margin: 0 3px;
+  }
+  .owl-dots button.owl-dot.active {
+    background-color: #000;
+  }
+  .owl-dots button.owl-dot:focus {
+    outline: none;
+  }
+</style>
+<script>
+  // Owlcarousel
+  $(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      center: true,
+      dots: true,
+
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        800: {
+          items: 3
+        }
+      }
+    });
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Owl Products Slider",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "default": "#E5E5E5",
+        "label": "Background Color"
+      }, {
+        "type": "color",
+        "id": "card_color",
+        "default": "#FFF",
+        "label": "Product Card Color"
+      }, {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Our Most Loved Flavours"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Product",
+        "type": "product-section",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product_id",
+            "label": "Product"
+          }, {
+            "type": "image_picker",
+            "id": "product_image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "product_title",
+            "label": "Title"
+          }, {
+            "type": "text",
+            "id": "product_caption",
+            "label": "Caption"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Owl Products Slider"
+      }
+    ]
+  }
+{% endschema %}

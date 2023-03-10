@@ -170,8 +170,81 @@
         "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png"
       }
     },
+    "db31dc5e-3862-4a46-9dcb-c586245513f4": {
+      "type": "owl-carousel-products",
+      "blocks": {
+        "0533fe58-f4a0-4345-9dd9-3ee87bb07995": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "vegan-plant-protein-powder",
+            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_title": "Vanilla",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "d2f59d90-bd0c-48ab-a7eb-9738e551cf0c": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "100-vegan-plant-protein-powder-14-servings",
+            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_title": "Cafe Mocha",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "ed68107d-f15b-4ad7-a925-9ca71c2b9c03": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "100-vegan-plant-protein-powder-28-servings",
+            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_title": "Kacha Aam",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "2e6bd7f4-8c6b-4aa7-9aba-16a5705d2345": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "100-vegan-plant-protein-powder-42-servings",
+            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_title": "Vanilla",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "21ac14ea-bb05-42ad-8ac1-2ccbd8916445": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "vegan-plant-protein-powder",
+            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_title": "Cafe Mocha",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "2a5dc927-8b46-4bad-a88f-fb25498750f6": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "100-vegan-plant-protein-powder-14-servings",
+            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_title": "Kacha Aam",
+            "product_caption": "100% Plant Protein"
+          }
+        }
+      },
+      "block_order": [
+        "0533fe58-f4a0-4345-9dd9-3ee87bb07995",
+        "d2f59d90-bd0c-48ab-a7eb-9738e551cf0c",
+        "ed68107d-f15b-4ad7-a925-9ca71c2b9c03",
+        "2e6bd7f4-8c6b-4aa7-9aba-16a5705d2345",
+        "21ac14ea-bb05-42ad-8ac1-2ccbd8916445",
+        "2a5dc927-8b46-4bad-a88f-fb25498750f6"
+      ],
+      "settings": {
+        "bg_color": "#fff",
+        "card_color": "#FFF",
+        "heading": "Our Most Loved Flavours"
+      }
+    },
     "d4b5b96c-5658-4ada-a12b-90b4eddf5026": {
       "type": "most-loved-flavors",
+      "disabled": true,
       "blocks": {
         "79dec2a2-e36a-44f1-be7b-790f59d2ac5d": {
           "type": "product-section",
@@ -555,6 +628,7 @@
     "main",
     "f43aec42-f575-41c4-91ef-3fbbe296439f",
     "79764431-e8b0-4f42-bbff-8410ae5e374e",
+    "db31dc5e-3862-4a46-9dcb-c586245513f4",
     "d4b5b96c-5658-4ada-a12b-90b4eddf5026",
     "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a",
     "ec9dae8a-2489-466a-af04-23f55d2b4041",
