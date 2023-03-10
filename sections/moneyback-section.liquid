@@ -1,12 +1,24 @@
 <div class="fluid-container">
   <div class="moneyback-section d-flex flex-column flex-md-row">
     <div class="col-12 col-md-7 first-col--{{ section.id}} p-0">
-      <div class="moneyback-section__image w-100">
+      <div class="d-none d-lg-block moneyback-section__image w-100">
         {% render 'image', class: 'moneyback--image', mobileSrc: section.settings.bg_image, desktopSrc: section.settings.bg_image %}
-
         <div class="moneyback-content">
           <div class="w-100">
-            <div class="h2 moneyback-content-heading">{{ section.settings.heading }}</div>
+            <div class="h2 moneyback-content-heading">
+              <span>{{ section.settings.caption }}</span>
+              <br/>{{ section.settings.heading }}</div>
+            <p class="moneyback-content-subheading">{{ section.settings.subheading }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-block d-lg-none moneyback-section__image w-100">
+        {% render 'image', class: 'moneyback--mobile_image', mobileSrc: section.settings.mobile_bg_image, desktopSrc: section.settings.mobile_bg_image %}
+        <div class="moneyback-mobile-content">
+          <div class="w-100">
+            <div class="h2 moneyback-content-heading">
+              <span>{{ section.settings.caption }}</span>
+              <br/>{{ section.settings.heading }}</div>
             <p class="moneyback-content-subheading">{{ section.settings.subheading }}</p>
           </div>
         </div>
@@ -27,28 +39,10 @@
 {% style %}
   .first-col--{{ section.id}}{
     color: #FFFFFF;
-
-
   }
   .second-col--{{ section.id}}{
     background-color: {{ section.settings.bg_color}}
     ;
-  }
-  .moneyback-section__wrapper {
-    height: 499px;
-  }
-  .moneyback-section__image {
-    position: relative;
-  }
-  .moneyback-content {
-    position: absolute;
-    top: 40%;
-    left: 55%;
-  }
-  .moneyback--image img {
-    position: relative;
-    min-height: 499px !important;
-    width: 100%;
   }
   .moneyback-content-heading {
     font-family: 'Sharp Grotesk';
@@ -65,6 +59,53 @@
   }
 {% endstyle %}
 
+
+
+<style>
+  .moneyback-section__wrapper {
+    height: 600px;
+  }
+  .moneyback-section__image {
+    position: relative;
+  }
+  .moneyback-mobile-content {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 80%;
+  }
+  .moneyback--mobile_image img {
+    position: relative;
+    width: 100%;
+    height: 800px;
+  }
+  @media(min-width:768px) {
+    .moneyback-section__wrapper {
+      height: 800px;
+    }
+  }
+  @media(min-width:992px) {
+    .moneyback-section__wrapper {
+      height: 499px;
+    }
+    .moneyback-section__image {
+      position: relative;
+    }
+    .moneyback-content {
+      position: absolute;
+      top: 40%;
+      left: 55%;
+    }
+    .moneyback--image img {
+      position: relative;
+      min-height: 499px !important;
+      width: 100%;
+    }
+  }
+</style>
+
+
+
 {% schema %}
   {
     "name": "Moneyback Section",
@@ -74,21 +115,30 @@
       {
         "type": "image_picker",
         "id": "bg_image",
-        "label": "Background Image"
+        "label": "Desktop Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_bg_image",
+        "label": "Mobile Background Image"
+      },
+      {
+        "type": "text",
+        "id": "caption",
+        "label": "Caption",
+        "default": "Caption"
       },
       {
         "type": "text",
         "id": "heading",
         "label": "Heading",
         "default": "Heading"
-      },
-      {
+      }, {
         "type": "text",
         "id": "subheading",
         "label": "Subheading",
         "default": "Subheading"
-      },
-      {
+      }, {
         "type": "color",
         "id": "bg_color",
         "label": "background color",

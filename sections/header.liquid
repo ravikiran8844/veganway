@@ -13,7 +13,7 @@
        </div>
             
       <div class="align-items-center d-flex shop_sec">       
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"  class="me-4" xmlns="http://www.w3.org/2000/svg">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none"  class="d-md-inline-block d-none me-4" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M9.37482 0C11.7771 0 14.18 0.912053 16.0071 2.73899C19.3982 6.12982 19.6407 11.5036 16.7375 15.1797L21.6768 20.1184C21.8837 20.3247 22 20.6049 22 20.897C22 21.1892 21.8837 21.4694 21.6768 21.6759C21.4703 21.8834 21.1897 22 20.8969 22C20.6041 22 20.3236 21.8834 20.117 21.6759L15.1778 16.7371C11.5008 19.6358 6.12786 19.3979 2.73827 16.0089C-0.915632 12.355 -0.911312 6.39261 2.74257 2.73937C4.56968 0.91243 6.97256 0.000376422 9.37482 0.000376422L9.37482 0ZM9.37267 2.1826C7.53669 2.18106 5.70038 2.88354 4.29371 4.29001C1.48044 7.103 1.48044 11.6382 4.29371 14.4515C7.10697 17.2645 11.6384 17.2602 14.4515 14.4472C17.2647 11.6342 17.2647 7.1097 14.4515 4.29671C13.0449 2.89025 11.2086 2.18435 9.37252 2.18286L9.37267 2.1826Z" fill="white"/>
       </svg>
       <a href="#" class="text-decoration-none"><p class="mb-0 me-4 text-white">Shop Now </p></a>
@@ -156,6 +156,18 @@ svg#vw_tgm {
     color: #fff;
     cursor: pointer;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+   body.open_menu div#VW_Sidenav {
+    width: 100% !important;
+}
+  .footer_sidenav .ftr button {   
+    padding: 10px 24px;
+    font-size: 14px !important;
+}
+  .sidenav .vw_ul a {  
+    font-size: 22px;   
+}
+  }
 </style>
 
 <!-- JavaScript -->
@@ -170,11 +182,13 @@ svg#vw_tgm {
     });
   });
   function openNav() {
+  document.getElementById("VW_Sidenav").style.opacity = "1";
   document.getElementById("VW_Sidenav").style.width = "50%";
   document.body.classList.add("open_menu");
  }
 
   function closeNav() {
+    document.getElementById("VW_Sidenav").style.opacity = "0";
     document.getElementById("VW_Sidenav").style.width = "0";
     document.body.classList.remove("open_menu");
   }

@@ -365,10 +365,70 @@
       "type": "moneyback-section",
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/Banner_1_1.jpg",
-        "heading": "Your Daily 100% Plant Protein",
+        "mobile_bg_image": "shopify:\/\/shop_images\/Untitled-1_1.png",
+        "caption": "Your Daily",
+        "heading": "100% Plant Protein",
         "subheading": "For your gut, your brain, your muscles, your skin, your hair, your heart. Your whole health",
         "bg_color": "#000000",
         "image2": "shopify:\/\/shop_images\/Group_14570.png"
+      }
+    },
+    "bab23c80-5f86-4de9-b9ff-c9e9c407322a": {
+      "type": "owl-carousel-testimonials",
+      "disabled": true,
+      "blocks": {
+        "b0263f06-cbf3-4448-89a0-5bd37386a11a": {
+          "type": "testimonial-section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "name": "Ruchatembe",
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+          }
+        },
+        "7e74e842-02b1-45c3-b600-6f16f2cd910c": {
+          "type": "testimonial-section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "name": "Name",
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+          }
+        },
+        "d4cd4680-8450-4743-a22f-cdedf27f9841": {
+          "type": "testimonial-section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "name": "Name",
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+          }
+        },
+        "868afad4-05bc-485e-b0d4-02bd2e0986dd": {
+          "type": "testimonial-section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "name": "Name",
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+          }
+        },
+        "2b3347e9-3802-4fab-80bf-39c10a18a71c": {
+          "type": "testimonial-section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "name": "Name",
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b0263f06-cbf3-4448-89a0-5bd37386a11a",
+        "7e74e842-02b1-45c3-b600-6f16f2cd910c",
+        "d4cd4680-8450-4743-a22f-cdedf27f9841",
+        "868afad4-05bc-485e-b0d4-02bd2e0986dd",
+        "2b3347e9-3802-4fab-80bf-39c10a18a71c"
+      ],
+      "settings": {
+        "bg_color": "#e5e5e5",
+        "heading": "Rated 5 star",
+        "subheading": "By 50,000 Customers"
       }
     },
     "4fb16557-cb08-4b0d-9d8b-47ed2340caf8": {
@@ -501,6 +561,7 @@
     "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45",
     "843c76d8-5c13-4385-8eae-6b8849167dcd",
     "9617ebdd-f579-4744-8822-de2fa956a4d0",
+    "bab23c80-5f86-4de9-b9ff-c9e9c407322a",
     "4fb16557-cb08-4b0d-9d8b-47ed2340caf8",
     "8517a24a-8d3e-4a86-979e-c9c141d6c190"
   ]
