@@ -53,9 +53,10 @@
     background: #FEA500;
     border-radius: 24.375px;
     text-transform: uppercase;
+    color: black;
   }
   .footer__ns-button:hover {
-    color: #fff;
+    color: black !important;
   }
   .footer__ns-label {
     background: #2B2B2B;

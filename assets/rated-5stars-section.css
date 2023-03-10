@@ -35,6 +35,9 @@
     font-size: 16px;
     color: #FFFFFF;
   }
+  .rated-section__btn:hover {
+    color: #FFFFFF !important;
+  }
   .rated-section__image img {
     padding: 5px;
     height: auto;

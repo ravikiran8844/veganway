@@ -40,6 +40,9 @@
     font-weight: 500;
     font-size: 18px;
   }
+  .slide-button:hover {
+    color: #fff !important;
+  }
   .slider-list-item {
     font-family: 'Inter';
     font-style: normal;

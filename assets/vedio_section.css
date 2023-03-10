@@ -19,6 +19,9 @@
     font-family: 'Sharp Grotesk';
     font-weight: 500;
   }
+  .video-section__button:hover {
+    color: #FFFFFF !important;
+  }
   video {
     height: auto;
     max-width: 100%;

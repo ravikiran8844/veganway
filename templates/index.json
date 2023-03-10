@@ -170,8 +170,57 @@
         "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png"
       }
     },
+    "d4b5b96c-5658-4ada-a12b-90b4eddf5026": {
+      "type": "most-loved-flavors",
+      "blocks": {
+        "79dec2a2-e36a-44f1-be7b-790f59d2ac5d": {
+          "type": "product-section",
+          "settings": {
+            "product_id1": "vegan-plant-protein-powder",
+            "product_image1": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_title1": "Vanilla",
+            "product_caption1": "100% Plant Protein",
+            "product_id2": "100-vegan-plant-protein-powder-14-servings",
+            "product_image2": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_title2": "Cafe Mocha",
+            "product_caption2": "100% Plant Protein",
+            "product_id3": "vegan-plant-protein-powder",
+            "product_image3": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_title3": "Kacha Aam",
+            "product_caption3": "100% Plant Protein"
+          }
+        },
+        "32c9e3b1-e381-4f2d-b22c-c2f4778423d7": {
+          "type": "product-section",
+          "settings": {
+            "product_id1": "vegan-plant-protein-powder",
+            "product_image1": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_title1": "Vanilla",
+            "product_caption1": "100% Plant Protein",
+            "product_id2": "100-vegan-plant-protein-powder-14-servings",
+            "product_image2": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_title2": "Cafe Mocha",
+            "product_caption2": "100% Plant Protein",
+            "product_id3": "100-vegan-plant-protein-powder-28-servings",
+            "product_image3": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_title3": "Kacha Aam",
+            "product_caption3": "100% Plant Protein"
+          }
+        }
+      },
+      "block_order": [
+        "79dec2a2-e36a-44f1-be7b-790f59d2ac5d",
+        "32c9e3b1-e381-4f2d-b22c-c2f4778423d7"
+      ],
+      "settings": {
+        "bg_color": "#ffffff",
+        "card_color": "#ffffff",
+        "heading": "Our Most Loved Flavours"
+      }
+    },
     "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a": {
       "type": "featured-products",
+      "disabled": true,
       "blocks": {
         "570b50c1-2f13-426f-b052-9eb7cf72ded6": {
           "type": "product-section",
@@ -446,6 +495,7 @@
     "main",
     "f43aec42-f575-41c4-91ef-3fbbe296439f",
     "79764431-e8b0-4f42-bbff-8410ae5e374e",
+    "d4b5b96c-5658-4ada-a12b-90b4eddf5026",
     "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a",
     "ec9dae8a-2489-466a-af04-23f55d2b4041",
     "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45",
