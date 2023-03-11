@@ -5,7 +5,7 @@
     </div>
     <div class="col-12">
       <div class="ocp__wrapper page-width">
-        <div class="owl-carousel">
+        <div id="owl-product-slider" class="owl-carousel">
           {% for block in section.blocks %}
             <div class="ocp__slide item">
               <div class="ocp-card__wrapper py-4 bg-light text-center">
@@ -96,8 +96,6 @@
     background-color: {{ section.settings.bg_color}}
     ;
   }
-</style>
-<style>
   .owl-item {
     width: 100%;
   }
@@ -155,10 +153,6 @@
       border-radius: 15.6176px;
     }
   }
-</style>
-
-
-<style>
   .owl-dots {
     text-align: center;
     padding-top: 15px;
@@ -182,17 +176,38 @@
   .owl-dots button.owl-dot:focus {
     outline: none;
   }
+  #owl-product-slider {
+    position: relative;
+    width: 100%;
+  }
+  #owl-product-slider .owl-nav .owl-prev,
+  #owl-product-slider .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    color: #2E241E;
+    font-size: 30px;
+  }
+  #owl-product-slider .owl-nav .owl-prev {
+    left: -10px;
+  }
+  #owl-product-slider .owl-nav .owl-next {
+    right: -16px;
+  }
 </style>
+
+
 <script>
   // Owlcarousel
   $(document).ready(function() {
-    $(".owl-carousel").owlCarousel({
+    $("#owl-product-slider").owlCarousel({
       loop: true,
       margin: 20,
       center: true,
       dots: true,
-
+      nav: true,
       responsiveClass: true,
+
       responsive: {
         0: {
           items: 1
