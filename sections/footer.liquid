@@ -2,7 +2,8 @@
 
 <div class="footer--{{section.id}} d-flex justify-content-center fluid-container py-3 px-4">
   <div class="page-width row g-0 p-2">
-    <div class="col-12 col-md-6 col-lg-4 p-2 footer__line px-3">
+    <div
+      class="col-12 col-md-6 col-lg-4 p-2 footer__line px-3">
       <div class="d-flex mb-3">
         <div><img src="{{section.settings.logo | img_url}}" alt="Footer Logo"></div>
         <div class="ms-3">
@@ -42,7 +43,7 @@
               <li class="list-unstyled footer-list-title mb-3">{{ block.settings.title }}</li>
               {% for link in block.settings.list.links %}
                 <li class="list-unstyled mb-2">
-                  <a class="footer-pagelinks" href="{{ link.url }}">{{ link.title }}</a>
+                  <a class="footer-pagelinks  footer-link-underline" href="{{ link.url }}">{{ link.title }}</a>
                 </li>
               {% endfor %}
             </ul>
@@ -128,13 +129,16 @@
           <span class="footer_ns-text">Sip the goodness of Plants Everyday.. 
             Build your health the Natures' Way..</span>
         </div>
+        <div class="d-md-none">
+          <hr class="footer__hr-line">
+        </div>
 
-        <div class="col-12 d-flex justify-content-between align-items-center mt-4">
-          <div class="footer-brandtext col-6">Veganway © {{ 'now' | date: '%Y' }}. | A Supercluster Pi Brand</div>
-          <div class="col-6 ms-3">
-            <a class="footer-pagelinks me-2" href="https://www.getveganway.com/pages/privacy-policy">Privacy Policy</a>
-            <a class="footer-pagelinks" href="https://www.getveganway.com/pages/terms-conditions">Terms & Conditions</a>
-          </div>
+        <div class="col-12 col-md-6 mt-4">
+          <div class="footer-brandtext col-12">Veganway © {{ 'now' | date: '%Y' }}. | A Supercluster Pi Brand</div>
+        </div>
+        <div class="col-12 col-md-6 mt-4">
+          <a class="footer-pagelinks footer-links me-2" href="https://www.getveganway.com/pages/privacy-policy">Privacy Policy</a>
+          <a class="footer-pagelinks footer-links" href="https://www.getveganway.com/pages/terms-conditions">Terms & Conditions</a>
         </div>
       </div>
     </div>
@@ -148,6 +152,14 @@
     color: {{ section.settings.text_color}}
     ;
     font-family: 'Sharp Grotesk';
+  }
+  .footer-links {
+    text-decoration-line: underline;
+  }
+  @media(max-width:767px) {
+    .footer-link-underline {
+      text-decoration-line: underline;
+    }
   }
 </style>
 

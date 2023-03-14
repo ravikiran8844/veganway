@@ -207,6 +207,96 @@
         "bg_color": "#017149"
       }
     },
+    "0ca1eec8-c2a7-45b0-bc3f-38c0416205ec": {
+      "type": "product-ingredients-section",
+      "blocks": {
+        "cc3b524c-7f97-41d0-aff8-961a2186b774": {
+          "type": "ingredient-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_325.png",
+            "text": "pea protein"
+          }
+        },
+        "099130a7-327c-4548-8fb2-b35fbdf20681": {
+          "type": "ingredient-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_326.png",
+            "text": "brown rice"
+          }
+        },
+        "b32f5f09-6571-4bf9-82b1-08cf267cf33d": {
+          "type": "ingredient-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_327.png",
+            "text": "Cafe Mocha Flavour"
+          }
+        },
+        "e48a046e-edcb-4ebf-b179-208487b9063d": {
+          "type": "ingredient-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_328.png",
+            "text": "Bromelain"
+          }
+        },
+        "2754e843-9841-4d45-8f37-0db0308ce679": {
+          "type": "ingredient-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_329.png",
+            "text": "Papain"
+          }
+        },
+        "523568ac-477e-472b-81e2-0d4b63f7177c": {
+          "type": "ingredient-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_340.png",
+            "text": "Himalayan pink"
+          }
+        },
+        "e2f0405a-8969-435c-86c0-eeb15070fd18": {
+          "type": "ingredient-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_342.png",
+            "text": "Spinach"
+          }
+        },
+        "19ffc9a3-b213-4f15-b618-1a7e3b68dd92": {
+          "type": "ingredient-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_341.png",
+            "text": "Moringa"
+          }
+        },
+        "ee105b3c-85c7-4343-a38d-f9e8b8348b1a": {
+          "type": "ingredient-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_343.png",
+            "text": "Alfalfa"
+          }
+        },
+        "39afc71e-68af-4ff5-9ad4-d25c7b549ddb": {
+          "type": "ingredient-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/40_plus.png",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc3b524c-7f97-41d0-aff8-961a2186b774",
+        "099130a7-327c-4548-8fb2-b35fbdf20681",
+        "b32f5f09-6571-4bf9-82b1-08cf267cf33d",
+        "e48a046e-edcb-4ebf-b179-208487b9063d",
+        "2754e843-9841-4d45-8f37-0db0308ce679",
+        "523568ac-477e-472b-81e2-0d4b63f7177c",
+        "e2f0405a-8969-435c-86c0-eeb15070fd18",
+        "19ffc9a3-b213-4f15-b618-1a7e3b68dd92",
+        "ee105b3c-85c7-4343-a38d-f9e8b8348b1a",
+        "39afc71e-68af-4ff5-9ad4-d25c7b549ddb"
+      ],
+      "settings": {
+        "heading": "Vegan Way is made with over 20+ super foods & Nutrients"
+      }
+    },
     "b0074d67-d009-4929-8faf-9bd4a74bd59d": {
       "type": "recipes-section",
       "settings": {
@@ -509,6 +599,7 @@
     "9d5e1cdc-a77c-45df-b42b-7c069ed22710",
     "e3e2db69-a213-446e-9a69-ff2f83e071ae",
     "3b754e96-18df-465c-a2d1-0b7eb94ac28a",
+    "0ca1eec8-c2a7-45b0-bc3f-38c0416205ec",
     "b0074d67-d009-4929-8faf-9bd4a74bd59d",
     "dc16db68-a5ad-4dbd-9acd-3d83ee41809a",
     "6ebf93de-e5c4-453f-a809-21632efa5ae7",

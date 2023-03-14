@@ -4,7 +4,7 @@
   <div class="testimonials__wrapper-{{section.id}} fluid-container">
     <div class="row  g-0 p-5">
       <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-        <div class="d-flex align-items-center flex-wrap">
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
           <span class="fs-2 testimonials__main-heading">{{ section.settings.heading }}</span>
           <span class="ms-3">
             <svg
@@ -46,7 +46,7 @@
             </svg>
           </span>
         </div>
-        <div class="fs-2 testimonials__sub-heading mb-4">{{ section.settings.subheading }}</div>
+        <div class="fs-2 text-center testimonials__sub-heading mb-4">{{ section.settings.subheading }}</div>
       </div>
       <div class="col-12 my-3 testimonial-wrapper page-width" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true ,"groupCells": true,"prevNextButtons": false}'>
         {% for block in section.blocks %}
