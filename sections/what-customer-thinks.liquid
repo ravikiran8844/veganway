@@ -2,15 +2,15 @@
 
 {% if section.blocks.size > 0 %}
   <div class="wct__wrapper--{{section.id}} fluid-container">
-    <div class="row g-0 p-5">
+    <div class="row g-0 p-5 page-width">
       <div class="col-12 text-center">
         <h2 class="wct__main-heading mb-4">{{ section.settings.heading }}</h2>
       </div>
       <div class="col-12" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
         {% for block in section.blocks %}
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mx-4">
+          <div class="col mx-4">
             <div>
-              {% render 'image', class: 'media media--portrait', mobileSrc: block.settings.customer_image, desktopSrc: block.settings.customer_image %}
+              {% render 'image', class: 'wct_customer_img media media--portrait', mobileSrc: block.settings.customer_image, desktopSrc: block.settings.customer_image %}
               <div class="d-flex mx-4 my-3">
                 <div class="me-2">
                   {% render 'image', class: 'wct__product-img', mobileSrc: block.settings.product_image, desktopSrc: block.settings.product_image %}
@@ -45,12 +45,16 @@
 
 
 <style>
+  .wct_customer_img {
+    width: 264px;
+    height: 344px;
+  }
   .wct__wrapper--{{ section.id}}{
     background-color: {{ section.settings.bg_color}}
     ;
   }
   .wct__main-heading {
-    font-family: 'Pluto';
+    font-family: 'Sharp Grotesk';
     font-style: normal;
     font-weight: 700;
     line-height: 48px;

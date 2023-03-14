@@ -237,8 +237,8 @@
         "2a5dc927-8b46-4bad-a88f-fb25498750f6"
       ],
       "settings": {
-        "bg_color": "#fff",
-        "card_color": "#FFF",
+        "bg_color": "#ffffff",
+        "card_color": "#ffffff",
         "heading": "Our Most Loved Flavours"
       }
     },
@@ -388,6 +388,17 @@
         "recipe3image": "shopify:\/\/shop_images\/recipe_3.png",
         "recipe3text": "Coco Berry Vegan Smoothie",
         "recipe3link": ""
+      }
+    },
+    "64abf6f4-dc82-48ae-823f-6ad88fa90e24": {
+      "type": "feeding-india-section",
+      "settings": {
+        "heading": "VEGAN WAY X Feeding India",
+        "content": "Vegan way wants to partner with you in a One-for-One mission to feed America’s hungry. We can make a difference in your community.",
+        "left-image": "shopify:\/\/shop_images\/Group_2550.png",
+        "right-image": "shopify:\/\/shop_images\/1_12.png",
+        "desktop-image": "shopify:\/\/shop_images\/desktop_image.png",
+        "mobile-image": "shopify:\/\/shop_images\/mobile_image.png"
       }
     },
     "843c76d8-5c13-4385-8eae-6b8849167dcd": {
@@ -633,6 +644,7 @@
     "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a",
     "ec9dae8a-2489-466a-af04-23f55d2b4041",
     "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45",
+    "64abf6f4-dc82-48ae-823f-6ad88fa90e24",
     "843c76d8-5c13-4385-8eae-6b8849167dcd",
     "9617ebdd-f579-4744-8822-de2fa956a4d0",
     "bab23c80-5f86-4de9-b9ff-c9e9c407322a",

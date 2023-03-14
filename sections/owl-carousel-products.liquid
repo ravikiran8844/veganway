@@ -26,6 +26,7 @@
               </div>
             </div>
           {% endfor %}
+
         </div>
       </div>
     </div>
@@ -146,9 +147,9 @@
     }
 
     .ocp__wrapper .owl-item.center .item {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
+      -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+      transform: scale(1.15);
       border: 0.951133px solid #D2D2D2;
       border-radius: 15.6176px;
     }
@@ -185,14 +186,19 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%);
-    color: #2E241E;
-    font-size: 30px;
+    color: #B0B0B0;
+    font-size: 50px;
   }
   #owl-product-slider .owl-nav .owl-prev {
-    left: -10px;
+    left: 10px;
+
   }
   #owl-product-slider .owl-nav .owl-next {
-    right: -16px;
+    right: -10px;
+  }
+  @media(min-width:800px) {}
+  #owl-product-slider .owl-nav .owl-next {
+    right: 0;
   }
 </style>
 
@@ -206,6 +212,7 @@
       center: true,
       dots: true,
       nav: true,
+
       responsiveClass: true,
 
       responsive: {

@@ -1,40 +1,45 @@
 <div class="fluid-container recipes-section--{{ section.id}} p-4">
   <div class="recipes-section__wrapper page-width my-5 d-flex flex-wrap justify-content-center">
-    <div class="col-12 col-md-4  p-2">
-      <div class="fs-3 recipes-section__heading">{{ section.settings.heading }}</div>
-      <div class="recipes-section__text my-3">{{ section.settings.description }}</div>
-      <div>
-        <a class="btn recipes-section__button  my-4 px-4" href="{{section.settings.link_url}}">{{ section.settings.link_text }}</a>
+    <div class="d-flex flex-column flex-lg-row">
+      <div class="col-12 col-lg-4  p-2">
+        <div class="fs-3 recipes-section__heading">{{ section.settings.heading }}</div>
+        <div class="recipes-section__text my-3">{{ section.settings.description }}</div>
+        <div>
+          <a class="btn recipes-section__button  my-4 px-4" href="{{section.settings.link_url}}">{{ section.settings.link_text }}</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8 d-flex overflow-auto">
+        <div class="col-8 col-sm-4 p-2">
+          <div>
+            {% render 'image', class: 'recipe-image media media--portrait', mobileSrc: section.settings.recipe1image, desktopSrc: section.settings.recipe1image %}
+          </div>
+          <div class="recipe-title my-3">{{ section.settings.recipe1text }}</div>
+          <div>
+            <a class="recipe-link" href="{{ section.settings.recipe1link}}">Read More</a>
+          </div>
+        </div>
+        <div class="col-8 col-sm-4 p-2">
+          <div>
+            {% render 'image', class: 'recipe-image media media--portrait', mobileSrc: section.settings.recipe2image, desktopSrc: section.settings.recipe2image %}
+          </div>
+          <div class="recipe-title my-3">{{ section.settings.recipe2text }}</div>
+          <div>
+            <a class="recipe-link" href="{{ section.settings.recipe2link}}">Read More</a>
+          </div>
+        </div>
+        <div class="col-8 col-sm-4 p-2">
+          <div>
+            {% render 'image', class: 'recipe-image media media--portrait', mobileSrc: section.settings.recipe3image, desktopSrc: section.settings.recipe3image %}
+          </div>
+          <div class="recipe-title my-3">{{ section.settings.recipe3text }}</div>
+          <div>
+            <a class="recipe-link" href="{{ section.settings.recipe3link}}">Read More</a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="col-4 col-md-2 p-2">
-      <div>
-        {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe1image, desktopSrc: section.settings.recipe1image %}
-      </div>
-      <div class="recipe-title my-3">{{ section.settings.recipe1text }}</div>
-      <div>
-        <a class="recipe-link" href="{{ section.settings.recipe1link}}">Read More</a>
-      </div>
-    </div>
-    <div class="col-4 col-md-2 p-2">
-      <div>
-        {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe2image, desktopSrc: section.settings.recipe2image %}
-      </div>
-      <div class="recipe-title my-3">{{ section.settings.recipe2text }}</div>
-      <div>
-        <a class="recipe-link" href="{{ section.settings.recipe2link}}">Read More</a>
-      </div>
-    </div>
-    <div class="col-4 col-md-2 p-2">
-      <div>
-        {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.recipe3image, desktopSrc: section.settings.recipe3image %}
-      </div>
-      <div class="recipe-title my-3">{{ section.settings.recipe3text }}</div>
-      <div>
-        <a class="recipe-link" href="{{ section.settings.recipe3link}}">Read More</a>
-      </div>
-    </div>
+
   </div>
 </div>
 
@@ -49,6 +54,7 @@
 
 
 <style>
+  .recipe-image img {}
   .recipes-section--{{ section.id}}{
     background-color: {{ section.settings.bg_color}}
     ;

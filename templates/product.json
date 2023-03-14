@@ -62,9 +62,19 @@
         "051b06ae-ce52-4d6a-8c05-e98c304e957b"
       ],
       "settings": {
-        "bg_color": "#E5E5E5",
+        "bg_color": "#ffffff",
         "heading": "What the VeganWay fam thinks",
-        "heading_color": "#583D36"
+        "heading_color": "#181818"
+      }
+    },
+    "e3e2db69-a213-446e-9a69-ff2f83e071ae": {
+      "type": "how-to-use",
+      "settings": {
+        "bg_color": "#F5F5F5",
+        "image": "shopify:\/\/shop_images\/how_to_use.png",
+        "heading": "How to use",
+        "footer_heading": "When to use",
+        "description": "Our protein can be had at any time of the day and with meals or inbetween them. As a general rule protein should be avoided before aworkout and should definitely be consumed within 1 hour of any strenousactivity or workout."
       }
     },
     "3b754e96-18df-465c-a2d1-0b7eb94ac28a": {
@@ -114,19 +124,19 @@
         "2bc440ac-7187-40ff-9b82-82e6539122d6"
       ],
       "settings": {
-        "bg_color": "#583d36"
+        "bg_color": "#017149"
       }
     },
     "b0074d67-d009-4929-8faf-9bd4a74bd59d": {
       "type": "recipes-section",
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#ffffff",
         "heading": "Try Your Hand At SimpleNutrient-Dense Recipes",
-        "heading_color": "#583d36",
+        "heading_color": "#181818",
         "description": "With every sachet of Vegan Way Protein Powder, add the benefits of over 20+ Superfoods and their nutrients for your daily dose of power to make each day better than your last! Try a different recipe each day and treat your taste buds.",
-        "description_color": "#583d36",
+        "description_color": "#181818",
         "link_text": "More Recipes",
-        "btn_color": "#583d36",
+        "btn_color": "#017149",
         "link_url": "",
         "recipe1image": "shopify:\/\/shop_images\/recipe_1.png",
         "recipe1text": "",
@@ -286,7 +296,7 @@
         "a9c84fa6-709c-42bf-a684-f78000f226a2"
       ],
       "settings": {
-        "bg_color": "#f4ebde",
+        "bg_color": "#ecf2ec",
         "title_1": "Vegan Way Protein",
         "title_2": "Whey Protein",
         "logo": "shopify:\/\/shop_images\/Group_14353.png",
@@ -348,9 +358,11 @@
         "0624144e-4f56-4fec-b0e2-cc7ca7081163"
       ],
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#ffffff",
         "heading": "FAQ",
-        "text_color": "#583d36"
+        "text_color": "#181818",
+        "read_more_link": "",
+        "link_color": "#fea500"
       }
     },
     "fffb2753-7a7f-466e-ae6f-68280c15990f": {
@@ -359,42 +371,42 @@
         "04b42659-b8e4-44c3-8bca-a2438cebd7a7": {
           "type": "logo-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_14536.png",
+            "image": "shopify:\/\/shop_images\/Group_14536_1.png",
             "text": ""
           }
         },
         "2686d5e4-702e-4fa1-b135-b80e1ae1c9bc": {
           "type": "logo-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_14534.png",
+            "image": "shopify:\/\/shop_images\/Group_14534_1.png",
             "text": ""
           }
         },
         "61b714eb-1cb3-4f47-9481-099c0d742501": {
           "type": "logo-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_14533.png",
+            "image": "shopify:\/\/shop_images\/Group_14533_1.png",
             "text": ""
           }
         },
         "2ab58409-5863-467a-845f-d26e81d1696c": {
           "type": "logo-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_14532.png",
+            "image": "shopify:\/\/shop_images\/Group_14532_1.png",
             "text": ""
           }
         },
         "5beba020-6e55-48be-893f-913b967c5a76": {
           "type": "logo-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1829.png",
+            "image": "shopify:\/\/shop_images\/Group_1829_1.png",
             "text": ""
           }
         },
         "9b0dca46-0167-42af-9dbd-48c5c680bf23": {
           "type": "logo-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_14530_1.png",
+            "image": "shopify:\/\/shop_images\/Group_14530_2.png",
             "text": ""
           }
         }
@@ -408,13 +420,14 @@
         "9b0dca46-0167-42af-9dbd-48c5c680bf23"
       ],
       "settings": {
-        "bg_color": "#282828"
+        "bg_color": "#ecf2ec"
       }
     }
   },
   "order": [
     "main",
     "9d5e1cdc-a77c-45df-b42b-7c069ed22710",
+    "e3e2db69-a213-446e-9a69-ff2f83e071ae",
     "3b754e96-18df-465c-a2d1-0b7eb94ac28a",
     "b0074d67-d009-4929-8faf-9bd4a74bd59d",
     "dc16db68-a5ad-4dbd-9acd-3d83ee41809a",

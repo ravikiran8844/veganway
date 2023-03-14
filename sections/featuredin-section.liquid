@@ -8,7 +8,7 @@
           {% endif %}
         </div>
       </div>
-      <div class="featured-item__wrapper page-width d-flex flex-column flex-md-row">
+      <div class="featured-item__wrapper page-width d-flex flex-row overflow-scroll">
         {% for block in section.blocks %}
           <div class="col-12 col-md-3 p-3">
             {% if block.settings.image != blank and block.settings.text != blank %}

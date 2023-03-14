@@ -2,7 +2,7 @@
 {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
 
 <div class="fluid-container product__wrapper">
-  <div class="row g-0">
+  <div class="row g-0 page-width">
     <div class="col-12 col-md-6 p-5">
       <div class="product__image-wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true,"prevNextButtons": false,"autoPlay": true }'>
         {%- comment -%}
@@ -64,6 +64,12 @@
 
 <style>
   .product__wrapper {
-    background: #DED2C7;
+    background: #F9F9F9;
+  }
+  .header_nav {
+    position: static;
+    background: #017149;
+    border-bottom: 1px solid #E1E1E1;
+
   }
 </style>
