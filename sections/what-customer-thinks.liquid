@@ -2,7 +2,7 @@
 
 {% if section.blocks.size > 0 %}
   <div class="wct__wrapper--{{section.id}} fluid-container">
-    <div class="row g-0 p-5 page-width">
+    <div class="row g-0 p-5 wtc-section page-width">
       <div class="col-12 text-center">
         <h2 class="wct__main-heading mb-4">{{ section.settings.heading }}</h2>
       </div>
@@ -45,6 +45,9 @@
 
 
 <style>
+  .wtc-section {
+    margin: 0 auto;
+  }
   .wct_customer_img {
     width: 264px;
     height: 344px;

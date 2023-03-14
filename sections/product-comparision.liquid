@@ -1,7 +1,8 @@
 {% if section.blocks.size > 0 %}
   <div class="fluid-container wrapper--{{section.id}} p-5">
-    <div class="col-12 text-center d-flex flex-column flex-md-row ">
-      <div class="col-12 col-md-5">
+    <div class="col-12 page-width  text-center d-flex flex-column flex-md-row ">
+      <div
+        class="col-12 col-md-5">
         <h2 class="h1 pc-main-heading">{{ section.settings.title_1 }}</h2>
       </div>
       <div class="col-12 col-md-2">
@@ -11,7 +12,7 @@
         <h2 class="h1 pc-main-heading">{{ section.settings.title_2 }}</h2>
       </div>
     </div>
-    <div class="col-12 mt-3 d-flex flex-column flex-md-row text-center">
+    <div class="col-12 page-width mt-3 d-flex flex-column flex-md-row text-center">
       <div class="col-12 col-md-4 text-md-end">
         <h4 class="pc-heading">{{ section.settings.title_1 }}</h4>
 
@@ -69,8 +70,8 @@
   .wrapper--{{ section.id}}{
     background-color: {{ section.settings.bg_color}}
     ;
-    color: #583D36;
-    font-family: 'Pluto';
+    color: #181818;
+    font-family: 'Sharp Grotesk';
     font-style: normal;
 
   }
@@ -88,6 +89,8 @@
     font-weight: 400;
     line-height: 192.5%;
     letter-spacing: -0.025em;
+    font-family: 'Inter';
+    font-style: normal;
   }
 </style>
 

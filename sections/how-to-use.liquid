@@ -1,5 +1,5 @@
 <div class="py-5 htc-{{section.id}} fluid-container">
-  <div class="row g-0 page-width">
+  <div class="row page-width htc-section g-0">
     <div class="col-12 col-lg-6">
       <div class="px-5">
         {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.image, desktopSrc: section.settings.image %}
@@ -93,6 +93,9 @@
 </div>
 
 <style>
+  .htc-section {
+    margin: 0 auto;
+  }
   .htc-{{ section.id}}{
     background-color: {{ section.settings.bg_color}}
     ;

@@ -2,6 +2,86 @@
   "sections": {
     "main": {
       "type": "main-product",
+      "blocks": {
+        "d06248fd-5cf2-42c1-baf7-608b723c4adf": {
+          "type": "caption",
+          "settings": {
+          }
+        },
+        "971351d5-89fd-4320-b054-bc3e160a96ca": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "b46e0338-2d2b-45f4-87d1-11b1c98cfa96": {
+          "type": "product_info",
+          "settings": {
+          }
+        },
+        "08906a90-3cfd-4499-bf45-571da2672b17": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "36626d70-5b21-4944-977b-09b705eb410d": {
+          "type": "variant_picker",
+          "settings": {
+          }
+        },
+        "e376e053-b6b5-4b23-81d3-c1150bd23c44": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "2ade82c9-0343-4983-a5b2-fa24eb699d1c": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "62e5bd40-5cd8-4db8-8f57-be278a36781b": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "1987284a-fc11-4bd6-ad28-807e4dd331f5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "NUTRITION INFO",
+            "content": "",
+            "page": ""
+          }
+        },
+        "4a710521-c79b-4bad-9ec0-4d5afabd5fe7": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "INGREDIENTS",
+            "content": "",
+            "page": ""
+          }
+        },
+        "054fbd55-f66e-4c52-b9e4-1a567a2ce653": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "BENEFITS",
+            "content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "d06248fd-5cf2-42c1-baf7-608b723c4adf",
+        "971351d5-89fd-4320-b054-bc3e160a96ca",
+        "b46e0338-2d2b-45f4-87d1-11b1c98cfa96",
+        "08906a90-3cfd-4499-bf45-571da2672b17",
+        "36626d70-5b21-4944-977b-09b705eb410d",
+        "e376e053-b6b5-4b23-81d3-c1150bd23c44",
+        "2ade82c9-0343-4983-a5b2-fa24eb699d1c",
+        "62e5bd40-5cd8-4db8-8f57-be278a36781b",
+        "1987284a-fc11-4bd6-ad28-807e4dd331f5",
+        "4a710521-c79b-4bad-9ec0-4d5afabd5fe7",
+        "054fbd55-f66e-4c52-b9e4-1a567a2ce653"
+      ],
       "settings": {
       }
     },
@@ -70,7 +150,7 @@
     "e3e2db69-a213-446e-9a69-ff2f83e071ae": {
       "type": "how-to-use",
       "settings": {
-        "bg_color": "#F5F5F5",
+        "bg_color": "#f5f5f5",
         "image": "shopify:\/\/shop_images\/how_to_use.png",
         "heading": "How to use",
         "footer_heading": "When to use",

@@ -27,16 +27,18 @@
 {% endif %}
 
 
+{% assign main_font = "Sharp Grotesk" %}
+{% assign second_font = "Inter" %}
+{% comment %}
 {% if template contains "index" %}
-  {% assign main_font = "Sharp Grotesk" %}
-  {% assign second_font = "Inter" %}
+{% assign main_font = "Sharp Grotesk" %}
+{% assign second_font = "Inter" %}
 {% endif %}
 {% if template contains "product" %}
-  {% assign main_font = "Pluto" %}
-  {% assign second_font = "Pluto" %}
+{% assign main_font = "Pluto" %}
+{% assign second_font = "Pluto" %}
 {% endif %}
-
-{% style %}
+{% endcomment %}{% style %}
   .faq__read-more {
     font-family: {{ main_font}}
     ;
