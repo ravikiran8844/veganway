@@ -4,7 +4,7 @@
   <div class="wct__wrapper--{{section.id}} fluid-container">
     <div class="row g-0 p-5 wtc-section page-width">
       <div class="col-12 text-center">
-        <h2 class="wct__main-heading mb-4">{{ section.settings.heading }}</h2>
+        <h2 class="wct__main-heading m-auto mb-4">{{ section.settings.heading }}</h2>
       </div>
       <div class="col-12" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
         {% for block in section.blocks %}
@@ -64,6 +64,7 @@
     letter-spacing: -1px;
     color: {{ section.settings.heading_color}}
     ;
+    max-width: 716px;
   }
 </style>
 

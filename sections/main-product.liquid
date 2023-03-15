@@ -130,6 +130,9 @@
                  <summary>
                    <div class="product__tab-summary">
                      <div class="product__tab-title">
+                      {% if block.settings.tab-icon != blank%}
+                      <span> {{ block.settings.tab-icon}} </span>
+                      {% endif %}
                        {{ block.settings.heading | default: block.settings.page.title }}
                      </div>
                      <div class="product__tab-icon">
@@ -277,6 +280,12 @@ color: #5E5E5E;
             "default": "Collapsible tab",
             "info": "Include a heading that explains the content.",
             "label": "Heading"
+          },
+          {
+            "type": "liquid",
+            "id": "tab-icon",
+            "label": "SVG Icon",
+            "info": "Paste your SVG Icon"
           },
           {
             "type": "richtext",

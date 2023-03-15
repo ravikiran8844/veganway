@@ -1,17 +1,18 @@
 <div class="py-5 htc-{{section.id}} fluid-container">
   <div class="row page-width htc-section g-0">
     <div class="col-12 col-lg-6">
-      <div class="px-5">
+      <div class="px-2">
         {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.image, desktopSrc: section.settings.image %}
       </div>
     </div>
-    <div class="p-5 col-12 col-lg-6">
-      <div class="htc__main-haeding fs-2">{{ section.settings.heading }}</div>
+    <div class="htc-content-wrapper col-12 col-lg-6">
+      <div class="htc__main-heading fs-2">{{ section.settings.heading }}</div>
       <hr class="htc__hr-line">
-      <div class="col-12 d-flex flex-column flex-md-row">
-        <div class="col-md-4 text-center">
-          <div class="pt-3">
+      <div class="col-12 d-flex flex-row overflow-auto">
+        <div class="col-5 col-md-4 text-center">
+          <div class="htc-svg-size pt-3">
             <svg
+              class="htu-svg-icon1"
               width="62"
               height="82"
               viewBox="0 0 62 82"
@@ -27,14 +28,15 @@
           <div class="htc__step my-3">
             STEP 1
           </div>
-          <div class="htc__step-text  px-3">
+          <div class="htc__step-text mb-3 px-3">
             Take one sachet of
             vegan protein powder
           </div>
         </div>
-        <div class="col-md-4 text-center htc__step-center">
+        <div class="col-5 col-md-4 text-center htc__step-center">
           <div class="pt-3">
             <svg
+              class="htu-svg-icon2"
               width="109"
               height="91"
               viewBox="0 0 109 91"
@@ -48,14 +50,15 @@
           <div class="htc__step my-3">
             STEP 2
           </div>
-          <div class="htc__step-text px-3">
+          <div class="htc__step-text mb-3 px-3">
             Add it to 300ml of
             water in a shaker
           </div>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-5 col-md-4 text-center">
           <div class="pt-3">
             <svg
+              class="htu-svg-icon3"
               width="74"
               height="93"
               viewBox="0 0 74 93"
@@ -72,7 +75,7 @@
           <div class="htc__step my-3">
             STEP 3
           </div>
-          <div class="htc__step-text px-3">
+          <div class="htc__step-text  mb-3  px-3">
             Shake it until you have
             a uniform consistency
           </div>
@@ -82,7 +85,7 @@
         Can be added to plant based milks & Smoothie bowls.
       </div>
       <div>
-        <div class="htc__main-haeding fs-2">{{ section.settings.footer_heading }}</div>
+        <div class="htc__main-heading fs-2">{{ section.settings.footer_heading }}</div>
         <hr class="htc__hr-line">
         <div class="htc__content">
           {{ section.settings.description }}
@@ -100,7 +103,7 @@
     background-color: {{ section.settings.bg_color}}
     ;
   }
-  .htc__main-haeding {
+  .htc__main-heading {
     font-family: 'Sharp Grotesk';
     font-style: normal;
     font-weight: 500;
@@ -132,13 +135,12 @@
     text-align: center;
     color: #393939;
   }
-  @media(min-width:768px) {
-    .htc__step-center {
-      border-left: 1.36112px solid #BBBBBB;
-      border-right: 1.36112px solid #BBBBBB;
+  .htc__step-center {
+    border-left: 1.36112px solid #BBBBBB;
+    border-right: 1.36112px solid #BBBBBB;
 
-    }
   }
+
   .htc__middle-text {
     font-family: 'Inter';
     font-style: normal;
@@ -158,9 +160,27 @@
     font-size: 15px;
     line-height: 147%;
     /* or 22px */
-
-
     color: #393939;
+  }
+
+  @media(max-width:600px) {
+    .htc-content-wrapper {
+      padding: 20px 0;
+    }
+    .htu-svg-icon1 {
+      width: 50px !important;
+    }
+    .htu-svg-icon2 {
+      width: 86.62px !important;
+    }
+    .htu-svg-icon3 {
+      width: 58.42px !important;
+    }
+  }
+  @media(min-width:600px) {
+    .htc-content-wrapper {
+      padding: 20px 30px;
+    }
   }
 </style>
 
