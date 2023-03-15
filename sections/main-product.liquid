@@ -5,15 +5,33 @@
 {{'marmeto-product.css' | asset_url |stylesheet_tag}}
 
   <div class="product main-product-section product-flex">
-      <div class="product-flexitem product-flexitem-images">
-       <div class="product__media-list">
-       {%- for image in product.images -%}
-           <div class="product__media-item">
-            <img class="img-fluid" src="{{image | img_url: 'master'}}" alt="{{product.title}}">
-           </div>
-         {%- endfor -%}
-       </div>
-     </div>
+    <div class="product-flexitem product-flexitem-images">
+      <div
+        class="product__media-list"
+      >
+        {%- for media in product.media -%}
+          <div class="product__media-item pb-0">
+            {% render 'product-media', media: media, class: 'media media--portrait' %}
+          </div>
+        {%- endfor -%}
+      </div>
+      <div
+        class="image__viewer d-md-none px-4"
+        data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false,"asNavFor": ".product__media-list", "prevNextButtons": true, "imagesLoaded": true,"groupCells": true }'
+      >
+        {%- for media in product.media -%}
+          <div
+            style="
+              height: 93px;
+              width: 94px;
+              margin-right:10px;
+            "
+          >
+            {% render 'product-media', media: media, class: 'media media--portrait' %}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
      
      <div class="product-flexitem product-flexitem-info">
        <div id="product-info-{{ section.id }}" class="product-info">
@@ -35,6 +53,19 @@
                 <div class="product__info" {{ block.shopify_attributes }}>
                   {{ product.metafields.custom.product_info}}
                 </div>
+                {%- when 'reviews-block' -%}
+                  <div class="product__reviews-block" {{ block.shopify_attributes }}>
+                    <div class="d-flex justify-content-between">
+                    <div>
+                      <span class="me-1">{{block.settings.reviews-svg}}</span>
+                      <span>{{block.settings.reviews-count}}</span>
+                    </div>
+                    <div>
+                      <span class="me-1">{{block.settings.video-svg}}</span><span><a href="{{block.settings.video-link}}">{{block.settings.video-text}}</a></span>
+                    </div>
+                    </div>
+                  </div>
+
            {%- when 'price' -%}
              <div id="price-{{ section.id }}" class="product__prices" {{ block.shopify_attributes }}>
                <span class="price__regular fs-5 {% if current_variant.compare_at_price > current_variant.price %}on-sale{% endif %}">{{ current_variant.price |money_with_currency }}</span>
@@ -156,7 +187,29 @@
 
 
 <style>
-  
+  @media(max-width:767px){
+   .main-product-section .flickity-page-dots{
+    display: none;
+    }
+  }
+  .product__reviews-block{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11.4729px;
+line-height: 18px;
+letter-spacing: -0.02em;
+color: #181818;
+  }
+  .product__reviews-block span a{
+text-decoration: none;
+color: #181818;
+  }
+  @media (min-width:767px){
+    .product__reviews-block{
+      font-size: 15px;
+    }
+  }
   .header_nav{
   position:static;
   background-color: #017149;
@@ -235,6 +288,31 @@ color: #5E5E5E;
         "type": "product_info",
         "name": "Product Info",
         "limit": 1
+      }, {
+        "type": "reviews-block",
+        "name": "Reviews Block",
+        "limit": 1,
+        "settings": [{
+          "type":"liquid",
+          "id":"reviews-svg",
+          "label": "Reviews SVG"
+        },{
+          "type":"text",
+          "id":"reviews-count",
+          "label": "Reviews Count"
+        },{
+          "type":"liquid",
+          "id":"video-svg",
+          "label": "Video SVG"
+        },{
+          "type":"text",
+          "id":"video-text",
+          "label": "Text"
+        },{
+          "type":"url",
+          "id":"video-link",
+          "label": "Link"
+        }]
       },
 	  {
         "type": "price",

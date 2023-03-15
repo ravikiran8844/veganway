@@ -1,7 +1,7 @@
 {{ 'slider-section.css' | asset_url | stylesheet_tag }}
 
 {% if section.blocks.size > 0 %}
-  <div class="slider--{{ section.id}} fluid-container mb-0">
+  <div class="slider--{{ section.id}} fluid-container mb-0 d-none d-md-block">
     <div class="row g-0">
       <div class="page-width col-12 slider__wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true,"prevNextButtons": false,"autoPlay": false }'>
         {% for block in section.blocks %}

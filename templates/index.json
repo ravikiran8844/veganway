@@ -67,6 +67,76 @@
         "button_link": ""
       }
     },
+    "864fac76-ea14-4fff-8172-6cc78f947233": {
+      "type": "slide-alt-mobile",
+      "blocks": {
+        "1e071ab6-5fe9-4a24-aa74-ac71e0d1be5d": {
+          "type": "sam",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1571.png",
+            "title": "Nutritionally complete",
+            "text": "Balanced in protein, fibre, cards, vitamins & minerals"
+          }
+        },
+        "ee49a47f-e9dd-41fa-a887-9ee71d474115": {
+          "type": "sam",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1572.png",
+            "title": "Super tasty",
+            "text": "Fresh flavours created by chef carl clark"
+          }
+        },
+        "bb47b827-e9e3-4e09-bc58-f51ae302c69a": {
+          "type": "sam",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1573_1.png",
+            "title": "Plant based",
+            "text": "We are 100% vegan but you don’t have to be"
+          }
+        },
+        "8f46848c-0659-4344-b946-b80263f4a9c1": {
+          "type": "sam",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1574.png",
+            "title": "super convenient",
+            "text": "Just put the kattle on and add boiling water"
+          }
+        },
+        "e37f83ee-267c-43d7-87d6-131895982699": {
+          "type": "sam",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1575_1.png",
+            "title": "Healthy planet",
+            "text": "Sustainable ingredients & recyclable packaging"
+          }
+        },
+        "4bb85431-8e61-4adb-b851-5efb6eea1503": {
+          "type": "sam",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1576.png",
+            "title": "Good value",
+            "text": "Complete nutrition for just 3.75 per meal"
+          }
+        }
+      },
+      "block_order": [
+        "1e071ab6-5fe9-4a24-aa74-ac71e0d1be5d",
+        "ee49a47f-e9dd-41fa-a887-9ee71d474115",
+        "bb47b827-e9e3-4e09-bc58-f51ae302c69a",
+        "8f46848c-0659-4344-b946-b80263f4a9c1",
+        "e37f83ee-267c-43d7-87d6-131895982699",
+        "4bb85431-8e61-4adb-b851-5efb6eea1503"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png",
+        "caption": "41,696 Five Star Reviews",
+        "heading": "Everything You Need Is",
+        "heading_highlight": "Right Here!",
+        "subheading": "20+ Plant-Based Superfoods & Is Rich in Nutrients",
+        "btn_text": "Try Veganway",
+        "btn_link": ""
+      }
+    },
     "79764431-e8b0-4f42-bbff-8410ae5e374e": {
       "type": "slider-section",
       "blocks": {
@@ -638,6 +708,7 @@
   "order": [
     "main",
     "f43aec42-f575-41c4-91ef-3fbbe296439f",
+    "864fac76-ea14-4fff-8172-6cc78f947233",
     "79764431-e8b0-4f42-bbff-8410ae5e374e",
     "db31dc5e-3862-4a46-9dcb-c586245513f4",
     "d4b5b96c-5658-4ada-a12b-90b4eddf5026",
