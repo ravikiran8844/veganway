@@ -17,15 +17,7 @@
     color: #017149;
     max-width: 634px;
   }
-  .rated-section__subheading {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 128%;
-    color: #515151;
-
-  }
+  
   .rated-section__btn {
     background: #017149;
     border-radius: 28.5714px;
@@ -46,3 +38,11 @@
 
 
   
+  .rated-section__subheading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 128%;
+    color: #515151;
+  }

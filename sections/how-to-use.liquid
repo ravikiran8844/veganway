@@ -1,14 +1,14 @@
-<div class="py-5 htc-{{ section.id }} fluid-container">
-  <div class="row page-width htc-section g-0">
+<div class="py-5 px-4 htc-{{ section.id }} fluid-container">
+  <div class="row py-5 page-width htc-section g-0">
     <div class="col-12 col-lg-6">
       <div class="px-2">
         {% render 'image', class: 'media media--portrait', mobileSrc: section.settings.image, desktopSrc: section.settings.image %}
       </div>
     </div>
-    <div class="htc-content-wrapper col-12 col-lg-6">
+    <div class="htc-content-wrapper col-12 col-lg-6 px-3">
       <div class="htc__main-heading fs-2">{{ section.settings.heading }}</div>
       <hr class="htc__hr-line">
-      <div class="col-12 d-flex flex-row overflow-auto">
+      <div class="how-to-use__items-wrapper col-12 d-flex flex-row overflow-auto">
         <div class="col-5 col-md-4 text-center">
           <div class="htc-svg-size pt-3">
             <svg
@@ -96,6 +96,17 @@
 </div>
 
 <style>
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .how-to-use__items-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .how-to-use__items-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
   .htc-section {
     margin: 0 auto;
   }
@@ -185,45 +196,44 @@
 </style>
 
 {% schema %}
-{
-  "name": "How to use",
-  "class": "section",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background Color",
-      "default": "#F5F5F5"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "How to use"
-    },
-    {
-      "type": "text",
-      "id": "footer_heading",
-      "label": "Heading",
-      "default": "When to use"
-    },
-    {
-      "type": "text",
-      "id": "description",
-      "label": "Description",
-      "default": "text"
-    }
-  ],
-  "presets": [
-    {
-      "name": "How to use"
-    }
-  ]
-}
+  {
+    "name": "How to use",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#F5F5F5"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "How to use"
+      },
+      {
+        "type": "text",
+        "id": "footer_heading",
+        "label": "Heading",
+        "default": "When to use"
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "How to use"
+      }
+    ]
+  }
 {% endschema %}

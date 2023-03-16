@@ -1,8 +1,7 @@
 {% if section.blocks.size > 0 %}
   <div class="fluid-container logo-section__wrapper--{{ section.id }}">
     <div class="row g-0">
-      <div
-        class="col-12 page-width logo-section__item d-flex justify-content-between align-content-center m-auto p-5">
+      <div class="col-12 page-width logo-section__item d-flex justify-content-between align-content-center m-auto p-5">
         {% for block in section.blocks %}
           <div class="col m-3 text-center">
             {% render 'image', class: 'p-2', mobileSrc: block.settings.image, desktopSrc: block.settings.image %}
@@ -20,6 +19,16 @@
   .logo-section__item {
     overflow: auto;
   }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .logo-section__item::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .logo-section__item {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
   .logo-section__wrapper--{{ section.id }}{
     background-color: {{ section.settings.bg_color }}
     ;
@@ -35,42 +44,41 @@
 </style>
 
 {% schema %}
-{
-  "name": "Logo with Text",
-  "class": "section",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background Color",
-      "default": "#282828"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "Logo Block",
-      "type": "logo-block",
-      "limit": 6,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "label": "Text",
-          "default": "Text",
-          "id": "text"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Logo with Text"
-    }
-  ]
-}
+  {
+    "name": "Logo with Text",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#282828"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Logo Block",
+        "type": "logo-block",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "label": "Text",
+            "default": "Text",
+            "id": "text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Logo with Text"
+      }
+    ]
+  }
 {% endschema %}

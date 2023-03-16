@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>
@@ -23,9 +23,13 @@
     {{ 'application.css' | asset_url | stylesheet_tag }}
     {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
     {{ 'flickity.css' | asset_url | stylesheet_tag }}
+
+    {% comment %}
     {{ 'owl.carousel.min.css' | asset_url | stylesheet_tag }}
-    <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
     <script src="{{ 'owl.carousel.min.js' | asset_url }}" defer></script>
+    {% endcomment %}
+
+    <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
     <script src="{{ 'application.js' | asset_url }}" defer></script>
     <script src="{{ 'bootstrap.min.js' | asset_url }}" defer></script>
     <script src="{{ 'flickity.js' | asset_url }}" defer></script>

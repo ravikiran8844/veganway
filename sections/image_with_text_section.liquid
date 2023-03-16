@@ -1,6 +1,6 @@
 {{ 'image_with_text_section.css' | asset_url | stylesheet_tag }}
 
-<div class="wrapper--{{ section.id }} fluid-container p-5 pb-0">
+<div class="wrapper--{{ section.id }} fluid-container pt-5 px-2 pb-0">
   <div class="row g-0">
     <div class="col-12 main-heading-wrapper my-4">
       <h2 class="fs-2 iwt__main-heading iiwt__section-main-heading heading-{{ section.id }}">{{ section.settings.heading }}</h2>
@@ -103,68 +103,63 @@
 
 
 {% schema %}
-{
-  "name": "Image with Text",
-  "class": "section",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background Color",
-      "default": "#DAE7D4"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Main Heading",
-      "default": "Heading"
-    },
-    {
-      "type": "color",
-      "id": "heading_color",
-      "label": "Heading Color",
-      "default": "#017149"
-    },
-    {
-      "type": "text",
-      "id": "line1text",
-      "label": "Line 1 text",
-      "default": "Line 1 text"
-    },
-    {
-      "type": "text",
-      "id": "line2text",
-      "label": "Line 2 text",
-      "default": "Line 2 text"
-    },
-    {
-      "type": "text",
-      "id": "line3text",
-      "label": "Line 3 text",
-      "default": "Line 3 text"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text Color",
-      "default": "#2C2B2B"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_logo",
-      "label": "Logos Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "main_image",
-      "label": "Main Image"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Image with Text"
-    }
-  ]
-}
+  {
+    "name": "Image with Text",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#DAE7D4"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Main Heading",
+        "default": "Heading"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading Color",
+        "default": "#017149"
+      },
+      {
+        "type": "text",
+        "id": "line1text",
+        "label": "Line 1 text",
+        "default": "Line 1 text"
+      }, {
+        "type": "text",
+        "id": "line2text",
+        "label": "Line 2 text",
+        "default": "Line 2 text"
+      }, {
+        "type": "text",
+        "id": "line3text",
+        "label": "Line 3 text",
+        "default": "Line 3 text"
+      }, {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#2C2B2B"
+      }, {
+        "type": "image_picker",
+        "id": "image_logo",
+        "label": "Logos Image"
+      }, {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Main Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with Text"
+      }
+    ]
+  }
 {% endschema %}

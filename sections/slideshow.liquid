@@ -1,0 +1,229 @@
+<script src="{{ 'flickity.js' | asset_url }}" defer></script>
+
+{% capture slider_options %}
+  { 
+  "cellAlign": "left", 
+                                                                                "contain": true, 
+                                                                                "pageDots": true,
+                                                                                "autoPlay": false,
+                                                                                "prevNextButtons": false
+                                                                              }{% endcapture %}
+
+<div class="slideshow section-{{ section.id }}-padding">
+  <div class="slideshow__slider page-width" {% if section.blocks.size > 1 %}data-flickity='{{ slider_options }}'{% endif %}>
+    {% for block in section.blocks %}
+      <div class="slideshow__slideritem">
+        <div class="slideshow__slideritem-wrap">
+          {% if block.settings.image != blank %}
+            {% assign mobile_image = block.settings.mobile_image | default: block.settings.image %}
+            {% render 'image', class: 'media media--slideshow' mobileSrc: mobile_image, desktopSrc: block.settings.image %}
+          {% endif %}
+
+          <div class="slideshow__content d-flex {{ block.settings.content_position }}">
+            <div class="slideshow__content-wrapper {{ block.settings.text_alignment }}">
+              {% if block.settings.caption != blank %}
+                <div class="slideshow__caption fs-4 caption-{{ block.id }}">
+                  {{ block.settings.caption }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.heading != blank %}
+                <div class="slideshow__heading fs-3 mb-3 heading-{{ block.id }}">
+                  {{ block.settings.heading }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.paragraph != blank %}
+                <p class="slideshow__paragraph mb-4 paragraph-{{ block.id }}">
+                  {{ block.settings.paragraph }}
+                </p>
+              {% endif %}
+
+              {% if block.settings.button_text != blank %}
+                <div class="slideshow__buttons">
+                  <a class="btn px-4 slideshow__btn" href="{{ block.settings.button_link }}">
+                    {{ block.settings.button_text }}
+                  </a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+
+  .slideshow__caption {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 128%;
+    color: #FFFFFF;
+  }
+  .slideshow__heading {
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 128%;
+    color: #FFFFFF;
+  }
+  .slideshow__paragraph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 128%;
+    color: #FFFFFF;
+  }
+
+  .slideshow__btn {
+    background: #FEA500;
+    border-radius: 30px;
+    font-family: 'Sharp Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.435404px;
+
+    color: #000000;
+  }
+
+  .slideshow__content {
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+  }
+
+
+
+  .slideshow__slideritem {
+    width: 100%;
+  }
+
+  .slideshow__slideritem .media::after {
+    content: '';
+    background: rgb(0 0 0 / 30%);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slideshow__slideritem-wrap {
+    position: relative;
+  }
+
+  .slideshow__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+  }
+
+
+  .slideshow__content-wrapper {
+    max-width: 500px;
+    padding: 0 30px;
+  }
+
+  .media--slideshow {
+    padding-bottom: 150%;
+  }
+
+  @media(min-width: 750px) {
+    .media--slideshow {
+      padding-bottom: 56.25%;
+    }
+    .slideshow__content {
+      justify-content: flex-end;
+      align-items: center;
+      text-align: left;
+    }
+    .slideshow__content-wrapper {
+      max-width: 50%;
+      padding: 0 30px;
+    }
+
+  }
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "Slide show",
+    "tag": "section",
+    "class": "section",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "slide",
+        "type": "slide-item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Desktop Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "Mobile Image"
+          },
+          {
+            "type": "text",
+            "id": "caption",
+            "label": "Caption",
+            "default": "Caption"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Heading"
+          }, {
+            "type": "text",
+            "id": "paragraph",
+            "label": "paragraph",
+            "default": "paragraph"
+          }, {
+            "type": "color",
+            "id": "button_bgcolor",
+            "label": "Button Background Color",
+            "default": "#FEA500"
+          }, {
+            "type": "color",
+            "id": "button_textcolor",
+            "label": "Button Text Color",
+            "default": "#000000"
+          }, {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Shop Now"
+          }, {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slide show"
+      }
+    ]
+  }
+{% endschema %}

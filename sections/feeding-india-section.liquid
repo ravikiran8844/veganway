@@ -1,5 +1,5 @@
 <div class="fluid-container feeding-india">
-  <div class="row g-0 pt-2 pb-5">
+  <div class="row g-0 py-5">
     <div class="col-12 d-flex">
       <div class="d-none d-md-block  col-md-3">
         <img class="fi-top-images" src="{{ section.settings.left-image | image_url: width: 240, height: 240 }}">
@@ -48,47 +48,45 @@
 </style>
 
 {% schema %}
-{
-  "name": "Feeding India",
-  "class": "section",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "VEGAN WAY X Feeding India"
-    },
-    {
-      "type": "text",
-      "id": "content",
-      "label": "Text"
-    },
-    {
-      "type": "image_picker",
-      "id": "left-image",
-      "label": "Top Left Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "right-image",
-      "label": "Top Right Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "desktop-image",
-      "label": "Image"
-    },
-    {
-      "type": "image_picker",
-      "id": "mobile-image",
-      "label": "Mobile Image"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Feeding India"
-    }
-  ]
-}
+  {
+    "name": "Feeding India",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "VEGAN WAY X Feeding India"
+      },
+      {
+        "type": "text",
+        "id": "content",
+        "label": "Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "left-image",
+        "label": "Top Left Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "right-image",
+        "label": "Top Right Image"
+      }, {
+        "type": "image_picker",
+        "id": "desktop-image",
+        "label": "Image"
+      }, {
+        "type": "image_picker",
+        "id": "mobile-image",
+        "label": "Mobile Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Feeding India"
+      }
+    ]
+  }
 {% endschema %}

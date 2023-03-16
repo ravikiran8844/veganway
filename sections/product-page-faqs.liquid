@@ -1,3 +1,5 @@
+<script src="{{ 'product-page-faqs.js' | asset_url }}" defer></script>
+
 {% if product.metafields.custom.faq_questions.value.size > 0 %}
   <div class="fluid-container faq-section faq--{{ section.id }}">
     <div class="col-12">
@@ -114,81 +116,46 @@
 </style>
 
 
-<script>
-  $(document).ready(function() {
-
-    var accordionParentClass = '.eachFaqItem';
-    var accordionQuestionClass = '.eachFaqItem .title';
-    var accordionContentClass = '.accordion-content';
-
-    $(accordionParentClass).each(function() {
-      $(this).addClass('close');
-      $(this).find(accordionContentClass).hide();
-    });
-
-    $(accordionQuestionClass).click(function() {
-      var faqClass = $(this).closest(accordionParentClass).attr('class');
-      console.log(faqClass);
-
-      if (faqClass.indexOf('close') != -1) { // WHEN CLOSED
-        $(accordionParentClass).find(accordionContentClass).slideUp('slow'); // CLOSE ALL
-        $(accordionParentClass).addClass('close').removeClass('open'); // set all faq as closed
-
-        $(this).closest(accordionParentClass).removeClass('close');
-        $(this).closest(accordionParentClass).addClass('open');
-        $(this).closest(accordionParentClass).find(accordionContentClass).slideDown('slow');
-
-      } else {
-        $(this).closest(accordionParentClass).addClass('close');
-        $(this).closest(accordionParentClass).removeClass('open');
-        $(this).closest(accordionParentClass).find(accordionContentClass).slideUp('slow');
-      }
-
-    });
-
-  });
-</script>
 
 {% schema %}
-{
-  "name": "Product Page FAQ",
-  "class": "section",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background color",
-      "default": "#E5E5E5"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "FAQ"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text color",
-      "default": "#181818"
-    },
-    {
-      "type": "url",
-      "id": "read_more_link",
-      "label": "Link"
-    },
-    {
-      "type": "color",
-      "id": "link_color",
-      "label": "Link color",
-      "default": "#017149"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Product Page FAQ"
-    }
-  ]
-}
+  {
+    "name": "Product Page FAQ",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color",
+        "default": "#E5E5E5"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "FAQ"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text color",
+        "default": "#181818"
+      },
+      {
+        "type": "url",
+        "id": "read_more_link",
+        "label": "Link"
+      }, {
+        "type": "color",
+        "id": "link_color",
+        "label": "Link color",
+        "default": "#017149"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Page FAQ"
+      }
+    ]
+  }
 {% endschema %}

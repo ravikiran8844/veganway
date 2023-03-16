@@ -4,7 +4,8 @@
 <script src="{{ 'marmeto-product.js' | asset_url }}" defer="defer"></script>
 {{ 'marmeto-product.css' | asset_url | stylesheet_tag }}
 
-  <div class="product main-product-section product-flex">
+  <div class="fluid-container">
+    <div class="product page-width main-product-section product-flex">
     <div class="product-flexitem product-flexitem-images">
       <div
         class="product__media-list"
@@ -184,9 +185,17 @@
        </div>
      </div>
    </div>
+  </div>
 
 
 <style>
+  .main-product-section{
+    background-color: #F5F5F5;
+    margin: 0;
+  }
+  .product__quantity .quantity__input{
+    background-color: transparent;
+  }
   @media(max-width:767px){
    .main-product-section .flickity-page-dots{
     display: none;
@@ -211,8 +220,8 @@ color: #181818;
     }
   }
   .header_nav{
-  position:static;
-  background-color: #017149;
+    border-bottom: 1px solid #E1E1E1;
+    background-color: #F5F5F5;
 }
 .product__description ul li b{
   font-weight: 500;
@@ -256,6 +265,7 @@ font-size: 15px;
 line-height: 18px;
 color: #5E5E5E;
 }
+
 </style>
 
 
@@ -263,6 +273,7 @@ color: #5E5E5E;
 {
   "name": "Product Information",
   "tag": "section",
+  "class": "section",
   "blocks": [
     {
       "type": "text",

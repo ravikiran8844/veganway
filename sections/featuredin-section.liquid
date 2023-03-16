@@ -27,6 +27,20 @@
   </div>
 {% endif %}
 
+
+<style>
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .featured-item__wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .featured-item__wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+</style>
+
 {% style %}
   .featured-section-{{ section.id }}{
     background-image: url('{{ section.settings.bg_image | image_url: width: 480, height: 480 }}');
@@ -48,51 +62,48 @@
 {% endstyle %}
 
 {% schema %}
-{
-  "name": "Featuredin Section",
-  "class": "section",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "bg_image",
-      "label": "Background Image"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Heading"
-    },
-    {
-      "type": "color",
-      "id": "color",
-      "label": "Text Color"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "Featured item",
-      "type": "item-block",
-      "limit": 4,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Text"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Featuredin Section"
-    }
-  ]
-}
+  {
+    "name": "Featuredin Section",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Background Image"
+      }, {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Heading"
+      }, {
+        "type": "color",
+        "id": "color",
+        "label": "Text Color"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Featured item",
+        "type": "item-block",
+        "limit": 4,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featuredin Section"
+      }
+    ]
+  }
 {% endschema %}

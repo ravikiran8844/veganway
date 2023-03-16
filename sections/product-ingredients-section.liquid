@@ -1,5 +1,5 @@
-<div class="fluid-container px-4">
-  <div class="row g-0 page-width m-auto mt-5 mb-2">
+<div class="fluid-container pis-container px-4">
+  <div class="row g-0 page-width m-auto pt-5 pb-2">
     <div class="col-12 text-center mb-5">
       <div class="fs-2 pis-heading m-auto">
         {{ section.settings.heading }}
@@ -25,9 +25,23 @@
 
 
 <style>
+  .pis-container {
+    background-color: {{ section.settings.bg_color}}
+    ;
+  }
   .pis_wrapper {
     display: flex;
     overflow: auto;
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .pis_wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .pis_wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
   .pis-heading {
     font-family: 'Sharp Grotesk';
@@ -75,41 +89,45 @@
 </style>
 
 {% schema %}
-{
-  "name": "Product Ingredients",
-  "class": "section",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Vegan Way is made with over 20+ super foods & Nutrients"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "Ingredient",
-      "type": "ingredient-block",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Text",
-          "default": "Text"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Product Ingredients"
-    }
-  ]
-}
+  {
+    "name": "Product Ingredients",
+    "class": "section",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Vegan Way is made with over 20+ super foods & Nutrients"
+      }, {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#E5E5E5"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Ingredient",
+        "type": "ingredient-block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Ingredients"
+      }
+    ]
+  }
 {% endschema %}
