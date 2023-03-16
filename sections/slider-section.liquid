@@ -1,12 +1,12 @@
 {{ 'slider-section.css' | asset_url | stylesheet_tag }}
 
 {% if section.blocks.size > 0 %}
-  <div class="slider--{{ section.id}} fluid-container mb-0 d-none d-md-block">
+  <div class="slider--{{ section.id }} fluid-container mb-0 d-none d-md-block">
     <div class="row g-0">
       <div class="page-width col-12 slider__wrapper" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": true,"prevNextButtons": false,"autoPlay": false }'>
         {% for block in section.blocks %}
           {% if block.type == "slide-block" %}
-            <div class="col-12 d-flex flex-column flex-md-row p-5 justify-content-center align-items-center slide--{{block.id}}">
+            <div class="col-12 d-flex flex-column flex-md-row p-5 justify-content-center align-items-center slide--{{ block.id }}">
               <div class="col-12 col-md-4 col-lg-4 col-xl-4">
                 <p>
                   <span>
@@ -145,150 +145,166 @@
 
 
 {% style %}
-  .slider--{{ section.id}}{
-    background-image: url('{{section.settings.bg_image | img_url: 'large'}}');
+  .slider--{{ section.id }}{
+    background-image: url('{{ section.settings.bg_image | image_url: width: 480, height: 480 }}');
     background-size: cover;
   }
 {% endstyle %}
 
 {% schema %}
-  {
-    "name": "Slider",
-    "class": "section",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "bg_image",
-        "label": "Background Image"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Slide",
-        "type": "slide-block",
-        "settings": [
-          {
-            "type": "text",
-            "id": "caption",
-            "label": "Caption",
-            "default": "41,696 Five Star Reviews"
-          },
-          {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading",
-            "default": "Everything You Need"
-          },
-          {
-            "type": "text",
-            "id": "heading_highlight",
-            "label": "Highlight Text",
-            "default": "Is Right Here!"
-          },
-          {
-            "type": "text",
-            "id": "subheading",
-            "label": "Subheading",
-            "default": "20+ Plant-Based Superfoods & Is Rich in Nutrients"
-          }, {
-            "type": "text",
-            "id": "btn_text",
-            "label": "Button Text",
-            "default": "Try Veganway"
-          }, {
-            "type": "url",
-            "id": "btn_link",
-            "label": "Button Link"
-          }, {
-            "type": "image_picker",
-            "id": "slide_image",
-            "label": "Image"
-          }, {
-            "type": "text",
-            "id": "list-item1",
-            "label": "List Item 1",
-            "default": "List Item"
-          }, {
-            "type": "text",
-            "id": "list-item2",
-            "label": "List Item 2",
-            "default": "List Item"
-          }, {
-            "type": "text",
-            "id": "list-item3",
-            "label": "List Item 3",
-            "default": "List Item"
-          }, {
-            "type": "text",
-            "id": "list-item4",
-            "label": "List Item 4",
-            "default": "List Item"
-          }, {
-            "type": "text",
-            "id": "list-item5",
-            "label": "List Item 5",
-            "default": "List Item"
-          }, {
-            "type": "text",
-            "id": "list-item6",
-            "label": "List Item 6",
-            "default": "List Item"
-          }, {
-            "type": "text",
-            "id": "list-item7",
-            "label": "List Item 7",
-            "default": "List Item"
-          }, {
-            "type": "text",
-            "id": "list-item8",
-            "label": "List Item 8",
-            "default": "List Item"
-          }, {
-            "type": "text",
-            "id": "list-item9",
-            "label": "List Item 9",
-            "default": "List Item"
-          }, {
-            "type": "text",
-            "id": "list-item10",
-            "label": "List Item 10",
-            "default": "List Item"
-
-          }, {
-            "type": "text",
-            "id": "title",
-            "label": "Bold Title",
-            "default": "Title"
-          }
-        ]
-      }, {
-        "name": "Text Block",
-        "type": "text-block",
-        "limit": 5,
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image1",
-            "label": "Image"
-          }, {
-            "type": "text",
-            "id": "title1",
-            "label": "Title",
-            "default": "Title"
-          }, {
-            "type": "text",
-            "id": "text1",
-            "label": "Text",
-            "default": "Text"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Slider"
-      }
-    ]
-  }
+{
+  "name": "Slider",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Slide",
+      "type": "slide-block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption",
+          "default": "41,696 Five Star Reviews"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Everything You Need"
+        },
+        {
+          "type": "text",
+          "id": "heading_highlight",
+          "label": "Highlight Text",
+          "default": "Is Right Here!"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "20+ Plant-Based Superfoods & Is Rich in Nutrients"
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text",
+          "default": "Try Veganway"
+        },
+        {
+          "type": "url",
+          "id": "btn_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "slide_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "list-item1",
+          "label": "List Item 1",
+          "default": "List Item"
+        },
+        {
+          "type": "text",
+          "id": "list-item2",
+          "label": "List Item 2",
+          "default": "List Item"
+        },
+        {
+          "type": "text",
+          "id": "list-item3",
+          "label": "List Item 3",
+          "default": "List Item"
+        },
+        {
+          "type": "text",
+          "id": "list-item4",
+          "label": "List Item 4",
+          "default": "List Item"
+        },
+        {
+          "type": "text",
+          "id": "list-item5",
+          "label": "List Item 5",
+          "default": "List Item"
+        },
+        {
+          "type": "text",
+          "id": "list-item6",
+          "label": "List Item 6",
+          "default": "List Item"
+        },
+        {
+          "type": "text",
+          "id": "list-item7",
+          "label": "List Item 7",
+          "default": "List Item"
+        },
+        {
+          "type": "text",
+          "id": "list-item8",
+          "label": "List Item 8",
+          "default": "List Item"
+        },
+        {
+          "type": "text",
+          "id": "list-item9",
+          "label": "List Item 9",
+          "default": "List Item"
+        },
+        {
+          "type": "text",
+          "id": "list-item10",
+          "label": "List Item 10",
+          "default": "List Item"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Bold Title",
+          "default": "Title"
+        }
+      ]
+    },
+    {
+      "name": "Text Block",
+      "type": "text-block",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title1",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "text",
+          "id": "text1",
+          "label": "Text",
+          "default": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider"
+    }
+  ]
+}
 {% endschema %}

@@ -1,10 +1,10 @@
 {{ 'footer.css' | asset_url | stylesheet_tag }}
 
-<div class="footer--{{section.id}} d-flex justify-content-center fluid-container py-3 px-4">
+<div class="footer--{{ section.id }} d-flex justify-content-center fluid-container py-3 px-4">
   <div class="page-width row g-0 p-2">
     <div class="col-12 col-md-6 col-lg-4 p-2 footer__line px-3">
       <div class="d-flex mb-3">
-        <div><img src="{{section.settings.logo | img_url}}" alt="Footer Logo"></div>
+        <div><img src="{{ section.settings.logo | image_url: width: 100, height: 100 }}" alt="Footer Logo"></div>
         <div class="ms-3">
           <div class="fs-2 footer__main-heading">{{ section.settings.heading }}</div>
           <div class="footer__main-description">{{ section.settings.description }}</div>
@@ -57,7 +57,7 @@
         <div class="col-6 mb-3">
           <div class="d-flex">
             <span class="me-3">
-              <a href="{{section.settings.fabebook_url}}">
+              <a href="{{ section.settings.fabebook_url }}">
                 <svg
                   width="13"
                   height="27"
@@ -69,7 +69,7 @@
               </a>
             </span>
             <span class="me-3">
-              <a href="{{section.settings.instagram_url}}">
+              <a href="{{ section.settings.instagram_url }}">
                 <svg
                   width="27"
                   height="26"
@@ -85,7 +85,7 @@
 
             </span>
             <span class="me-3">
-              <a href="{{section.settings.youtube_url}}">
+              <a href="{{ section.settings.youtube_url }}">
                 <svg
                   width="30"
                   height="21"
@@ -99,7 +99,7 @@
 
             </span>
             <span class="me-3">
-              <a href="{{section.settings.location_url}}">
+              <a href="{{ section.settings.location_url }}">
                 <svg
                   width="20"
                   height="24"
@@ -145,10 +145,10 @@
 </div>
 
 <style>
-  .footer--{{ section.id}}{
-    background-color: {{ section.settings.bg_color}}
+  .footer--{{ section.id }}{
+    background-color: {{ section.settings.bg_color }}
     ;
-    color: {{ section.settings.text_color}}
+    color: {{ section.settings.text_color }}
     ;
     font-family: 'Sharp Grotesk';
   }
@@ -165,74 +165,80 @@
 
 
 {% schema %}
-  {
-    "name": "Footer",
-    "class": "section",
-    "tag": "footer",
-    "settings": [
-      {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background Color",
-        "default": "#181818"
-      },
-      {
-        "type": "color",
-        "id": "text_color",
-        "label": "Text Color",
-        "default": "#FFFFFF"
-      },
-      {
-        "type": "image_picker",
-        "id": "logo",
-        "label": "Logo"
-      },
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "Get 10% off!"
-      }, {
-        "type": "text",
-        "id": "description",
-        "label": "Description",
-        "default": "Sign up to our newsletter - the place for wild news, invitations and good karma treats!"
-      }, {
-        "type": "url",
-        "id": "fabebook_url",
-        "label": "Facebook Url"
-      }, {
-        "type": "url",
-        "id": "instagram_url",
-        "label": "Instagram Url"
-      }, {
-        "type": "url",
-        "id": "youtube_url",
-        "label": "Youtube Url"
-      }, {
-        "type": "url",
-        "id": "location_url",
-        "label": "Location Url"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Linklist",
-        "type": "list-block",
-        "limit": 3,
-        "settings": [
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Title",
-            "default": "Title"
-          }, {
-            "type": "link_list",
-            "id": "list",
-            "label": "List"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Footer",
+  "class": "section",
+  "tag": "footer",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#181818"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Get 10% off!"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "Sign up to our newsletter - the place for wild news, invitations and good karma treats!"
+    },
+    {
+      "type": "url",
+      "id": "fabebook_url",
+      "label": "Facebook Url"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram Url"
+    },
+    {
+      "type": "url",
+      "id": "youtube_url",
+      "label": "Youtube Url"
+    },
+    {
+      "type": "url",
+      "id": "location_url",
+      "label": "Location Url"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Linklist",
+      "type": "list-block",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "link_list",
+          "id": "list",
+          "label": "List"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

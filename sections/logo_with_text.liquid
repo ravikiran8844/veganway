@@ -21,7 +21,7 @@
     overflow: auto;
   }
   .logo-section__wrapper--{{ section.id }}{
-    background-color: {{ section.settings.bg_color}}
+    background-color: {{ section.settings.bg_color }}
     ;
     font-family: 'Inter';
     font-style: normal;
@@ -35,41 +35,42 @@
 </style>
 
 {% schema %}
-  {
-    "name": "Logo with Text",
-    "class": "section",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background Color",
-        "default": "#282828"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Logo Block",
-        "type": "logo-block",
-        "limit": 6,
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          }, {
-            "type": "text",
-            "label": "Text",
-            "default": "Text",
-            "id": "text"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Logo with Text"
-      }
-    ]
-  }
+{
+  "name": "Logo with Text",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#282828"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Logo Block",
+      "type": "logo-block",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "label": "Text",
+          "default": "Text",
+          "id": "text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo with Text"
+    }
+  ]
+}
 {% endschema %}

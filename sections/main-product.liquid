@@ -2,7 +2,7 @@
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
 <script src="{{ 'marmeto-product.js' | asset_url }}" defer="defer"></script>
-{{'marmeto-product.css' | asset_url |stylesheet_tag}}
+{{ 'marmeto-product.css' | asset_url | stylesheet_tag }}
 
   <div class="product main-product-section product-flex">
     <div class="product-flexitem product-flexitem-images">
@@ -47,28 +47,28 @@
              </h1>
              {%- when 'caption' -%}
               <div class="product__caption" {{ block.shopify_attributes }}>
-                {{ product.metafields.descriptors.subtitle}}
+                {{ product.metafields.descriptors.subtitle }}
               </div>
               {%- when 'product_info' -%}
                 <div class="product__info" {{ block.shopify_attributes }}>
-                  {{ product.metafields.custom.product_info}}
+                  {{ product.metafields.custom.product_info }}
                 </div>
                 {%- when 'reviews-block' -%}
                   <div class="product__reviews-block" {{ block.shopify_attributes }}>
                     <div class="d-flex justify-content-between">
                     <div>
-                      <span class="me-1">{{block.settings.reviews-svg}}</span>
-                      <span>{{block.settings.reviews-count}}</span>
+                      <span class="me-1">{{ block.settings.reviews-svg }}</span>
+                      <span>{{ block.settings.reviews-count }}</span>
                     </div>
                     <div>
-                      <span class="me-1">{{block.settings.video-svg}}</span><span><a href="{{block.settings.video-link}}">{{block.settings.video-text}}</a></span>
+                      <span class="me-1">{{ block.settings.video-svg }}</span><span><a href="{{ block.settings.video-link }}">{{ block.settings.video-text }}</a></span>
                     </div>
                     </div>
                   </div>
 
            {%- when 'price' -%}
              <div id="price-{{ section.id }}" class="product__prices" {{ block.shopify_attributes }}>
-               <span class="price__regular fs-5 {% if current_variant.compare_at_price > current_variant.price %}on-sale{% endif %}">{{ current_variant.price |money_with_currency }}</span>
+               <span class="price__regular fs-5 {% if current_variant.compare_at_price > current_variant.price %}on-sale{% endif %}">{{ current_variant.price | money_with_currency }}</span>
                
                {%- if current_variant.compare_at_price > current_variant.price -%}
                  <span class="price__compare">{{ current_variant.compare_at_price | money_with_currency }}</span>
@@ -101,7 +101,7 @@
                <marmeto-variant-radios class="product__variants" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                  {%- for option in product.options_with_values -%}
                    <div class="product__variant">
-                     <label class="product__variant--label">{{ option.name |upcase}}</label>
+                     <label class="product__variant--label">{{ option.name | upcase }}</label>
                      <br>
                      {%- for value in option.values -%}
                        <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -161,8 +161,8 @@
                  <summary>
                    <div class="product__tab-summary">
                      <div class="product__tab-title">
-                      {% if block.settings.tab-icon != blank%}
-                      <span> {{ block.settings.tab-icon}} </span>
+                      {% if block.settings.tab-icon != blank %}
+                      <span> {{ block.settings.tab-icon }} </span>
                       {% endif %}
                        {{ block.settings.heading | default: block.settings.page.title }}
                      </div>
@@ -260,123 +260,132 @@ color: #5E5E5E;
 
 
 {% schema %}
-  {
-    "name": "Product Information",
-	"tag": "section",
-    "blocks": [
-	  {
-        "type": "text",
-        "name": "Text",
-        "settings": [
-          {
-            "type": "text",
-            "id": "text",
-            "default": "Text block",
-            "label": "Text"
-          }
-        ]
-      },
-	  {
-        "type": "title",
-        "name": "Title",
-        "limit": 1
-      },  {
-        "type": "caption",
-        "name": "Caption",
-        "limit": 1
-      },  {
-        "type": "product_info",
-        "name": "Product Info",
-        "limit": 1
-      }, {
-        "type": "reviews-block",
-        "name": "Reviews Block",
-        "limit": 1,
-        "settings": [{
-          "type":"liquid",
-          "id":"reviews-svg",
-          "label": "Reviews SVG"
-        },{
-          "type":"text",
-          "id":"reviews-count",
-          "label": "Reviews Count"
-        },{
-          "type":"liquid",
-          "id":"video-svg",
-          "label": "Video SVG"
-        },{
-          "type":"text",
-          "id":"video-text",
+{
+  "name": "Product Information",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Text block",
           "label": "Text"
-        },{
-          "type":"url",
-          "id":"video-link",
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1
+    },
+    {
+      "type": "caption",
+      "name": "Caption",
+      "limit": 1
+    },
+    {
+      "type": "product_info",
+      "name": "Product Info",
+      "limit": 1
+    },
+    {
+      "type": "reviews-block",
+      "name": "Reviews Block",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "reviews-svg",
+          "label": "Reviews SVG"
+        },
+        {
+          "type": "text",
+          "id": "reviews-count",
+          "label": "Reviews Count"
+        },
+        {
+          "type": "liquid",
+          "id": "video-svg",
+          "label": "Video SVG"
+        },
+        {
+          "type": "text",
+          "id": "video-text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "video-link",
           "label": "Link"
-        }]
-      },
-	  {
-        "type": "price",
-        "name": "Price",
-        "limit": 1
-      },
-	  {
-        "type": "quantity_selector",
-        "name": "Quantity selector",
-        "limit": 1
-      },
-	  {
-        "type": "variant_picker",
-        "name": "Variant picker",
-        "limit": 1
-      },
-	  {
-        "type": "buy_buttons",
-        "name": "Buy buttons",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "checkbox",
-            "id": "show_dynamic_checkout",
-            "default": true,
-            "label": "Show dynamic checkout buttons",
-            "info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
-          }
-        ]
-      },
-	  {
-        "type": "description",
-        "name": "Description",
-        "limit": 1
-      },
-	  {
-        "type": "collapsible_tab",
-        "name": "Collapsible tab",
-        "settings": [
-          {
-            "type": "text",
-            "id": "heading",
-            "default": "Collapsible tab",
-            "info": "Include a heading that explains the content.",
-            "label": "Heading"
-          },
-          {
-            "type": "liquid",
-            "id": "tab-icon",
-            "label": "SVG Icon",
-            "info": "Paste your SVG Icon"
-          },
-          {
-            "type": "richtext",
-            "id": "content",
-            "label": "Tab content"
-          },
-          {
-            "type": "page",
-            "id": "page",
-            "label": "Tab content from page"
-          }
-        ]
-      }
-	]
-  }
+        }
+      ]
+    },
+    {
+      "type": "price",
+      "name": "Price",
+      "limit": 1
+    },
+    {
+      "type": "quantity_selector",
+      "name": "Quantity selector",
+      "limit": 1
+    },
+    {
+      "type": "variant_picker",
+      "name": "Variant picker",
+      "limit": 1
+    },
+    {
+      "type": "buy_buttons",
+      "name": "Buy buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_dynamic_checkout",
+          "default": true,
+          "label": "Show dynamic checkout buttons",
+          "info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1
+    },
+    {
+      "type": "collapsible_tab",
+      "name": "Collapsible tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Collapsible tab",
+          "info": "Include a heading that explains the content.",
+          "label": "Heading"
+        },
+        {
+          "type": "liquid",
+          "id": "tab-icon",
+          "label": "SVG Icon",
+          "info": "Paste your SVG Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Tab content"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Tab content from page"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

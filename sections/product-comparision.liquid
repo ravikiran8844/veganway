@@ -1,5 +1,5 @@
 {% if section.blocks.size > 0 %}
-  <div class="fluid-container wrapper--{{section.id}} px-4 py-5">
+  <div class="fluid-container wrapper--{{ section.id }} px-4 py-5">
     <div class="col-12 page-width  text-center d-flex flex-column flex-md-row ">
       <div class="col-12 col-md-5">
         <h2 class="h1 pc-main-heading">{{ section.settings.title_1 }}</h2>
@@ -49,7 +49,7 @@
       </div>
       <div class="col-12 col-md-4 mx-3 p-3 text-center order-1 order-md-2">
         <div class="pc-image-wrapper">
-          <img class="product-compare-image" src="{{section.settings.image |img_url: 'master'}}">
+          <img class="product-compare-image" src="{{ section.settings.image | image_url }}">
           <div class="pc-image-overlay-text btn btn-warning">
             Read More
           </div>
@@ -116,8 +116,8 @@
   .pc-box2__wrapper {
     justify-content: flex-start;
   }
-  .wrapper--{{ section.id}}{
-    background-color: {{ section.settings.bg_color}}
+  .wrapper--{{ section.id }}{
+    background-color: {{ section.settings.bg_color }}
     ;
     color: #181818;
     font-family: 'Sharp Grotesk';
@@ -151,70 +151,72 @@
 </style>
 
 {% schema %}
-  {
-    "name": "Product Comparision",
-    "class": "section",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "color",
-        "label": "Background Color",
-        "default": "#F4EBDE",
-        "id": "bg_color"
-      },
-      {
-        "type": "text",
-        "id": "title_1",
-        "label": "Title 1",
-        "default": "Vegan Way Protein"
-      },
-      {
-        "type": "text",
-        "id": "title_2",
-        "label": "Title 2",
-        "default": "Whey Protein"
-      },
-      {
-        "type": "image_picker",
-        "id": "logo",
-        "label": "Compare Logo"
-      }, {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Compare Image"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Product 1",
-        "limit": 10,
-        "type": "item1-block",
-        "settings": [
-          {
-            "type": "text",
-            "id": "item1text",
-            "label": "Text",
-            "default": "Text"
-          }
-        ]
-      }, {
-        "name": "Product 2",
-        "limit": 10,
-        "type": "item2-block",
-        "settings": [
-          {
-            "type": "text",
-            "id": "item2text",
-            "label": "Text",
-            "default": "Text"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Product Comparision"
-      }
-    ]
-  }
+{
+  "name": "Product Comparision",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "label": "Background Color",
+      "default": "#F4EBDE",
+      "id": "bg_color"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title 1",
+      "default": "Vegan Way Protein"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title 2",
+      "default": "Whey Protein"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Compare Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Compare Image"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Product 1",
+      "limit": 10,
+      "type": "item1-block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "item1text",
+          "label": "Text",
+          "default": "Text"
+        }
+      ]
+    },
+    {
+      "name": "Product 2",
+      "limit": 10,
+      "type": "item2-block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "item2text",
+          "label": "Text",
+          "default": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Comparision"
+    }
+  ]
+}
 {% endschema %}

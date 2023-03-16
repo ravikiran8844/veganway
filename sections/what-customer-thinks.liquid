@@ -1,7 +1,7 @@
 {{ 'what-customer-thinks.css' | asset_url | stylesheet_tag }}
 
 {% if section.blocks.size > 0 %}
-  <div class="wct__wrapper--{{section.id}} fluid-container">
+  <div class="wct__wrapper--{{ section.id }} fluid-container">
     <div class="row g-0 p-5 pt-0 wtc-section page-width">
       <div class="col-12 text-center">
         <h2 class="wct__main-heading m-auto mb-4">{{ section.settings.heading }}</h2>
@@ -52,8 +52,8 @@
     width: 264px;
     height: 344px;
   }
-  .wct__wrapper--{{ section.id}}{
-    background-color: {{ section.settings.bg_color}}
+  .wct__wrapper--{{ section.id }}{
+    background-color: {{ section.settings.bg_color }}
     ;
   }
   .wct__main-heading {
@@ -62,64 +62,69 @@
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -1px;
-    color: {{ section.settings.heading_color}}
+    color: {{ section.settings.heading_color }}
     ;
     max-width: 716px;
   }
 </style>
 
 {% schema %}
-  {
-    "name": "What customer thinks",
-    "class": "section",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "color",
-        "default": "#E5E5E5",
-        "label": "Background Color",
-        "id": "bg_color"
-      }, {
-        "type": "text",
-        "default": "What the VeganWay fam thinks",
-        "label": "Heading",
-        "id": "heading"
-      }, {
-        "type": "color",
-        "default": "#583D36",
-        "label": "Heading Color",
-        "id": "heading_color"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Customer Review",
-        "type": "review-block",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "customer_image",
-            "label": "Customer Image"
-          }, {
-            "type": "text",
-            "id": "customer_name",
-            "label": "Customer Name"
-          }, {
-            "type": "image_picker",
-            "id": "product_image",
-            "label": "Product Image"
-          }, {
-            "type": "text",
-            "id": "review",
-            "label": "Review"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "What customer thinks"
-      }
-    ]
-  }
+{
+  "name": "What customer thinks",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "default": "#E5E5E5",
+      "label": "Background Color",
+      "id": "bg_color"
+    },
+    {
+      "type": "text",
+      "default": "What the VeganWay fam thinks",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "color",
+      "default": "#583D36",
+      "label": "Heading Color",
+      "id": "heading_color"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Customer Review",
+      "type": "review-block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "customer_image",
+          "label": "Customer Image"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image"
+        },
+        {
+          "type": "text",
+          "id": "review",
+          "label": "Review"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "What customer thinks"
+    }
+  ]
+}
 {% endschema %}

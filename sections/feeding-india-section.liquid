@@ -2,7 +2,7 @@
   <div class="row g-0 pt-2 pb-5">
     <div class="col-12 d-flex">
       <div class="d-none d-md-block  col-md-3">
-        <img class="fi-top-images" src="{{section.settings.left-image | img_url: 'medium'}}">
+        <img class="fi-top-images" src="{{ section.settings.left-image | image_url: width: 240, height: 240 }}">
       </div>
       <div class="text-center col-10 col-md-6 m-auto">
         <h2 class="fi-main-heading  p-2 mb-4">
@@ -11,7 +11,7 @@
         <p class="fi-content">{{ section.settings.content }}</p>
       </div>
       <div class="d-none d-md-block col-md-3">
-        <img class="float-end" src="{{section.settings.right-image | img_url: 'medium'}}">
+        <img class="float-end" src="{{ section.settings.right-image | image_url: width: 240, height: 240 }}">
       </div>
     </div>
     <div class="col-12">
@@ -48,45 +48,47 @@
 </style>
 
 {% schema %}
-  {
-    "name": "Feeding India",
-    "class": "section",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "VEGAN WAY X Feeding India"
-      },
-      {
-        "type": "text",
-        "id": "content",
-        "label": "Text"
-      },
-      {
-        "type": "image_picker",
-        "id": "left-image",
-        "label": "Top Left Image"
-      },
-      {
-        "type": "image_picker",
-        "id": "right-image",
-        "label": "Top Right Image"
-      }, {
-        "type": "image_picker",
-        "id": "desktop-image",
-        "label": "Image"
-      }, {
-        "type": "image_picker",
-        "id": "mobile-image",
-        "label": "Mobile Image"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Feeding India"
-      }
-    ]
-  }
+{
+  "name": "Feeding India",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "VEGAN WAY X Feeding India"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "left-image",
+      "label": "Top Left Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right-image",
+      "label": "Top Right Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop-image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile-image",
+      "label": "Mobile Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feeding India"
+    }
+  ]
+}
 {% endschema %}

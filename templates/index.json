@@ -3,7 +3,7 @@
     "main": {
       "type": "vedio_section",
       "settings": {
-        "video": "shopify:\/\/files\/videos\/Copy of VEGAN WAY v3.mp4",
+        "video": "shopify://files/videos/Copy of VEGAN WAY v3.mp4",
         "heading": "Are you conscious about fitness, nature, nutrition, and taste?",
         "subheading": "Check out the daily health routine, made easy with plant-based proteins",
         "button_text": "Go Proteinlicious",
@@ -16,37 +16,37 @@
         "babe1fa8-e438-4eff-9642-006f31557074": {
           "type": "image-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_1570_46f117db-5f13-44f4-97f5-f1a616b0ab64_300x_png.png"
+            "image": "shopify://shop_images/Rectangle_1570_46f117db-5f13-44f4-97f5-f1a616b0ab64_300x_png.png"
           }
         },
         "503d5585-ba65-4a61-89ad-18199b1543b1": {
           "type": "image-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_1571_300x_png.png"
+            "image": "shopify://shop_images/Rectangle_1571_300x_png.png"
           }
         },
         "625c3e96-2c5a-4898-9627-ef6da00c3d6f": {
           "type": "image-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_6303-min_5553afb2-e735-4ce3-b07b-032d9f5058a4_300x_jpg.png"
+            "image": "shopify://shop_images/Frame_6303-min_5553afb2-e735-4ce3-b07b-032d9f5058a4_300x_jpg.png"
           }
         },
         "57258b86-6132-4c48-8844-7291fce34109": {
           "type": "image-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_1572_7922a14b-3c7f-4c9d-aadd-dff3ab8e0878_300x_png.png"
+            "image": "shopify://shop_images/Rectangle_1572_7922a14b-3c7f-4c9d-aadd-dff3ab8e0878_300x_png.png"
           }
         },
         "72e5a175-851e-4dae-bbcc-ef43884c2544": {
           "type": "image-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_1568_8f29b142-3a91-4351-90ac-60254331bbd1_300x_png.png"
+            "image": "shopify://shop_images/Rectangle_1568_8f29b142-3a91-4351-90ac-60254331bbd1_300x_png.png"
           }
         },
         "aab3f413-2220-4563-ae4d-ffb5fb8b3300": {
           "type": "image-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_1569_300x_png.png"
+            "image": "shopify://shop_images/Rectangle_1569_300x_png.png"
           }
         }
       },
@@ -73,7 +73,7 @@
         "1e071ab6-5fe9-4a24-aa74-ac71e0d1be5d": {
           "type": "sam",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1571.png",
+            "image": "shopify://shop_images/Group_1571.png",
             "title": "Nutritionally complete",
             "text": "Balanced in protein, fibre, cards, vitamins & minerals"
           }
@@ -81,7 +81,7 @@
         "ee49a47f-e9dd-41fa-a887-9ee71d474115": {
           "type": "sam",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1572.png",
+            "image": "shopify://shop_images/Group_1572.png",
             "title": "Super tasty",
             "text": "Fresh flavours created by chef carl clark"
           }
@@ -89,7 +89,7 @@
         "bb47b827-e9e3-4e09-bc58-f51ae302c69a": {
           "type": "sam",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1573_1.png",
+            "image": "shopify://shop_images/Group_1573_1.png",
             "title": "Plant based",
             "text": "We are 100% vegan but you don’t have to be"
           }
@@ -97,7 +97,7 @@
         "8f46848c-0659-4344-b946-b80263f4a9c1": {
           "type": "sam",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1574.png",
+            "image": "shopify://shop_images/Group_1574.png",
             "title": "super convenient",
             "text": "Just put the kattle on and add boiling water"
           }
@@ -105,7 +105,7 @@
         "e37f83ee-267c-43d7-87d6-131895982699": {
           "type": "sam",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1575_1.png",
+            "image": "shopify://shop_images/Group_1575_1.png",
             "title": "Healthy planet",
             "text": "Sustainable ingredients & recyclable packaging"
           }
@@ -113,7 +113,7 @@
         "4bb85431-8e61-4adb-b851-5efb6eea1503": {
           "type": "sam",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1576.png",
+            "image": "shopify://shop_images/Group_1576.png",
             "title": "Good value",
             "text": "Complete nutrition for just 3.75 per meal"
           }
@@ -128,7 +128,7 @@
         "4bb85431-8e61-4adb-b851-5efb6eea1503"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png",
+        "bg_image": "shopify://shop_images/white-texture_1_1.png",
         "caption": "41,696 Five Star Reviews",
         "heading": "Everything You Need Is",
         "heading_highlight": "Right Here!",
@@ -148,8 +148,8 @@
             "heading_highlight": "Right Here!",
             "subheading": "20+ Plant-Based Superfoods & Is Rich in Nutrients",
             "btn_text": "Try Veganway",
-            "btn_link": "shopify:\/\/products\/vegan-plant-protein-powder",
-            "slide_image": "shopify:\/\/shop_images\/1_27_2.png",
+            "btn_link": "shopify://products/vegan-plant-protein-powder",
+            "slide_image": "shopify://shop_images/1_27_2.png",
             "list-item1": "Plant Protein",
             "list-item2": "Super Greens",
             "list-item3": "Omegas + MCTs",
@@ -172,7 +172,7 @@
             "subheading": "20+ Plant-Based Superfoods & Is Rich in Nutrients",
             "btn_text": "Try Veganway",
             "btn_link": "",
-            "slide_image": "shopify:\/\/shop_images\/image_648_1.png",
+            "slide_image": "shopify://shop_images/image_648_1.png",
             "list-item1": "Pea Protein",
             "list-item2": "Brown Rice Protein",
             "list-item3": "Coconut Water Powder",
@@ -189,7 +189,7 @@
         "ea94166d-d2a6-4ffe-aed8-f5bd89a3b6f2": {
           "type": "text-block",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/Group_1571.png",
+            "image1": "shopify://shop_images/Group_1571.png",
             "title1": "Nutritionally Complete",
             "text1": "Nutritionally balanced. Keeps you always on the go."
           }
@@ -197,7 +197,7 @@
         "708bae88-7900-4d58-9fab-f466508131d3": {
           "type": "text-block",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/Group_1572.png",
+            "image1": "shopify://shop_images/Group_1572.png",
             "title1": "Super Tasty",
             "text1": "Super yummy even the aftertaste makes you feel more resilient."
           }
@@ -205,7 +205,7 @@
         "c48a3872-7422-4d42-9cc5-71945cc8bb35": {
           "type": "text-block",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/Group_1573_1.png",
+            "image1": "shopify://shop_images/Group_1573_1.png",
             "title1": "Plant Based",
             "text1": "100% Vegan. Sourced ethically and free from added preservatives."
           }
@@ -213,7 +213,7 @@
         "fb3ec4e6-c0b1-4aaa-abed-2b64918e2dab": {
           "type": "text-block",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/Group_1574.png",
+            "image1": "shopify://shop_images/Group_1574.png",
             "title1": "Super Convenient",
             "text1": "Cut. Pour. Shake. And it’s consumable in seconds."
           }
@@ -221,7 +221,7 @@
         "956a1e4f-f11d-4677-ab30-159a13f81bdb": {
           "type": "text-block",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/Group_1576.png",
+            "image1": "shopify://shop_images/Group_1576.png",
             "title1": "Good Value",
             "text1": "Intrinsically healthier for the body and the mind."
           }
@@ -237,7 +237,7 @@
         "956a1e4f-f11d-4677-ab30-159a13f81bdb"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png"
+        "bg_image": "shopify://shop_images/white-texture_1_1.png"
       }
     },
     "db31dc5e-3862-4a46-9dcb-c586245513f4": {
@@ -247,7 +247,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "vegan-plant-protein-powder",
-            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_image": "shopify://shop_images/venilla_1.png",
             "product_title": "Vanilla",
             "product_caption": "100% Plant Protein"
           }
@@ -256,7 +256,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "100-vegan-plant-protein-powder-14-servings",
-            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_image": "shopify://shop_images/Coffee_Mocha_1.png",
             "product_title": "Cafe Mocha",
             "product_caption": "100% Plant Protein"
           }
@@ -265,7 +265,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "100-vegan-plant-protein-powder-28-servings",
-            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_image": "shopify://shop_images/Katcha_aam_1.png",
             "product_title": "Kacha Aam",
             "product_caption": "100% Plant Protein"
           }
@@ -274,7 +274,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "100-vegan-plant-protein-powder-42-servings",
-            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_image": "shopify://shop_images/venilla_1.png",
             "product_title": "Vanilla",
             "product_caption": "100% Plant Protein"
           }
@@ -283,7 +283,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "vegan-plant-protein-powder",
-            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_image": "shopify://shop_images/Coffee_Mocha_1.png",
             "product_title": "Cafe Mocha",
             "product_caption": "100% Plant Protein"
           }
@@ -292,7 +292,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "100-vegan-plant-protein-powder-14-servings",
-            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_image": "shopify://shop_images/Katcha_aam_1.png",
             "product_title": "Kacha Aam",
             "product_caption": "100% Plant Protein"
           }
@@ -320,15 +320,15 @@
           "type": "product-section",
           "settings": {
             "product_id1": "vegan-plant-protein-powder",
-            "product_image1": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_image1": "shopify://shop_images/venilla_1.png",
             "product_title1": "Vanilla",
             "product_caption1": "100% Plant Protein",
             "product_id2": "100-vegan-plant-protein-powder-14-servings",
-            "product_image2": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_image2": "shopify://shop_images/Coffee_Mocha_1.png",
             "product_title2": "Cafe Mocha",
             "product_caption2": "100% Plant Protein",
             "product_id3": "vegan-plant-protein-powder",
-            "product_image3": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_image3": "shopify://shop_images/Katcha_aam_1.png",
             "product_title3": "Kacha Aam",
             "product_caption3": "100% Plant Protein"
           }
@@ -337,15 +337,15 @@
           "type": "product-section",
           "settings": {
             "product_id1": "vegan-plant-protein-powder",
-            "product_image1": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_image1": "shopify://shop_images/venilla_1.png",
             "product_title1": "Vanilla",
             "product_caption1": "100% Plant Protein",
             "product_id2": "100-vegan-plant-protein-powder-14-servings",
-            "product_image2": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_image2": "shopify://shop_images/Coffee_Mocha_1.png",
             "product_title2": "Cafe Mocha",
             "product_caption2": "100% Plant Protein",
             "product_id3": "100-vegan-plant-protein-powder-28-servings",
-            "product_image3": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_image3": "shopify://shop_images/Katcha_aam_1.png",
             "product_title3": "Kacha Aam",
             "product_caption3": "100% Plant Protein"
           }
@@ -369,7 +369,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "vegan-plant-protein-powder",
-            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_image": "shopify://shop_images/venilla_1.png",
             "product_title": "Vanilla",
             "product_caption": "100% Plant Protein"
           }
@@ -378,7 +378,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "100-vegan-plant-protein-powder-14-servings",
-            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_image": "shopify://shop_images/Coffee_Mocha_1.png",
             "product_title": "Cafe Mocha",
             "product_caption": "100% Plant Protein"
           }
@@ -387,7 +387,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "vegan-plant-protein-powder",
-            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_image": "shopify://shop_images/Katcha_aam_1.png",
             "product_title": "Kacha Aam",
             "product_caption": "100% Plant Protein"
           }
@@ -396,7 +396,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "vegan-plant-protein-powder",
-            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_image": "shopify://shop_images/venilla_1.png",
             "product_title": "Vanilla",
             "product_caption": "100% Plant Protein"
           }
@@ -405,7 +405,7 @@
           "type": "product-section",
           "settings": {
             "product_id": "100-vegan-plant-protein-powder-14-servings",
-            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_image": "shopify://shop_images/Coffee_Mocha_1.png",
             "product_title": "Cafe Mocha",
             "product_caption": "100% Plant Protein"
           }
@@ -434,8 +434,8 @@
         "line2text": "With our team of experts, we bring you sustainably sourced ingredients with better potency, digestibility, absorption, and bioavailability.",
         "line3text": "Our full-spectrum approach and synergistic formulations help you build your health daily by day.",
         "text_color": "#2c2b2b",
-        "image_logo": "shopify:\/\/shop_images\/Group_14556.png",
-        "main_image": "shopify:\/\/shop_images\/DSC00156_1.png"
+        "image_logo": "shopify://shop_images/Group_14556.png",
+        "main_image": "shopify://shop_images/DSC00156_1.png"
       }
     },
     "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45": {
@@ -448,14 +448,14 @@
         "description_color": "#474747",
         "link_text": "More Recipes",
         "btn_color": "#017149",
-        "link_url": "shopify:\/\/blogs\/recipes",
-        "recipe1image": "shopify:\/\/shop_images\/recipe_1.png",
+        "link_url": "shopify://blogs/recipes",
+        "recipe1image": "shopify://shop_images/recipe_1.png",
         "recipe1text": "Very Berry Vegan Smoothie",
         "recipe1link": "",
-        "recipe2image": "shopify:\/\/shop_images\/recipe_2.png",
+        "recipe2image": "shopify://shop_images/recipe_2.png",
         "recipe2text": "PB Vegan Smoothie",
         "recipe2link": "",
-        "recipe3image": "shopify:\/\/shop_images\/recipe_3.png",
+        "recipe3image": "shopify://shop_images/recipe_3.png",
         "recipe3text": "Coco Berry Vegan Smoothie",
         "recipe3link": ""
       }
@@ -465,10 +465,10 @@
       "settings": {
         "heading": "VEGAN WAY X Feeding India",
         "content": "Vegan way wants to partner with you in a One-for-One mission to feed America’s hungry. We can make a difference in your community.",
-        "left-image": "shopify:\/\/shop_images\/Group_2550.png",
-        "right-image": "shopify:\/\/shop_images\/1_12.png",
-        "desktop-image": "shopify:\/\/shop_images\/desktop_image.png",
-        "mobile-image": "shopify:\/\/shop_images\/mobile_image.png"
+        "left-image": "shopify://shop_images/Group_2550.png",
+        "right-image": "shopify://shop_images/1_12.png",
+        "desktop-image": "shopify://shop_images/desktop_image.png",
+        "mobile-image": "shopify://shop_images/mobile_image.png"
       }
     },
     "843c76d8-5c13-4385-8eae-6b8849167dcd": {
@@ -477,28 +477,28 @@
         "63c7c07c-7e5e-48f3-a7e5-35f965ddd380": {
           "type": "item-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_649.png",
+            "image": "shopify://shop_images/image_649.png",
             "text": "“Pea protein is a high-quality protein and a great source of iron. It can aid muscle growth, weight loss, and heart health.”"
           }
         },
         "b16c0ed9-a1ac-4eb5-97ab-799539044995": {
           "type": "item-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group.png",
+            "image": "shopify://shop_images/Group.png",
             "text": "“Barley grass offers a variety of health benefits because of the minerals, vitamins, and antioxidants it contains.”"
           }
         },
         "1e416f1e-00f6-4d47-906c-c22af240f8f3": {
           "type": "item-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_14557.png",
+            "image": "shopify://shop_images/Group_14557.png",
             "text": "“Moringa is believed to have many benefits, and its uses range from health and beauty to helping prevent and cure diseases.”"
           }
         },
         "ba047269-7587-419c-b82c-1a9ea1eda810": {
           "type": "item-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_14558.png",
+            "image": "shopify://shop_images/Group_14558.png",
             "text": "“Spinach has long been regarded as a plant which can restore energy, increase vitality and improve the quality of the blood.”"
           }
         }
@@ -510,7 +510,7 @@
         "ba047269-7587-419c-b82c-1a9ea1eda810"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/featured_section_background.jpg",
+        "bg_image": "shopify://shop_images/featured_section_background.jpg",
         "heading": "Veganway Featured In",
         "color": "#181818"
       }
@@ -518,13 +518,13 @@
     "9617ebdd-f579-4744-8822-de2fa956a4d0": {
       "type": "moneyback-section",
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/Banner_1_1.jpg",
-        "mobile_bg_image": "shopify:\/\/shop_images\/Untitled-1_1.png",
+        "bg_image": "shopify://shop_images/Banner_1_1.jpg",
+        "mobile_bg_image": "shopify://shop_images/Untitled-1_1.png",
         "caption": "Your Daily",
         "heading": "100% Plant Protein",
         "subheading": "For your gut, your brain, your muscles, your skin, your hair, your heart. Your whole health",
         "bg_color": "#000000",
-        "image2": "shopify:\/\/shop_images\/Group_14570.png"
+        "image2": "shopify://shop_images/Group_14570.png"
       }
     },
     "bab23c80-5f86-4de9-b9ff-c9e9c407322a": {
@@ -534,41 +534,41 @@
         "b0263f06-cbf3-4448-89a0-5bd37386a11a": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "image": "shopify://shop_images/Kajol_post_2_1.png",
             "name": "Ruchatembe",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  </p><p></p><p>I tried this PCOS/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.</p>"
           }
         },
         "7e74e842-02b1-45c3-b600-6f16f2cd910c": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "image": "shopify://shop_images/Kajol_post_2_1.png",
             "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  </p><p></p><p>I tried this PCOS/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.</p>"
           }
         },
         "d4cd4680-8450-4743-a22f-cdedf27f9841": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "image": "shopify://shop_images/Kajol_post_2_1.png",
             "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  </p><p></p><p>I tried this PCOS/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.</p>"
           }
         },
         "868afad4-05bc-485e-b0d4-02bd2e0986dd": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "image": "shopify://shop_images/Kajol_post_2_1.png",
             "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  </p><p></p><p>I tried this PCOS/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.</p>"
           }
         },
         "2b3347e9-3802-4fab-80bf-39c10a18a71c": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "image": "shopify://shop_images/Kajol_post_2_1.png",
             "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  </p><p></p><p>I tried this PCOS/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.</p>"
           }
         }
       },
@@ -591,41 +591,41 @@
         "0c856eea-cb21-43d6-9b47-8ad551449975": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "image": "shopify://shop_images/Kajol_post_2_1.png",
             "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  </p><p></p><p>I tried this PCOS/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.</p>"
           }
         },
         "33558849-c2c1-43ff-b87c-b0738e2b9a75": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "image": "shopify://shop_images/Kajol_post_2_1.png",
             "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  </p><p></p><p>I tried this PCOS/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.</p>"
           }
         },
         "cfd9433a-4a40-46bc-a29d-b21bd29820d7": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "image": "shopify://shop_images/Kajol_post_2_1.png",
             "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  </p><p></p><p>I tried this PCOS/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.</p>"
           }
         },
         "ad51ef4d-1a32-40c5-b9a3-54b80bcbc0d1": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "image": "shopify://shop_images/Kajol_post_2_1.png",
             "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  </p><p></p><p>I tried this PCOS/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.</p>"
           }
         },
         "5fa480b5-afaa-4afc-91f1-003854c825b2": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
+            "image": "shopify://shop_images/Kajol_post_2_1.png",
             "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  </p><p></p><p>I tried this PCOS/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.</p>"
           }
         }
       },
