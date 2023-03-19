@@ -3,7 +3,7 @@
     <div class="row g-0">
       <div class="col-12 page-width logo-section__item d-flex justify-content-between align-content-center m-auto p-5">
         {% for block in section.blocks %}
-          <div class="col m-3 text-center">
+          <div class="col px-3 lwt-{{block.id}} text-center">
             {% render 'image', class: 'p-2', mobileSrc: block.settings.image, desktopSrc: block.settings.image %}
             {% if block.settings.text != blank %}
               <div class="mt-2">{{ block.settings.text }}</div>
@@ -15,6 +15,15 @@
   </div>
 {% endif %}
 
+{% style %}
+  {% for block in section.blocks %}
+    {% if block.settings.border %}
+      .lwt-{{ block.id}}{
+        border-right: 1.5px solid #258D68;
+      }
+    {% endif %}
+  {% endfor %}
+{% endstyle %}
 <style>
   .logo-section__item {
     overflow: auto;
@@ -71,6 +80,11 @@
             "label": "Text",
             "default": "Text",
             "id": "text"
+          }, {
+            "type": "checkbox",
+            "label": "border right",
+            "default": true,
+            "id": "border"
           }
         ]
       }

@@ -4,7 +4,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "image": "shopify:\/\/shop_images\/Group_14604.png"
+          "image": "shopify://shop_images/Group_14604.png",
+          "bg_color": "#f9f9f9"
         }
       },
       "footer": {
@@ -40,7 +41,7 @@
         "settings": {
           "bg_color": "#181818",
           "text_color": "#ffffff",
-          "logo": "shopify:\/\/shop_images\/footer_logo.png",
+          "logo": "shopify://shop_images/footer_logo.png",
           "heading": "Get 10% off!",
           "description": "Sign up to our newsletter - the place for wild news, invitations and good karma treats!",
           "fabebook_url": "",
@@ -53,7 +54,7 @@
         "type": "announcement-bar",
         "settings": {
           "announcement_visibility": true,
-          "announcement_text": "<b>20% off<\/b> + Free shaker - CODE: <b>FIT20<\/b>",
+          "announcement_text": "<b>20% off</b> + Free shaker - CODE: <b>FIT20</b>",
           "announcement_text_size": 16,
           "announcement_text_color": "#ffffff",
           "announcement_bg_color": "#000000",
@@ -69,7 +70,7 @@
     ],
     "blocks": {
       "8962992520437913685": {
-        "type": "shopify:\/\/apps\/yotpo-loyalty-rewards\/blocks\/loader-app-embed-block\/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+        "type": "shopify://apps/yotpo-loyalty-rewards/blocks/loader-app-embed-block/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
         "disabled": true,
         "settings": {
           "inject_modules_loader": false,

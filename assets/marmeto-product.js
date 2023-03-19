@@ -69,13 +69,11 @@ function onKeyUpEscape(event) {
     var firstSlide = sliderElementCells[initialIndex];
     
     firstSlide.classList.add('is-selected');            
-    firstSlide.style.height = "".concat(firstSlide.clientHeight, "px");
     
     var initFlickty = new Flickity(sliderElement, {
       accessibility: false,
       prevNextButtons: false,
       pageDots: true,
-      adaptiveHeight: true,
       cellSelector: '.product__media-item',
       initialIndex: initialIndex
     });

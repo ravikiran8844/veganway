@@ -2,18 +2,18 @@
   <div class="fluid-container wrapper--{{ section.id }} px-4 py-5">
     <div class="col-12 page-width  text-center d-flex flex-column flex-md-row ">
       <div class="col-12 col-md-5">
-        <h2 class="h1 pc-main-heading">{{ section.settings.title_1 }}</h2>
+        <h2 class="fs-3 pc-main-heading">{{ section.settings.title_1 }}</h2>
       </div>
       <div class="col-12 col-md-2">
         {% render 'image', class: '', mobileSrc: section.settings.logo, desktopSrc: section.settings.logo %}
       </div>
       <div class="col-12 col-md-5">
-        <h2 class="h1 pc-main-heading">{{ section.settings.title_2 }}</h2>
+        <h2 class="fs-3 pc-main-heading">{{ section.settings.title_2 }}</h2>
       </div>
     </div>
     <div class="page-width mt-3 d-flex flex-column flex-md-row justify-content-center">
-      <div class="col-12 col-md-4 text-md-end order-2 order-md-1">
-        <h4 class="m-3 pc-heading">{{ section.settings.title_1 }}</h4>
+      <div class="col-12 col-md-4 px-2 text-md-end order-2 order-md-1">
+        <div class="m-3 fs-5 pc-heading">{{ section.settings.title_1 }}</div>
 
         {% for block in section.blocks %}
           {% if block.settings.item1text != blank %}
@@ -55,8 +55,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-4 me-5 text-md-start order-3 order-md-3">
-        <h4 class="m-3 pc-heading">{{ section.settings.title_2 }}</h4>
+      <div class="col-12 col-md-4 px-2 text-md-start order-3 order-md-3">
+        <div class="m-3 fs-5 pc-heading">{{ section.settings.title_2 }}</div>
         {% for block in section.blocks %}
           {% if block.settings.item2text != blank %}
             <div class="d-flex pc-box2__wrapper">

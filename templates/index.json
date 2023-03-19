@@ -84,7 +84,7 @@
         "aab3f413-2220-4563-ae4d-ffb5fb8b3300"
       ],
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#f9f9f9",
         "caption": "Rated 5 stars",
         "heading": "Fuel Up Your Day With India’s Tastiest Vegan Protein",
         "subheading": "Zero Bloating | Designed For Everyday Health | All Natural",
@@ -265,8 +265,71 @@
         "bg_image": "shopify:\/\/shop_images\/white-texture_1_1.png"
       }
     },
+    "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a": {
+      "type": "featured-products",
+      "blocks": {
+        "570b50c1-2f13-426f-b052-9eb7cf72ded6": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "vanilla-protein-powder",
+            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_title": "Vanilla",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "6645a8b2-32d1-47ed-8865-2cd03fd73180": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "cafe-mocha-plant-protein-powder",
+            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_title": "Cafe Mocha",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "4f9ee208-02be-44a8-b7e2-64ccc8372f74": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "kacha-aam-plant-protein-powder",
+            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1.png",
+            "product_title": "Kacha Aam",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "c557dfa9-0fc0-4d99-9414-d05d3a2d816b": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "vanilla-protein-powder",
+            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
+            "product_title": "Vanilla",
+            "product_caption": "100% Plant Protein"
+          }
+        },
+        "72c9d794-bca4-47a7-ae80-43f18933cf62": {
+          "type": "product-section",
+          "settings": {
+            "product_id": "cafe-mocha-plant-protein-powder",
+            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
+            "product_title": "Cafe Mocha",
+            "product_caption": "100% Plant Protein"
+          }
+        }
+      },
+      "block_order": [
+        "570b50c1-2f13-426f-b052-9eb7cf72ded6",
+        "6645a8b2-32d1-47ed-8865-2cd03fd73180",
+        "4f9ee208-02be-44a8-b7e2-64ccc8372f74",
+        "c557dfa9-0fc0-4d99-9414-d05d3a2d816b",
+        "72c9d794-bca4-47a7-ae80-43f18933cf62"
+      ],
+      "settings": {
+        "bg_color": "#f9f9f9",
+        "card_color": "#ffffff",
+        "heading": "Our Most Loved Flavours"
+      }
+    },
     "d4b5b96c-5658-4ada-a12b-90b4eddf5026": {
       "type": "most-loved-flavors",
+      "disabled": true,
       "blocks": {
         "79dec2a2-e36a-44f1-be7b-790f59d2ac5d": {
           "type": "product-section",
@@ -308,7 +371,7 @@
         "32c9e3b1-e381-4f2d-b22c-c2f4778423d7"
       ],
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#f9f9f9",
         "card_color": "#ffffff",
         "heading": "Our Most Loved Flavours"
       }
@@ -386,69 +449,6 @@
         "heading": "Our Most Loved Flavours"
       }
     },
-    "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a": {
-      "type": "featured-products",
-      "disabled": true,
-      "blocks": {
-        "570b50c1-2f13-426f-b052-9eb7cf72ded6": {
-          "type": "product-section",
-          "settings": {
-            "product_id": "vegan-plant-protein-powder",
-            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
-            "product_title": "Vanilla",
-            "product_caption": "100% Plant Protein"
-          }
-        },
-        "6645a8b2-32d1-47ed-8865-2cd03fd73180": {
-          "type": "product-section",
-          "settings": {
-            "product_id": "100-vegan-plant-protein-powder-14-servings",
-            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
-            "product_title": "Cafe Mocha",
-            "product_caption": "100% Plant Protein"
-          }
-        },
-        "4f9ee208-02be-44a8-b7e2-64ccc8372f74": {
-          "type": "product-section",
-          "settings": {
-            "product_id": "vegan-plant-protein-powder",
-            "product_image": "shopify:\/\/shop_images\/Katcha_aam_1.png",
-            "product_title": "Kacha Aam",
-            "product_caption": "100% Plant Protein"
-          }
-        },
-        "c557dfa9-0fc0-4d99-9414-d05d3a2d816b": {
-          "type": "product-section",
-          "settings": {
-            "product_id": "vegan-plant-protein-powder",
-            "product_image": "shopify:\/\/shop_images\/venilla_1.png",
-            "product_title": "Vanilla",
-            "product_caption": "100% Plant Protein"
-          }
-        },
-        "72c9d794-bca4-47a7-ae80-43f18933cf62": {
-          "type": "product-section",
-          "settings": {
-            "product_id": "100-vegan-plant-protein-powder-14-servings",
-            "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1.png",
-            "product_title": "Cafe Mocha",
-            "product_caption": "100% Plant Protein"
-          }
-        }
-      },
-      "block_order": [
-        "570b50c1-2f13-426f-b052-9eb7cf72ded6",
-        "6645a8b2-32d1-47ed-8865-2cd03fd73180",
-        "4f9ee208-02be-44a8-b7e2-64ccc8372f74",
-        "c557dfa9-0fc0-4d99-9414-d05d3a2d816b",
-        "72c9d794-bca4-47a7-ae80-43f18933cf62"
-      ],
-      "settings": {
-        "bg_color": "#ffffff",
-        "card_color": "#ffffff",
-        "heading": "Our Most Loved Flavours"
-      }
-    },
     "ec9dae8a-2489-466a-af04-23f55d2b4041": {
       "type": "image_with_text_section",
       "settings": {
@@ -466,7 +466,7 @@
     "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45": {
       "type": "recipes-section",
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#f9f9f9",
         "heading": "PROTEIN-FILLED RECIPES - QUICK & EASY TO MAKE!",
         "heading_color": "#181818",
         "description": "If your protein shake recipe is getting old and you’re looking for a change, then go for these yummiest recipes here! From creamy smoothies to delicious pancakes, our recipes are made from the tastiest and highest amount of protein with wholesome ingredients. So, try these quick, easy & yummy recipes!",
@@ -616,41 +616,33 @@
         "0c856eea-cb21-43d6-9b47-8ad551449975": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
-            "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1_2.png",
+            "name": "Sneha Karthik",
+            "text": "<p>On the advice of a friend, I tried vegan protein for the first time. To be honest, I’m still getting used to the flavor because it’s so different from the milk and whey protein I’m used to. It makes me feel different and healthful as well. The flavor is fantastic, and the container makes it easy to keep it fresh and ready to use whenever I want.<\/p>"
           }
         },
         "33558849-c2c1-43ff-b87c-b0738e2b9a75": {
           "type": "testimonial-section",
           "settings": {
             "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
-            "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "name": "Sweetha",
+            "text": "<p>Normally, I would use the standard protein powders available on the market, but this is my first time using a plant-based vegan protein powder. The regular protein powders used to work for me, but they did have some side effects, such as digestion and gastric issues. I've been using this vegan protein powder for a few weeks now and haven't had any issues or side effects. The protein mixture tastes generally good as well in a major way. It is, in my opinion, an excellent product for the price in a subtle way.<\/p>"
           }
         },
         "cfd9433a-4a40-46bc-a29d-b21bd29820d7": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
-            "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1_4.png",
+            "name": "Amit mishra",
+            "text": "<p>I’ve been enjoying amazing peace of mind and body since I started living a vegan lifestyle, but one thing I’ve noticed is that vegan diets lack good quality protein. And if it is present, it is not clean because it contains carbs and fats. As a result, I was in desperate need of a good vegan protein, so I purchased vegan way protein based on my faith in them. This product is excellent in terms of quality.<\/p>"
           }
         },
         "ad51ef4d-1a32-40c5-b9a3-54b80bcbc0d1": {
           "type": "testimonial-section",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
-            "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
-          }
-        },
-        "5fa480b5-afaa-4afc-91f1-003854c825b2": {
-          "type": "testimonial-section",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Kajol_post_2_1.png",
-            "name": "Name",
-            "text": "<p>I was diagnosed with PCOD some months back. The journey till now hasn't been an easy one. Struggle with weith gain, mood swings has been tough..  <\/p><p><\/p><p>I tried this PCOS\/PCOD women’s health supplement and consumed it for a month. It has been a good help from this, my periods are on time with reduced spotting. Great work solvve for introducing this amazing product.<\/p>"
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1_3.png",
+            "name": "Pranav savjani",
+            "text": "<p>Vegan way protein powder is a plant-based supplement for men and women. It’s manufactured from plant-based resources that are naturally occurring. This vegan protein is made up of a superior blend of pea protein and brown rice protein. It’s also better than whey protein because it’s a completely vegan form of protein. Vegan protein is a wonderful way to be healthy, and I would recommend this product to everyone.<\/p>"
           }
         }
       },
@@ -658,11 +650,10 @@
         "0c856eea-cb21-43d6-9b47-8ad551449975",
         "33558849-c2c1-43ff-b87c-b0738e2b9a75",
         "cfd9433a-4a40-46bc-a29d-b21bd29820d7",
-        "ad51ef4d-1a32-40c5-b9a3-54b80bcbc0d1",
-        "5fa480b5-afaa-4afc-91f1-003854c825b2"
+        "ad51ef4d-1a32-40c5-b9a3-54b80bcbc0d1"
       ],
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#f9f9f9",
         "heading": "Rated 5 star",
         "subheading": "By 50,000 Customers"
       }
@@ -722,7 +713,7 @@
         "7735e8df-e71c-4c1b-a558-d65ed97ad271"
       ],
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#f9f9f9",
         "heading": "FAQs",
         "text_color": "#181818",
         "read_more_link": "",
@@ -736,9 +727,9 @@
     "f43aec42-f575-41c4-91ef-3fbbe296439f",
     "864fac76-ea14-4fff-8172-6cc78f947233",
     "79764431-e8b0-4f42-bbff-8410ae5e374e",
+    "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a",
     "d4b5b96c-5658-4ada-a12b-90b4eddf5026",
     "db31dc5e-3862-4a46-9dcb-c586245513f4",
-    "e36e700f-b1b7-4bdc-bd2c-b94b25684a0a",
     "ec9dae8a-2489-466a-af04-23f55d2b4041",
     "4bf4e198-4bce-4fa0-b7e6-3d28b6b3ef45",
     "64abf6f4-dc82-48ae-823f-6ad88fa90e24",

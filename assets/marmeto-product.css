@@ -46,7 +46,7 @@ color: #161616;
   .product__prices {
     display: flex;
     align-items: baseline;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
   .product__prices .price__regular {
     margin: 0;
@@ -114,8 +114,14 @@ color: #181818;
     margin-bottom: 15px;
   }
   .product__variant--label {
-    font-weight: 600;
     margin-bottom: 5px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 13px;
+text-transform: uppercase;
+color: #181818;
   }
   .product__variant input[type=radio] {
     clip: rect(0,0,0,0);

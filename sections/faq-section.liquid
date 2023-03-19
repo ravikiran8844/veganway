@@ -83,9 +83,12 @@
 
   }
   .faq-answer {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 23px;
-    opacity: .8;
+    line-height: 142%;
+    color: #595959;
 
   }
   .faq_title {
@@ -126,63 +129,65 @@
 
 
 {% schema %}
-  {
-    "name": "FAQ Section",
-    "class": "section",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background color",
-        "default": "#E5E5E5"
-      },
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "FAQ"
-      },
-      {
-        "type": "color",
-        "id": "text_color",
-        "label": "Text color",
-        "default": "#181818"
-      },
-      {
-        "type": "url",
-        "id": "read_more_link",
-        "label": "Link"
-      }, {
-        "type": "color",
-        "id": "link_color",
-        "label": "Link color",
-        "default": "#017149"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "FAQ",
-        "type": "faq-section",
-        "settings": [
-          {
-            "type": "text",
-            "id": "faq_question",
-            "label": "Question",
-            "default": "Question"
-          }, {
-            "type": "text",
-            "id": "faq_answer",
-            "label": "Answer",
-            "default": "Answer"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "FAQ Section"
-      }
-    ]
-  }
+{
+  "name": "FAQ Section",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#E5E5E5"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "FAQ"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#181818"
+    },
+    {
+      "type": "url",
+      "id": "read_more_link",
+      "label": "Link"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link color",
+      "default": "#017149"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "FAQ",
+      "type": "faq-section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "faq_question",
+          "label": "Question",
+          "default": "Question"
+        },
+        {
+          "type": "text",
+          "id": "faq_answer",
+          "label": "Answer",
+          "default": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Section"
+    }
+  ]
+}
 {% endschema %}

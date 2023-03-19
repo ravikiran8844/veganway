@@ -20,7 +20,6 @@
         },
         "6e7426d1-9402-4748-b4be-7c310c6f08cd": {
           "type": "reviews-block",
-          "disabled": true,
           "settings": {
             "reviews-svg": "<svg width=\"91\" height=\"16\" viewBox=\"0 0 91 16\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M8.30353 1.01562L10.5594 5.68478L15.6024 6.43204L11.953 10.0636L12.8152 15.1944L8.30353 12.7718L3.79184 15.1944L4.6541 10.0636L1 6.43204L6.04769 5.68478L8.30353 1.01562Z\" fill=\"#FEA501\" stroke=\"#C1942D\" stroke-width=\"0.286822\" stroke-miterlimit=\"10\"\/>\n<path d=\"M26.7469 1.01562L29.0027 5.68478L34.0458 6.43204L30.3963 10.0636L31.2586 15.1944L26.7469 12.7718L22.2352 15.1944L23.0975 10.0636L19.4434 6.43204L24.4911 5.68478L26.7469 1.01562Z\" fill=\"#FEA501\" stroke=\"#C1942D\" stroke-width=\"0.286822\" stroke-miterlimit=\"10\"\/>\n<path d=\"M45.1895 1.01562L47.4453 5.68478L52.4884 6.43204L48.8389 10.0636L49.7012 15.1944L45.1895 12.7718L40.6778 15.1944L41.5401 10.0636L37.8906 6.43204L42.9337 5.68478L45.1895 1.01562Z\" fill=\"#FEA501\" stroke=\"#C1942D\" stroke-width=\"0.286822\" stroke-miterlimit=\"10\"\/>\n<path d=\"M64.1729 1.01562L66.4287 5.68478L71.4718 6.43204L67.8223 10.0636L68.6846 15.1944L64.1729 12.7718L59.6612 15.1944L60.5235 10.0636L56.874 6.43204L61.9171 5.68478L64.1729 1.01562Z\" fill=\"#FEA501\" stroke=\"#C1942D\" stroke-width=\"0.286822\" stroke-miterlimit=\"10\"\/>\n<path d=\"M82.6153 1.01562L84.8711 5.68478L89.9141 6.43204L86.2647 10.0636L87.127 15.1944L82.6153 12.7718L78.1036 15.1944L78.9658 10.0636L75.3164 6.43204L80.3594 5.68478L82.6153 1.01562Z\" fill=\"#FEA501\" stroke=\"#C1942D\" stroke-width=\"0.286822\" stroke-miterlimit=\"10\"\/>\n<\/svg>",
             "reviews-count": "( 78 Reviews )",
@@ -31,6 +30,11 @@
         },
         "08906a90-3cfd-4499-bf45-571da2672b17": {
           "type": "description",
+          "settings": {
+          }
+        },
+        "5ee24d26-66fe-4999-a565-e3e2e107979f": {
+          "type": "flavor",
           "settings": {
           }
         },
@@ -51,6 +55,7 @@
         },
         "62e5bd40-5cd8-4db8-8f57-be278a36781b": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": false
           }
@@ -60,7 +65,7 @@
           "settings": {
             "heading": "NUTRITION INFO",
             "tab-icon": "<span class=\"me-2\">\n<svg width=\"17\" height=\"19\" viewBox=\"0 0 17 19\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.07308 4.81258C4.07308 2.36757 6.05515 0.385498 8.50016 0.385498C10.9452 0.385498 12.9272 2.36757 12.9272 4.81258C12.9272 7.25759 10.9452 9.23966 8.50016 9.23966C6.05515 9.23966 4.07308 7.25759 4.07308 4.81258ZM8.50016 1.948C6.9181 1.948 5.63558 3.23052 5.63558 4.81258C5.63558 6.39465 6.9181 7.67716 8.50016 7.67716C10.0822 7.67716 11.3647 6.39465 11.3647 4.81258C11.3647 3.23052 10.0822 1.948 8.50016 1.948Z\" fill=\"#5E5E5E\"\/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.3335 12.3647C3.03908 12.3647 1.98975 13.414 1.98975 14.7084V15.9462C1.98975 15.9651 2.00341 15.9811 2.02201 15.9842C6.31238 16.6846 10.688 16.6846 14.9783 15.9842C14.9969 15.9811 15.0106 15.9651 15.0106 15.9462V14.7084C15.0106 13.414 13.9612 12.3647 12.6668 12.3647H12.3118C12.2843 12.3647 12.257 12.369 12.2309 12.3775L11.3293 12.6719C9.49099 13.2722 7.50934 13.2722 5.67098 12.6719L4.7694 12.3775C4.7433 12.369 4.71602 12.3647 4.68857 12.3647H4.3335ZM0.427246 14.7084C0.427246 12.5511 2.17613 10.8022 4.3335 10.8022H4.68857C4.88075 10.8022 5.07172 10.8326 5.25441 10.8922L6.15598 11.1866C7.6792 11.684 9.32113 11.684 10.8443 11.1866L11.7459 10.8922C11.9286 10.8326 12.1196 10.8022 12.3118 10.8022H12.6668C14.8242 10.8022 16.5731 12.5511 16.5731 14.7084V15.9462C16.5731 16.7308 16.0045 17.3998 15.2301 17.5262C10.773 18.2539 6.22735 18.2539 1.77024 17.5262C0.995875 17.3998 0.427246 16.7308 0.427246 15.9462V14.7084Z\" fill=\"#5E5E5E\"\/>\n<\/svg>\n<\/span>",
-            "content": "",
+            "content": "<p><strong>Nutrition Facts - 1 Sachet(33g)<\/strong><\/p><p>Energy              134.8 kcal<\/p><p>Protein              25.7g<\/p><p>Carbohydrates  3.5g <\/p><p>Sugar                0g<\/p><p>Trans Fat          0g<\/p>",
             "page": ""
           }
         },
@@ -69,7 +74,7 @@
           "settings": {
             "heading": "INGREDIENTS",
             "tab-icon": "<span class=\"me-2\">\n<svg width=\"23\" height=\"16\" viewBox=\"0 0 23 16\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M10.8764 4.43908C11.2069 3.79043 11.5862 3.18179 12.0938 2.63478C13.2576 1.38108 14.8003 0.649597 16.6015 0.279852C17.9905 -0.00506026 19.3996 -0.0174651 20.8206 0.00974555C21.614 0.0249515 21.9947 0.330671 22.2363 0.936109C22.978 2.79564 23.2568 4.67798 22.7233 6.61074C22.3167 8.08451 21.426 9.30819 20.0502 10.2726C20.0079 10.3022 19.966 10.3314 19.8955 10.381C20.1968 10.5527 20.4793 10.6923 20.8521 10.6095C21.2803 10.5143 21.6361 10.6243 21.8645 10.9068C22.0934 11.1905 22.0906 11.5407 21.8152 11.8356C20.1376 13.6327 18.099 15.008 15.4795 15.6735C13.0325 16.2953 10.6875 15.9984 8.43081 15.042C8.15114 14.9236 7.87523 14.7971 7.61059 14.6567C7.45642 14.5751 7.32998 14.5651 7.1603 14.6275C6.19343 14.9844 5.18989 15.2245 4.13183 15.2785C2.81338 15.3454 1.58657 15.0953 0.459421 14.5062C0.0114734 14.2721 -0.125308 13.8376 0.121933 13.4694C0.379044 13.0861 0.914888 12.9516 1.37741 13.1841C2.19715 13.5959 3.07566 13.7844 4.02279 13.7391C4.76263 13.7039 5.47051 13.5459 6.16287 13.3262C6.32504 13.2745 6.28978 13.1845 6.28696 13.0881C6.25782 12.0705 6.17603 11.0513 6.21411 10.0357C6.27004 8.54509 6.54924 7.08212 7.31588 5.71718C7.79861 4.85765 8.46653 4.13416 9.46349 3.66398C9.88934 3.4635 10.3725 3.53353 10.6395 3.84965C10.7401 3.9689 10.7805 4.12576 10.8407 4.26782C10.8637 4.32184 10.8651 4.38186 10.8764 4.43908ZM7.98521 12.485C8.01624 12.4906 8.04726 12.4966 8.07828 12.5022C8.38287 12.3286 8.69215 12.1605 8.99063 11.98C10.1295 11.2922 11.1758 10.5135 12.1357 9.65033C12.5498 9.27818 13.1646 9.28178 13.534 9.65513C13.8433 9.96725 13.8236 10.3782 13.4677 10.7039C12.5164 11.5735 11.4724 12.3554 10.3472 13.0581C10.0078 13.2697 9.65761 13.469 9.30837 13.6767C12.6315 15.1325 16.4436 14.4814 19.3305 11.9092C18.7345 11.6167 18.2043 11.257 17.7818 10.7956C17.6755 10.6799 17.5895 10.5315 17.5599 10.3882C17.4838 10.0221 17.6925 9.76797 18.0558 9.5819C19.5463 8.8204 20.5461 7.73798 20.9583 6.29101C21.4076 4.71399 21.1529 3.17299 20.5766 1.65479C20.5592 1.60917 20.4558 1.56115 20.3905 1.55875C19.1745 1.50913 17.9684 1.56316 16.7862 1.83606C15.5425 2.12337 14.4497 2.62557 13.6149 3.47991C12.6715 4.44549 12.2579 5.57633 12.2245 6.81762C12.2156 7.15455 12.075 7.41665 11.7098 7.56191C11.3483 7.70556 10.9883 7.66435 10.7086 7.43106C10.3989 7.17256 10.106 6.89165 9.85644 6.58993C9.65338 6.34463 9.52459 6.05452 9.35773 5.77481C9.00661 6.17576 8.77582 6.62434 8.59626 7.09332C8.17652 8.19176 8.02893 9.3278 7.98897 10.4751C7.96594 11.1441 7.98521 11.8148 7.98521 12.485Z\" fill=\"#5E5E5E\"\/>\n<\/svg>\n<\/span>",
-            "content": "",
+            "content": "<p><strong>Protein Blend<\/strong>: Pea Protein and Brown Rice Protein, Coconut Water Powder.<strong> <\/strong><\/p><p><strong>Multi Greens Blend: <\/strong>Spinach, Moringa, Alfalfa, Chlorella, Barley Grass, Amla Extract, Spirulina.<\/p><p><strong>Digestive Blend<\/strong>: Bromelain (Pineapple Enzyme), Papain (Papaya Enzyme), Himalayan Pink Salt. <\/p><p><strong>Antioxidant Blend:<\/strong> Curcumin Extract, Green Tea Extract, Grape Seed Extract.<\/p><p><strong>Weight Management Blend<\/strong>: Nigella Sativa, Guggul, Cumin Seeds, Aloe Vera Extract, Garcinia Cambogia.<\/p><p>Natural and nature identical flavour (Cafe Mocha), Stevia (INS 960).<\/p>",
             "page": ""
           }
         },
@@ -78,7 +83,7 @@
           "settings": {
             "heading": "BENEFITS",
             "tab-icon": "<span class=\"me-2\">\n<svg width=\"18\" height=\"17\" viewBox=\"0 0 18 17\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M9.0017 1.85935C9.36462 1.40266 9.76231 1.01895 10.228 0.722133C11.963 -0.384499 14.2155 -0.211414 15.7957 1.18752C17.2132 2.44256 17.9387 4.08478 17.9983 6.05996C18.0247 6.93407 17.7413 7.72721 17.3723 8.48732C16.8587 9.54529 16.1786 10.4743 15.435 11.3502C13.6668 13.4328 11.6436 15.1949 9.50599 16.811C9.18107 17.0568 8.82717 17.0634 8.51481 16.8277C6.35438 15.1963 4.30987 13.4164 2.52685 11.3085C1.7994 10.4486 1.14957 9.52687 0.626284 8.50157C-0.0618724 7.15339 -0.180054 5.7555 0.257571 4.29992C0.739957 2.69662 1.61392 1.4242 3.00762 0.616822C4.83573 -0.442194 7.36616 -0.17214 8.89994 1.74465C8.92764 1.77872 8.95823 1.81034 9.0017 1.85935ZM5.5548 1.82737C4.70885 1.82494 4.16367 1.97057 3.68322 2.2719C2.76546 2.84677 2.21255 3.72609 1.88087 4.79206C1.56304 5.81319 1.63034 6.78497 2.1372 7.72686C2.54037 8.47585 3.01503 9.16472 3.54636 9.80909C5.14326 11.745 6.97587 13.3931 8.91508 14.9095C8.95372 14.9398 9.05033 14.9349 9.0909 14.9033C10.8961 13.4943 12.6029 11.9612 14.1238 10.1987C14.7855 9.43164 15.4031 8.6253 15.8681 7.69801C16.1299 7.17563 16.3447 6.63135 16.317 6.02103C16.2652 4.8713 15.8807 3.86269 15.1674 3.00595C13.6819 1.22192 10.8356 1.3957 9.78164 3.90613C9.62803 4.27211 9.36752 4.47995 8.9914 4.47613C8.61624 4.47231 8.36797 4.25751 8.20696 3.89501C7.62249 2.57671 6.6648 1.86387 5.5548 1.82737Z\" fill=\"#5E5E5E\"\/>\n<\/svg>\n<\/span>",
-            "content": "",
+            "content": "<ul><li>Enhances overall health & longevity <\/li><li>Improves energy & strength<\/li><li>Fulfils daily protein needs<\/li><li>Supports immunity <\/li><li>Pre\/Post-workout recovery<\/li><\/ul>",
             "page": ""
           }
         }
@@ -89,6 +94,7 @@
         "b46e0338-2d2b-45f4-87d1-11b1c98cfa96",
         "6e7426d1-9402-4748-b4be-7c310c6f08cd",
         "08906a90-3cfd-4499-bf45-571da2672b17",
+        "5ee24d26-66fe-4999-a565-e3e2e107979f",
         "36626d70-5b21-4944-977b-09b705eb410d",
         "e376e053-b6b5-4b23-81d3-c1150bd23c44",
         "2ade82c9-0343-4983-a5b2-fa24eb699d1c",
@@ -115,7 +121,7 @@
         "12c4b6a9-b58c-4bb8-a7ad-7ec3d3549857": {
           "type": "review-block",
           "settings": {
-            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1.png",
+            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1_1.png",
             "customer_name": "Brandy A.",
             "product_image": "shopify:\/\/shop_images\/Katcha_aam_1_1.png",
             "review": "Heavenly Protein Powder - Dreamy Cafe Mocha"
@@ -124,7 +130,7 @@
         "eb9bc994-e4f0-4e16-a5a8-28b352b7025c": {
           "type": "review-block",
           "settings": {
-            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1.png",
+            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1_2.png",
             "customer_name": "Akhil",
             "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1_2.png",
             "review": "Heavenly Protein Powder - Dreamy Cafe Mocha"
@@ -133,7 +139,7 @@
         "b4354ed4-9514-4201-9c42-3e801b5238e0": {
           "type": "review-block",
           "settings": {
-            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1.png",
+            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1_3.png",
             "customer_name": "Name",
             "product_image": "shopify:\/\/shop_images\/Katcha_aam_1_1.png",
             "review": "Heavenly Protein Powder - Dreamy Cafe Mocha"
@@ -142,7 +148,7 @@
         "051b06ae-ce52-4d6a-8c05-e98c304e957b": {
           "type": "review-block",
           "settings": {
-            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1.png",
+            "customer_image": "shopify:\/\/shop_images\/Screenshot_2023-02-15_at_1.00_1_4.png",
             "customer_name": "Name",
             "product_image": "shopify:\/\/shop_images\/Coffee_Mocha_1_2.png",
             "review": "Heavenly Protein Powder - Dreamy Cafe Mocha"
@@ -157,7 +163,7 @@
         "051b06ae-ce52-4d6a-8c05-e98c304e957b"
       ],
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#ffffff",
         "heading": "Satisfy your protein cravings without bloating in an all Natural Way",
         "heading_color": "#181818"
       }
@@ -169,7 +175,7 @@
         "image": "shopify:\/\/shop_images\/how_to_use.png",
         "heading": "How to use",
         "footer_heading": "When to use",
-        "description": "Our protein can be had at any time of the day and with meals or inbetween them. As a general rule protein should be avoided before aworkout and should definitely be consumed within 1 hour of any strenousactivity or workout."
+        "description": "Our protein powder can be taken anytime, with meals or in between. However, as a general rule, protein should be avoided before a workout and should definitely be consumed within 1 hour of any strenuous activity or workout."
       }
     },
     "3b754e96-18df-465c-a2d1-0b7eb94ac28a": {
@@ -179,35 +185,40 @@
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_14544.png",
-            "text": ""
+            "text": "",
+            "border": true
           }
         },
         "5c7cf7f5-f720-42a0-b77e-a58a8d8e6ca9": {
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_14543.png",
-            "text": ""
+            "text": "",
+            "border": true
           }
         },
         "81b98e51-74c7-48df-9d01-d0c369246f1c": {
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_14542.png",
-            "text": ""
+            "text": "",
+            "border": true
           }
         },
         "de67261d-67f4-498b-bf52-cec11a0808e4": {
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_14541.png",
-            "text": ""
+            "text": "",
+            "border": true
           }
         },
         "2bc440ac-7187-40ff-9b82-82e6539122d6": {
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_14540.png",
-            "text": ""
+            "text": "",
+            "border": false
           }
         }
       },
@@ -310,7 +321,7 @@
       ],
       "settings": {
         "heading": "Vegan Way is made with over 20+ super foods & Nutrients",
-        "bg_color": "#E5E5E5"
+        "bg_color": "#ffffff"
       }
     },
     "b0074d67-d009-4929-8faf-9bd4a74bd59d": {
@@ -341,73 +352,55 @@
         "900939dd-8c81-4459-a7dd-5c9f8c3fc243": {
           "type": "item1-block",
           "settings": {
-            "item1text": "No dairy based allergens"
+            "item1text": "100% Vegan \/ Plant-Based"
           }
         },
         "7e118c94-9844-40d2-ac9b-e53086e57cc7": {
           "type": "item1-block",
           "settings": {
-            "item1text": "Gluten Free "
+            "item1text": "100% Natural and Gluten Free"
           }
         },
         "2f94a099-6f25-4afb-aa9b-768f0325fe2f": {
           "type": "item1-block",
           "settings": {
-            "item1text": "Complete Nutrition For The Body And Mind"
+            "item1text": "Complete nutrition for the body and mind"
           }
         },
         "50028fa3-3833-4642-b76e-cfb8492288e4": {
           "type": "item1-block",
           "settings": {
-            "item1text": "Controls Hunger Cravings for long "
+            "item1text": "Controls hunger cravings for long"
           }
         },
         "3cd2006f-d337-46a6-be5a-09559db6c73b": {
           "type": "item1-block",
           "settings": {
-            "item1text": "Nutritionally Balanced "
+            "item1text": "Nutritionally balanced"
           }
         },
         "2b54da42-b7c1-4865-9151-e6de1cd8bb5f": {
           "type": "item1-block",
           "settings": {
-            "item1text": "100% Vegan \/ Plant-Based"
+            "item1text": "Easy to digest and great aftertaste"
           }
         },
         "12449254-719b-4261-b6a4-7f237aca05a7": {
           "type": "item1-block",
           "settings": {
-            "item1text": "Easy To Digest "
-          }
-        },
-        "6b065614-4652-41f6-bf7b-b5db83f93ee0": {
-          "type": "item1-block",
-          "settings": {
-            "item1text": "Great Aftertaste "
-          }
-        },
-        "d360426d-06d0-4f36-ba1a-e07d4ee229f5": {
-          "type": "item1-block",
-          "settings": {
-            "item1text": "Contains Antioxidant Blend "
-          }
-        },
-        "2c1066c8-8816-49c3-b759-b6be37cc0e2d": {
-          "type": "item1-block",
-          "settings": {
-            "item1text": "100% Natural"
+            "item1text": "Contains antioxidant blend"
           }
         },
         "b7077826-d4d8-4e37-8b81-aab7e54c69b2": {
           "type": "item2-block",
           "settings": {
-            "item2text": "Dairy is a major allergen "
+            "item2text": "Made from animal product"
           }
         },
         "6b5800e7-51b4-4423-9f63-9fb37d93c4e7": {
           "type": "item2-block",
           "settings": {
-            "item2text": "Contains Gluten "
+            "item2text": "Contain additives & preservatives"
           }
         },
         "e8a3ea77-f96c-486b-bac9-a6d3584b59fb": {
@@ -431,31 +424,13 @@
         "d7053a06-72a5-4d34-ba38-7a2281af5af9": {
           "type": "item2-block",
           "settings": {
-            "item2text": "Made from animal product "
+            "item2text": "Difficult to digest causes bloating and not good aftertaste"
           }
         },
         "0e7493cd-ca8a-4833-b3fb-cadc0094a8a1": {
           "type": "item2-block",
           "settings": {
-            "item2text": "Difficult to Digest and causes bloating "
-          }
-        },
-        "d31b2a19-1b7b-4af7-9e28-3b482b8bece1": {
-          "type": "item2-block",
-          "settings": {
-            "item2text": "Not So Good Aftertaste "
-          }
-        },
-        "fe202153-ee3f-410a-8f42-31779ba6d021": {
-          "type": "item2-block",
-          "settings": {
-            "item2text": "Doesn’t contain antioxidant blend "
-          }
-        },
-        "a9c84fa6-709c-42bf-a684-f78000f226a2": {
-          "type": "item2-block",
-          "settings": {
-            "item2text": "Contains additives & preservatives"
+            "item2text": "Doesn’t contain antioxidant blend"
           }
         }
       },
@@ -467,19 +442,13 @@
         "3cd2006f-d337-46a6-be5a-09559db6c73b",
         "2b54da42-b7c1-4865-9151-e6de1cd8bb5f",
         "12449254-719b-4261-b6a4-7f237aca05a7",
-        "6b065614-4652-41f6-bf7b-b5db83f93ee0",
-        "d360426d-06d0-4f36-ba1a-e07d4ee229f5",
-        "2c1066c8-8816-49c3-b759-b6be37cc0e2d",
         "b7077826-d4d8-4e37-8b81-aab7e54c69b2",
         "6b5800e7-51b4-4423-9f63-9fb37d93c4e7",
         "e8a3ea77-f96c-486b-bac9-a6d3584b59fb",
         "66983a5e-f8cc-4513-b8f0-d517eca83079",
         "469ced08-8592-45d1-a32e-86b9b047359f",
         "d7053a06-72a5-4d34-ba38-7a2281af5af9",
-        "0e7493cd-ca8a-4833-b3fb-cadc0094a8a1",
-        "d31b2a19-1b7b-4af7-9e28-3b482b8bece1",
-        "fe202153-ee3f-410a-8f42-31779ba6d021",
-        "a9c84fa6-709c-42bf-a684-f78000f226a2"
+        "0e7493cd-ca8a-4833-b3fb-cadc0094a8a1"
       ],
       "settings": {
         "bg_color": "#ecf2ec",
@@ -492,7 +461,7 @@
     "51a64afb-d940-4535-85ca-b19a943636a9": {
       "type": "product-page-faqs",
       "settings": {
-        "bg_color": "#e5e5e5",
+        "bg_color": "#ffffff",
         "heading": "FAQ",
         "text_color": "#181818",
         "read_more_link": "",
@@ -506,42 +475,48 @@
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_14536_1.png",
-            "text": ""
+            "text": "",
+            "border": false
           }
         },
         "2686d5e4-702e-4fa1-b135-b80e1ae1c9bc": {
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_14534_1.png",
-            "text": ""
+            "text": "",
+            "border": false
           }
         },
         "61b714eb-1cb3-4f47-9481-099c0d742501": {
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_14533_1.png",
-            "text": ""
+            "text": "",
+            "border": false
           }
         },
         "2ab58409-5863-467a-845f-d26e81d1696c": {
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_14532_1.png",
-            "text": ""
+            "text": "",
+            "border": false
           }
         },
         "5beba020-6e55-48be-893f-913b967c5a76": {
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_1829_1.png",
-            "text": ""
+            "text": "",
+            "border": false
           }
         },
         "9b0dca46-0167-42af-9dbd-48c5c680bf23": {
           "type": "logo-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_14530_2.png",
-            "text": ""
+            "text": "",
+            "border": false
           }
         }
       },

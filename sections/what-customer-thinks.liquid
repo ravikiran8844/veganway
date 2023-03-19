@@ -1,4 +1,6 @@
 {{ 'what-customer-thinks.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'what-customer-thinks.js' | asset_url }}" defer="defer"></script>
+
 
 {% if section.blocks.size > 0 %}
   <div class="wct__wrapper--{{ section.id }} fluid-container">
@@ -6,7 +8,7 @@
       <div class="col-12 text-center">
         <h2 class="wct__main-heading h3 m-auto mb-4">{{ section.settings.heading }}</h2>
       </div>
-      <div class="col-12" data-flickity='{ "cellAlign": "left", "contain": true,"pageDots": false ,"groupCells": true }'>
+      <div class="col-12 wct-carousel">
         {% for block in section.blocks %}
           <div class="col mx-4">
             <div>
@@ -45,6 +47,49 @@
 
 
 <style>
+  .wtc-section .flickity-page-dots {
+    counter-reset: a;
+  }
+  .wtc-section .flickity-page-dots .dot {
+    background-color: transparent;
+  }
+  @media(max-width:767px) {
+    .wtc-section .flickity-page-dots::before {
+      content: "<";
+    }
+    .wtc-section .flickity-page-dots::after {
+      content: ">";
+    }
+  }
+  .wtc-section .flickity-page-dots .dot::before {
+    content: counter(a);
+    counter-increment: a;
+  }
+  .wtc-section .flickity-button {
+    display: none;
+  }
+  @media(min-width:768px) {
+    .wtc-section .flickity-page-dots .dot::before {
+      content: "";
+    }
+    .wtc-section .flickity-button {
+      display: block;
+      background-color: transparent;
+    }
+    .wtc-section .flickity-prev-next-button {
+      width: 51px;
+      height: 51px;
+      border: none;
+    }
+    .wtc-section .flickity-prev-next-button.previous {
+      left: -40px;
+    }
+    .wtc-section .flickity-prev-next-button.next {
+      right: -40px;
+    }
+  }
+
+
   .wtc-section {
     margin: 0 auto;
   }

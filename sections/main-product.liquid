@@ -4,184 +4,257 @@
 <script src="{{ 'marmeto-product.js' | asset_url }}" defer="defer"></script>
 {{ 'marmeto-product.css' | asset_url | stylesheet_tag }}
 
-  <div class="fluid-container">
-    <div class="product page-width main-product-section product-flex">
-    <div class="product-flexitem product-flexitem-images">
-      <div
-        class="product__media-list"
-      >
-        {%- for media in product.media -%}
-          <div class="product__media-item pb-0">
-            {% render 'product-media', media: media, class: 'media media--portrait' %}
-          </div>
-        {%- endfor -%}
+  <div class="fluid-container main-product__wrapper">
+   <div class="col-12 page-width pb-5">
+    <div class="product main-product-section product-flex">
+      <div class="product-flexitem product-flexitem-images">
+        <div
+          class="product__media-list"
+        >
+          {%- for media in product.media -%}
+            <div class="product__media-item pb-0">
+              {% render 'product-media', media: media, class: 'media media--portrait' %}
+            </div>
+          {%- endfor -%}
+        </div>
+        <div
+          class="image__viewer d-md-none px-4"
+          data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false,"asNavFor": ".product__media-list", "prevNextButtons": true, "imagesLoaded": true,"groupCells": true }'
+        >
+          {%- for media in product.media -%}
+            <div
+              style="
+                height: 93px;
+                width: 94px;
+                margin-right:10px;
+              "
+            >
+              {% render 'product-media', media: media, class: 'media media--portrait' %}
+            </div>
+          {%- endfor -%}
+        </div>
       </div>
-      <div
-        class="image__viewer d-md-none px-4"
-        data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false,"asNavFor": ".product__media-list", "prevNextButtons": true, "imagesLoaded": true,"groupCells": true }'
-      >
-        {%- for media in product.media -%}
-          <div
-            style="
-              height: 93px;
-              width: 94px;
-              margin-right:10px;
-            "
-          >
-            {% render 'product-media', media: media, class: 'media media--portrait' %}
-          </div>
-        {%- endfor -%}
-      </div>
-    </div>
-     
-     <div class="product-flexitem product-flexitem-info">
-       <div id="product-info-{{ section.id }}" class="product-info">
-         {%- for block in section.blocks -%}
-           {%- case block.type -%}
-           {%- when 'text' -%}
-             <div class="product__text" {{ block.shopify_attributes }}>
-               {{- block.settings.text -}}
-             </div>
-           {%- when 'title' -%}
-             <h1 class="product__title fs-1" {{ block.shopify_attributes }}>
-               {{ product.title | escape }}
-             </h1>
-             {%- when 'caption' -%}
-              <div class="product__caption" {{ block.shopify_attributes }}>
-                {{ product.metafields.descriptors.subtitle }}
-              </div>
-              {%- when 'product_info' -%}
-                <div class="product__info" {{ block.shopify_attributes }}>
-                  {{ product.metafields.custom.product_info }}
-                </div>
-                {%- when 'reviews-block' -%}
-                  <div class="product__reviews-block" {{ block.shopify_attributes }}>
-                    <div class="d-flex justify-content-between">
-                    <div>
-                      <span class="me-1">{{ block.settings.reviews-svg }}</span>
-                      <span>{{ block.settings.reviews-count }}</span>
-                    </div>
-                    <div>
-                      <span class="me-1">{{ block.settings.video-svg }}</span><span><a href="{{ block.settings.video-link }}">{{ block.settings.video-text }}</a></span>
-                    </div>
-                    </div>
-                  </div>
-
-           {%- when 'price' -%}
-             <div id="price-{{ section.id }}" class="product__prices" {{ block.shopify_attributes }}>
-               <span class="price__regular fs-5 {% if current_variant.compare_at_price > current_variant.price %}on-sale{% endif %}">{{ current_variant.price | money_with_currency }}</span>
-               
-               {%- if current_variant.compare_at_price > current_variant.price -%}
-                 <span class="price__compare">{{ current_variant.compare_at_price | money_with_currency }}</span>
-                 <span class="price__discount">{{ current_variant.compare_at_price | minus: current_variant.price | times: 100 | divided_by: current_variant.compare_at_price }}% Off</span>
-               {%- endif -%}
-             </div>     	  
-           {%- when 'quantity_selector' -%}
-             <div class="product__quantity" {{ block.shopify_attributes }}>
-               {% comment %}
-                <label class="quantity__label" for="Quantity-{{ section.id }}">
-                 Quantity
-               </label>
-               {% endcomment %}
-               
-         <marmeto-quantity-input class="quantity__flex">
-                 <button class="quantity__button" name="minus" type="button">-</button>
-                 <input class="quantity__input"
-                     type="number"
-                     name="quantity"
-                     id="Quantity-{{ section.id }}"
-                     min="1"
-                     value="1"
-                     form="{{ product_form_id }}"
-                   >
-                 <button class="quantity__button" name="plus" type="button">+</button>
-               </marmeto-quantity-input>
-             </div>
-           {%- when 'variant_picker' -%}
-             {%- unless product.has_only_default_variant -%}
-               <marmeto-variant-radios class="product__variants" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
-                 {%- for option in product.options_with_values -%}
-                   <div class="product__variant">
-                     <label class="product__variant--label">{{ option.name | upcase }}</label>
-                     <br>
-                     {%- for value in option.values -%}
-                       <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                              name="{{ option.name }}"
-                              value="{{ value | escape }}"
-                              form="{{ product_form_id }}"
-                              {% if option.selected_value == value %}checked{% endif %}
-                              >
-                       <label class="product__options-swatches" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                         {{ value }}
-                       </label>
-                     {%- endfor -%}
-                   </div>
-                 {%- endfor -%}
-                 
-                 <script type="application/json">
-                   {{ product.variants | json }}
-                 </script>
-               </marmeto-variant-radios>
-             {%- endunless -%}
-           {%- when 'buy_buttons' -%}
-             <div {{ block.shopify_attributes }}>
-               <marmeto-product-form class="product__form">
-                 <div class="product__form-error" role="alert" hidden>                
-                   <span class="product__form-error-message"></span>
-                 </div>
-   
-                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
-   
-                   <div class="product__form-buttons">
-                     <button type="submit" name="add" class="product__form-button"
-                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
-                     >
-                       <span>
-                         {%- if product.selected_or_first_available_variant.available -%}
-                           ADD TO CART
-                         {%- else -%}
-                           SOLD OUT
-                         {%- endif -%}
-                       </span>
-                     </button>
-                      {%- if block.settings.show_dynamic_checkout -%}
-                       {{ form | payment_button }}
-                     {%- endif -%}
-                   </div>
-                 {%- endform -%}
-               </marmeto-product-form>
-             </div>
-           {%- when 'description' -%}
-               <div class="product__description">
-                 {{ product.metafields.my_fields.product_desc }}
+       
+       <div class="product-flexitem product-flexitem-info">
+         <div id="product-info-{{ section.id }}" class="product-info">
+           {%- for block in section.blocks -%}
+             {%- case block.type -%}
+             {%- when 'text' -%}
+               <div class="product__text" {{ block.shopify_attributes }}>
+                 {{- block.settings.text -}}
                </div>
-           {%- when 'collapsible_tab' -%}
-             <div class="product__tab" {{ block.shopify_attributes }}>
-               <details id="Tabs-{{ block.id }}-{{ section.id }}">
-                 <summary>
-                   <div class="product__tab-summary">
-                     <div class="product__tab-title">
-                      {% if block.settings.tab-icon != blank %}
-                      <span> {{ block.settings.tab-icon }} </span>
-                      {% endif %}
-                       {{ block.settings.heading | default: block.settings.page.title }}
-                     </div>
-                     <div class="product__tab-icon">
-                       <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
-                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
-                       </svg>
-                     </div>
-                   </div>
-                 </summary>
-                 <div class="product__tab-content" id="ProductTab-{{ block.id }}-{{ section.id }}">
-                   {{ block.settings.content }}
-                   {{ block.settings.page.content }}
+             {%- when 'title' -%}
+               <h1 class="product__title fs-1" {{ block.shopify_attributes }}>
+                 {{ product.title | escape }}
+               </h1>
+               {%- when 'caption' -%}
+                <div class="product__caption" {{ block.shopify_attributes }}>
+                  {{ product.metafields.descriptors.subtitle }}
+                </div>
+                {%- when 'product_info' -%}
+                  <div class="product__info" {{ block.shopify_attributes }}>
+                    {{ product.metafields.custom.product_info }}
+                  </div>
+                  {%- when 'reviews-block' -%}
+                    <div class="product__reviews-block" {{ block.shopify_attributes }}>
+                      <div class="d-flex justify-content-between">
+                      <div>
+                        <span class="me-1">{{ block.settings.reviews-svg }}</span>
+                        <span>{{ block.settings.reviews-count }}</span>
+                      </div>
+                      <div>
+                        <span class="me-1">{{ block.settings.video-svg }}</span><span><a href="{{ block.settings.video-link }}">{{ block.settings.video-text }}</a></span>
+                      </div>
+                      </div>
+                    </div>
+  
+             {%- when 'price' -%}
+               <div id="price-{{ section.id }}" class="product__prices" {{ block.shopify_attributes }}>
+                 <span class="price__regular my-3 fs-3 {% if current_variant.compare_at_price > current_variant.price %}on-sale{% endif %}">{{ current_variant.price | money_with_currency }}</span>
+                 
+                 {%- if current_variant.compare_at_price > current_variant.price -%}
+                   <span class="price__compare">{{ current_variant.compare_at_price | money_with_currency }}</span>
+                   <span class="price__discount">{{ current_variant.compare_at_price | minus: current_variant.price | times: 100 | divided_by: current_variant.compare_at_price }}% Off</span>
+                 {%- endif -%}
+               </div>     	  
+             {%- when 'quantity_selector' -%}
+               <div class="product__quantity d-flex align-items-center" {{ block.shopify_attributes }}>
+                 {% comment %}
+                  <label class="quantity__label" for="Quantity-{{ section.id }}">
+                   Quantity
+                 </label>
+                 {% endcomment %}
+                 
+           <marmeto-quantity-input class="quantity__flex">
+                   <button class="quantity__button" name="minus" type="button">-</button>
+                   <input class="quantity__input"
+                       type="number"
+                       name="quantity"
+                       id="Quantity-{{ section.id }}"
+                       min="1"
+                       value="1"
+                       form="{{ product_form_id }}"
+                     >
+                   <button class="quantity__button" name="plus" type="button">+</button>
+                 </marmeto-quantity-input>
+                 <marmeto-product-form class="product__form ms-2" style="flex-grow: 1;">
+                  <div class="product__form-error" role="alert" hidden>                
+                    <span class="product__form-error-message"></span>
+                  </div>
+    
+                  {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+    
+                    <div class="product__form-buttons">
+                      <button type="submit" name="add" class="product__form-button"
+                      {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                      >
+                        <span>
+                          {%- if product.selected_or_first_available_variant.available -%}
+                            ADD TO CART
+                          {%- else -%}
+                            SOLD OUT
+                          {%- endif -%}
+                        </span>
+                      </button>
+                    </div>
+                  {%- endform -%}
+                </marmeto-product-form>
+               </div>
+               {%- when 'flavor' -%}
+               {% if product.metafields.custom.flavor_text_1 != blank and product.metafields.custom.flavor_text_2 != blank %}
+               <div class="mb-3">
+                 <div class="mb-2 drop-down-item-title">Flavor</div>
+                 <div class="dropdown">
+                 <button class="dropbtn"><span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <rect y="0.90625" width="20" height="20" rx="10" fill="white"/>
+               </svg>
+               </span><span class="dropdown-menu-item">{{ product.variants[0].option1 }}</span> <span class="drop-down-svg"><svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <g clip-path="url(#clip0_6832_2376)">
+               <path d="M1 1.77344L6.92308 8.77344L13 1.77344" stroke="#FAF8F5" stroke-width="1.7"/>
+               </g>
+               <defs>
+               <clipPath id="clip0_6832_2376">
+               <rect width="14" height="10" fill="white" transform="translate(0 0.773438)"/>
+               </clipPath>
+               </defs>
+               </svg>
+               </span></button>
+                 <div class="dropdown-content">
+                     <a href="{{ product.metafields.custom.flavor_link_1 }}">{{ product.metafields.custom.flavor_text_1 }}</a>
+                     <a href="{{ product.metafields.custom.flavor_link_2 }}">{{ product.metafields.custom.flavor_text_2 }}</a>
                  </div>
-               </details>
-             </div>
-           {%- endcase -%}
-         {%- endfor -%}
+               </div>
+               </div>
+              {% endif %}
+             {%- when 'variant_picker' -%}
+               {%- unless product.has_only_default_variant -%}
+                 <marmeto-variant-radios class="product__variants" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                   {%- for option in product.options_with_values -%}
+                    {% if option.name == "Flavor" %}
+                    <div class="product__variant" style="display: none;">
+                      <label class="product__variant--label">{{ option.name | upcase }}</label>
+                      <br>
+                          {%- for value in option.values -%}
+                        <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                               name="{{ option.name }}"
+                               value="{{ value | escape }}"
+                               form="{{ product_form_id }}"
+                               {% if option.selected_value == value %}checked{% endif %}
+                               >
+                        <label class="product__options-swatches" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                          {{ value }}
+                        </label>
+                      {%- endfor -%}
+
+                    </div>
+                    {% else %}
+
+                     <div class="product__variant">
+                       <label class="product__variant--label">{{ option.name | upcase }}</label>
+                       <br>
+                           {%- for value in option.values -%}
+                         <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                name="{{ option.name }}"
+                                value="{{ value | escape }}"
+                                form="{{ product_form_id }}"
+                                {% if option.selected_value == value %}checked{% endif %}
+                                >
+                         <label class="product__options-swatches" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                           {{ value }}
+                         </label>
+                       {%- endfor -%}
+
+                     </div>
+                    {% endif %}
+
+                   {%- endfor -%}
+                   
+                   <script type="application/json">
+                     {{ product.variants | json }}
+                   </script>
+                 </marmeto-variant-radios>
+               {%- endunless -%}
+             {%- when 'buy_buttons' -%}
+               <div {{ block.shopify_attributes }}>
+                 <marmeto-product-form class="product__form">
+                   <div class="product__form-error" role="alert" hidden>                
+                     <span class="product__form-error-message"></span>
+                   </div>
+     
+                   {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+     
+                     <div class="product__form-buttons">
+                       <button type="submit" name="add" class="product__form-button"
+                       {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                       >
+                         <span>
+                           {%- if product.selected_or_first_available_variant.available -%}
+                             ADD TO CART
+                           {%- else -%}
+                             SOLD OUT
+                           {%- endif -%}
+                         </span>
+                       </button>
+                        {%- if block.settings.show_dynamic_checkout -%}
+                         {{ form | payment_button }}
+                       {%- endif -%}
+                     </div>
+                   {%- endform -%}
+                 </marmeto-product-form>
+               </div>
+             {%- when 'description' -%}
+                 <div class="product__description">
+                   {{ product.metafields.my_fields.product_desc }}
+                 </div>
+             {%- when 'collapsible_tab' -%}
+               <div class="product__tab" {{ block.shopify_attributes }}>
+                 <details id="Tabs-{{ block.id }}-{{ section.id }}">
+                   <summary>
+                     <div class="product__tab-summary">
+                       <div class="product__tab-title">
+                        {% if block.settings.tab-icon != blank %}
+                        <span> {{ block.settings.tab-icon }} </span>
+                        {% endif %}
+                         {{ block.settings.heading | default: block.settings.page.title }}
+                       </div>
+                       <div class="product__tab-icon">
+                         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"></path>
+                         </svg>
+                       </div>
+                     </div>
+                   </summary>
+                   <div class="product__tab-content" id="ProductTab-{{ block.id }}-{{ section.id }}">
+                     {{ block.settings.content }}
+                     {{ block.settings.page.content }}
+                   </div>
+                 </details>
+               </div>
+             {%- endcase -%}
+           {%- endfor -%}
+         </div>
        </div>
      </div>
    </div>
@@ -189,7 +262,117 @@
 
 
 <style>
+.image__viewer .flickity-button{
+  background-color: transparent;
+ }
+
+ .image__viewer .flickity-prev-next-button.previous {
+  left: 0;
+}
+.image__viewer .flickity-prev-next-button.next {
+    right: 0;
+}
+
+
+
+
+  .drop-down-item-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 13px;
+color: #181818;
+text-transform: uppercase;
+
+  }
+  .drop-down-svg{
+    position: absolute;
+    right: 3%;
+  }
+  .dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+display: flex;
+align-items: center;
+letter-spacing: -0.325px;
+color: #FFFFFF;
+min-width: 220px;
+height: 49.55px;
+background: #017149;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-menu-item{
+margin-left:10px;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .product__title, .product__caption, .product__info{
+    text-align: center;
+  }
+ 
+  .product__description{
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+margin: 20px 10px;
+
+  }
+  .product__description ul{
+    list-style-type: '\2713';
+    padding: 10px 0;
+  }
+  .product__description ul li{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+margin: 10px 0;
+padding-left: 10px;
+color: #5E5E5E;
+  }
+  .product__description ul li b{
+    font-weight: 700;
+    color: #181818;
+  }
+
+ 
   .main-product-section{
+    background-color: #F5F5F5;
+    margin: 0;
+  }
+  .main-product__wrapper{
     background-color: #F5F5F5;
     margin: 0;
   }
@@ -214,14 +397,20 @@ color: #181818;
 text-decoration: none;
 color: #181818;
   }
-  @media (min-width:767px){
+  @media (min-width:768px){
     .product__reviews-block{
       font-size: 15px;
     }
+    .product__media-list{
+      position: sticky;
+      top: 0;
+    }
+    .product__title, .product__caption, .product__info{
+      text-align: left;
+    }
   }
-  .header_nav{
+  header{
     border-bottom: 1px solid #E1E1E1;
-    background-color: #F5F5F5;
 }
 .product__description ul li b{
   font-weight: 500;
@@ -295,6 +484,11 @@ color: #5E5E5E;
     {
       "type": "caption",
       "name": "Caption",
+      "limit": 1
+    },
+    {
+      "type": "flavor",
+      "name": "Flavor",
       "limit": 1
     },
     {
